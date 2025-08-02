@@ -7,6 +7,8 @@ public class SwapCalculation : MonoBehaviour, IControlable
     [HideInInspector] public UnityEvent<Vector2, float, bool> eSwapContinued;
     [HideInInspector] public UnityEvent<Vector2, float, bool> eSwapEnded;
 
+    [HideInInspector] public UnityEvent eSwapBlocked;
+
     [HideInInspector] public Vector2 Difference { get; private set; } = Vector2.zero;
     [HideInInspector] public bool IsEnabled { get; set; } = true;
     [HideInInspector] public bool IsSwapped { get; private set; } = false;
@@ -22,7 +24,7 @@ public class SwapCalculation : MonoBehaviour, IControlable
 
     public void PressOn(Vector2 vec)
     {
-        if (!IsEnabled) { return; }
+        if (!IsEnabled) { eSwapBlocked?.Invoke(); return; }
 
         startVec = vec;
 

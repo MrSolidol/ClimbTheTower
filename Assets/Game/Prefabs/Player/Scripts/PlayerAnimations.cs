@@ -19,7 +19,7 @@ public class PlayerAnimations : MonoBehaviour
         playerMove.eDisplayGrounded.AddListener(OnGroundDisplay);
         playerMove.eDisplayRoofHit.AddListener(OnRoofHitDisplay);
         playerMove.eDisplayWallHit.AddListener(OnWallHitDisplay);
-        playerMove.eDisplayWallHit.AddListener(OnSlideDisplay);
+        playerMove.eDisplaySlide.AddListener(OnSlideDisplay);
     }
 
     private void OnDisable()
@@ -31,7 +31,7 @@ public class PlayerAnimations : MonoBehaviour
         playerMove.eDisplayGrounded.RemoveListener(OnGroundDisplay);
         playerMove.eDisplayRoofHit.RemoveListener(OnRoofHitDisplay);
         playerMove.eDisplayWallHit.RemoveListener(OnWallHitDisplay);
-        playerMove.eDisplayWallHit.RemoveListener(OnSlideDisplay);
+        playerMove.eDisplaySlide.RemoveListener(OnSlideDisplay);
     }
 
     public void HandlerFallAnimation() 

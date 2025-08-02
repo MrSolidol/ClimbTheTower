@@ -1,14 +1,8 @@
-using Newtonsoft.Json.Linq;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
-using UnityEditor.Localization.Plugins.XLIFF.V20;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
-    #region ANIMATION_EVENTS
     [HideInInspector] public UnityEvent<bool> eDisplayFlip;
     [HideInInspector] public UnityEvent<float> eDisplaySpring;
     [HideInInspector] public UnityEvent eDisplayJump;
@@ -17,11 +11,13 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector] public UnityEvent eDisplayRoofHit;
     [HideInInspector] public UnityEvent eDisplaySlide;
     [HideInInspector] public UnityEvent eDisplayGrounded;
-    #endregion
+
+    [HideInInspector] public UnityEvent<string> ePlaySound;
 
     #region JUMP_VARIABLES
 
     [SerializeField] private float PushForceMult = 300f;
+    [SerializeField] AnimationCurve curveJumpValue;
 
     private SwapCalculation swapCalculation;
     private Rigidbody2D playerBody;
@@ -47,13 +43,6 @@ public class PlayerMovement : MonoBehaviour
 
     #endregion
 
-    public bool some;
-    #region JUMPTRAP_VARIABLES
- 
-    public UnityEvent WebSound;
-    
-    #endregion
-
     #region DISSPLATFORM_VARIABLES
     private DisappearPlatform disPlatform;
     #endregion
@@ -62,19 +51,6 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float toFallSpeed = 10f;
     
-    #endregion
-    
-    #region SOUND_VARIABLES
-
-        public UnityEvent<float> StoneSlap;
-        public UnityEvent<float> WoodSlap;
-        public UnityEvent<float> MetalSlap;
-
-        private List<float> pitches;
-
-        [SerializeField] private AudioSource StoneSound;
-        [SerializeField] private AudioSource WoodSound;
-        [SerializeField] private AudioSource MetalSound;
     #endregion
     
 
@@ -90,58 +66,25 @@ public class PlayerMovement : MonoBehaviour
 
             absoluteGravity = playerBody.gravityScale;
         #endregion
-        
-        #region SOUND_AWAKE
-
-            pitches = new List<float>();
-
-            pitches.Add(StoneSound.pitch);
-            StoneSlap.AddListener(delegate(float _value) 
-            {
-                StoneSound.volume = _value;
-                StoneSound.pitch = pitches[0];
-                StoneSound.pitch += 2 * UnityEngine.Random.Range(-0.1f, 0.1f);
-                StoneSound.Play();
-            });
-
-            pitches.Add(WoodSound.pitch);
-            WoodSlap.AddListener(delegate (float _value)
-            {
-                WoodSound.volume = _value;
-                WoodSound.pitch = pitches[1];
-                WoodSound.pitch += 2 * UnityEngine.Random.Range(-0.1f, 0.1f);
-                WoodSound.Play();
-            });
-
-            pitches.Add(MetalSound.pitch);
-            MetalSlap.AddListener(delegate (float _value)
-            {
-                MetalSound.volume = _value;
-                MetalSound.pitch = pitches[2];
-                MetalSound.pitch += 2 * UnityEngine.Random.Range(-0.1f, 0.1f);
-                MetalSound.Play();
-            });
-        #endregion
     }
 
     private void OnEnable()
     {
         swapCalculation.eSwapContinued.AddListener(DifferenceCheck);
         swapCalculation.eSwapEnded.AddListener(BodyPush);
+        swapCalculation.eSwapBlocked.AddListener(JumpBugCrutchFix);
     }
 
     private void OnDisable()
     {
         swapCalculation.eSwapContinued.RemoveListener(DifferenceCheck);
         swapCalculation.eSwapEnded.RemoveListener(BodyPush);
+        swapCalculation.eSwapBlocked.RemoveListener(JumpBugCrutchFix);
     }
 
     private void Start()
     {
-        //#region LOAD_START
-        //ProgressSave.Instance.Load();
-        //transform.position = ProgressSave.Instance.playerPosition;
-        //#endregion
+
     }
 
     private void Update()
@@ -158,42 +101,40 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        #region JUMPTRAP_COLLISION
+        switch (collision.transform.parent.tag) 
+        {
+            case "STONE":
+                ePlaySound?.Invoke("STONE");
+                break;
+            case "WOOD":
+                ePlaySound?.Invoke("WOOD");
+                break;
+            case "METAL":
+                ePlaySound?.Invoke("METAL");
+                break;
+            default:
+                break;
+        } 
 
-            switch (collision.transform.parent.tag) 
-            {
-                case "STONE":
-                    StoneSlap.Invoke(preVelocity.magnitude/(preVelocity.magnitude + 5));
-                    break;
-                case "WOOD":
-                    WoodSlap.Invoke(preVelocity.magnitude / (preVelocity.magnitude + 5));
-                    break;
-                case "METAL":
-                    MetalSlap.Invoke(preVelocity.magnitude / (preVelocity.magnitude + 5));
-                    break;
-                default:
-                    break;
-            } 
+        Vector2 _vecContact = collision.contacts[0].normal;
+        float _degContact = Vector2.Angle(Vector2.up, _vecContact);
 
-            Vector2 _vecContact = collision.contacts[0].normal;
-            float _degContact = Vector2.Angle(Vector2.up, _vecContact);
+        switch (_degContact)
+        {
+            case <=2.5f and >= 0:
+                eFloorContact.Invoke(collision.gameObject);
+                break;
+            case <=92.5f and >= 87.5f:
+                eWallContact.Invoke(collision.gameObject);
+                break;
+            case >= 177.5f:
+                RoofReact(collision.gameObject);
+                break;
+            default:
+                eInclineContact.Invoke(collision.gameObject);
+                break;
+        }
 
-            switch (_degContact)
-            {
-                case <=2.5f and >= 0:
-                    eFloorContact.Invoke(collision.gameObject);
-                    break;
-                case <=92.5f and >= 87.5f:
-                    eWallContact.Invoke(collision.gameObject);
-                    break;
-                case >= 177.5f:
-                    RoofReact(collision.gameObject);
-                    break;
-                default:
-                    eInclineContact.Invoke(collision.gameObject);
-                    break;
-            }
-        #endregion
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -209,13 +150,23 @@ public class PlayerMovement : MonoBehaviour
 
     #region DISSPLATFORM_FUNCTIONS
     public void DisPlatformControl() 
-        {
-            isGrounded = false;
-        }
+    {
+        isGrounded = false;
+        swapCalculation.IsEnabled = isGrounded;
+    }
 
     #endregion
 
     #region JUMP_FUNCTIONS
+
+    public void JumpBugCrutchFix() 
+    {
+        if (playerBody.velocity.magnitude == 0 && preVelocity.magnitude == 0) 
+        {
+            isGrounded = true;
+            swapCalculation.IsEnabled = isGrounded;
+        }
+    }
 
     public void SetSwapActive(bool flag) 
     {
@@ -235,8 +186,12 @@ public class PlayerMovement : MonoBehaviour
         if (!flag) { return; }
         
         if (!isGrounded) { return; }
+
+        value = curveJumpValue.Evaluate(value);
         
         isGrounded = false;
+        swapCalculation.IsEnabled = isGrounded;
+
         playerBody.velocity = Vector2.zero;
         playerBody.gravityScale = absoluteGravity;
         playerBody.AddForce(vec * value * -PushForceMult);
@@ -276,7 +231,9 @@ public class PlayerMovement : MonoBehaviour
         }
 
         isGrounded = true;
+        swapCalculation.IsEnabled = isGrounded;
 
+        eDisplayFlip?.Invoke(preVelocity.x < 0);
         eDisplayGrounded?.Invoke();
         }
 
@@ -327,11 +284,14 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("JumpTrap"))
         {
             isGrounded = true;
+            swapCalculation.IsEnabled = isGrounded;
+
             swapCalculation.IsFullHorizon = true;
             playerBody.gravityScale = 0;
             playerBody.velocity = Vector2.zero;
             transform.position = new Vector2(collision.transform.position.x, collision.transform.position.y);
 
+            ePlaySound?.Invoke("WEBB");
             eDisplayTrap?.Invoke();
         }
     }
