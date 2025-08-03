@@ -7,8 +7,9 @@ using Zenject;
 public class UIMainMenuBook : MonoBehaviour
 {
     [SerializeField] private UIPopup[] uiPopupsToInsert;
-    [SerializeField] private string sceneToMoveName;
-    
+    [SerializeField] private string gameScene;
+
+    [Inject] private SceneLoader sceneLoader;
     private Dictionary<string, UIPopup> popupMap;
     private bool isSetted = false;
 
@@ -22,6 +23,17 @@ public class UIMainMenuBook : MonoBehaviour
     }
 
 
+    public void SetNewPopup(string newPopup)
+    {
+        ChangePopup(newPopup);
+    }
+
+    public void MoveToGame() 
+    {
+        sceneLoader.LoadSceneWithFade(gameScene);
+    }
+
+
     private void InitMap(params UIPopup[] uiPopups)
     {
         this.popupMap = new Dictionary<string, UIPopup>();
@@ -29,11 +41,6 @@ public class UIMainMenuBook : MonoBehaviour
         {
             this.popupMap[popup.PopupName] = popup;
         }
-    }
-
-    public void SetNewPopup(string newPopup)
-    {
-        ChangePopup(newPopup);
     }
 
     private async void ChangePopup(string newPopup)
