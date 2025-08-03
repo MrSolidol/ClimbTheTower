@@ -95712,60 +95712,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
-      propertyPath: curveJumpValue.m_Curve.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
-      propertyPath: curveJumpValue.m_Curve.Array.data[0].time
-      value: 0.00000004307367
-      objectReference: {fileID: 0}
-    - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
-      propertyPath: curveJumpValue.m_Curve.Array.data[1].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
-      propertyPath: curveJumpValue.m_Curve.Array.data[0].value
-      value: 0.30178833
-      objectReference: {fileID: 0}
-    - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
-      propertyPath: curveJumpValue.m_Curve.Array.data[1].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
-      propertyPath: curveJumpValue.m_Curve.Array.data[0].inSlope
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
-      propertyPath: curveJumpValue.m_Curve.Array.data[1].inSlope
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
       propertyPath: eFalled.m_PersistentCalls.m_Calls.Array.size
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
-      propertyPath: curveJumpValue.m_Curve.Array.data[0].outSlope
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
-      propertyPath: curveJumpValue.m_Curve.Array.data[1].inWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
-      propertyPath: curveJumpValue.m_Curve.Array.data[1].outSlope
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
-      propertyPath: curveJumpValue.m_Curve.Array.data[0].outWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
-      propertyPath: curveJumpValue.m_Curve.Array.data[0].tangentMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
-      propertyPath: curveJumpValue.m_Curve.Array.data[1].tangentMode
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
       propertyPath: eFalled.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
