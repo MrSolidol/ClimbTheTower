@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Zenject;
@@ -5,11 +6,13 @@ using Zenject;
 public class ScreensInstaller : MonoInstaller
 {
     [SerializeField] private Transform currentCamera;
+    [SerializeField] private GameObject musicPlayer;
 
     public override void InstallBindings()
     {
-        var screenZones = FindObjectsOfType<ScreenZone>();
+        var screenZoneList = FindObjectsOfType<ScreenZone>().ToList();
+        var musicInfoList = Resources.LoadAll<MusicInfo>("").ToList();
 
-        Container.Bind<ScreenController>().AsSingle().WithArguments(screenZones.ToList(), currentCamera).NonLazy();
+        Container.Bind<ScreenController>().AsSingle().WithArguments(currentCamera, musicPlayer, screenZoneList, musicInfoList).NonLazy();
     }
 }

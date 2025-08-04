@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1aeca42c97311448d9ab75ca2ec817, type: 3}
+  m_Name: StoneMusic
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: 0da456646e57b6d45af0b9fa92a1eb3b, type: 3}
+  _playIndex: 1
+  _maxVolume: 0.1
