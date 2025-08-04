@@ -139,7 +139,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-    
+        isGrounded = false;
+        swapCalculation.IsEnabled = isGrounded;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -165,6 +166,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true;
             swapCalculation.IsEnabled = isGrounded;
+            eDisplayGrounded?.Invoke();
         }
     }
 

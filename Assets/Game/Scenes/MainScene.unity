@@ -44401,7 +44401,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1456511299}
-  - component: {fileID: 1456511298}
   m_Layer: 0
   m_Name: GameMenu
   m_TagString: Untagged
@@ -44409,18 +44408,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1456511298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1456511297}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: addf96fb3d89ab145950a657bb0df546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1456511299
 Transform:
   m_ObjectHideFlags: 0
@@ -95870,11 +95857,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6285646276325132253, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.7
+      value: -7.15
       objectReference: {fileID: 0}
     - target: {fileID: 6285646276325132253, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 146.8
+      value: 144.68
       objectReference: {fileID: 0}
     - target: {fileID: 6285646276325132253, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
       propertyPath: m_LocalPosition.z

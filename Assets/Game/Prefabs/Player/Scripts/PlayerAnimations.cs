@@ -87,9 +87,9 @@ public class PlayerAnimations : MonoBehaviour
 
     private void OnWebbDisplay()
     {
+        playerAnimator.SetBool("is_falling", false);
         playerAnimator.SetTrigger("webbed");
     }
-
 
 
 }

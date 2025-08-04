@@ -10,17 +10,31 @@ public class SwapCalculation : MonoBehaviour, IControlable
     [HideInInspector] public UnityEvent eSwapBlocked;
 
     [HideInInspector] public Vector2 Difference { get; private set; } = Vector2.zero;
-    [HideInInspector] public bool IsEnabled { get; set; } = true;
     [HideInInspector] public bool IsSwapped { get; private set; } = false;
     [HideInInspector] public bool IsDifferenceEnough { get; private set; } = false;
     [HideInInspector] public bool IsDegreesAllowed { get; private set; } = false;
     [HideInInspector] public bool IsFullHorizon { get; set; } = false;
+    [HideInInspector] public bool IsEnabled
+    {
+        get { return isEnabled; }
+        set
+        {
+            if (value != isEnabled) 
+            {
+                isEnabled = value;
+                startVec = Vector2.zero;
+                eSwapContinued?.Invoke(Vector2.up, 0f, false);
+                eSwapEnded?.Invoke(Vector2.up, 0f, false);
+            }
+        }
+    }
 
     [SerializeField] private float maxDegrees = 70;
     [SerializeField] private float maxSwapDistance = 3.5f;
     [SerializeField] private float minSwapDistance = 1f;
 
     private Vector2 startVec = Vector2.zero;
+    private bool isEnabled = true;
 
     public void PressOn(Vector2 vec)
     {

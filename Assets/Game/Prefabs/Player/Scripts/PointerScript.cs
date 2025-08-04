@@ -22,23 +22,16 @@ public class PointerScript : MonoBehaviour
 
     private void OnEnable()
     {
-        swapCalculation.eSwapStarted.AddListener(OnSwapStart);
         swapCalculation.eSwapContinued.AddListener(OnSwapContinued);
         swapCalculation.eSwapEnded.AddListener(OnSwapEnded);
     }
 
     private void OnDisable()
     {
-        swapCalculation.eSwapStarted.RemoveListener(OnSwapStart);
         swapCalculation.eSwapContinued.RemoveListener(OnSwapContinued);
         swapCalculation.eSwapEnded.RemoveListener(OnSwapEnded);
     }
 
-
-    private void OnSwapStart(Vector2 vec) 
-    {
-        transform.position = playerObject.transform.position;
-    }
 
     private void OnSwapContinued(Vector2 vec, float value, bool flag) 
     {
@@ -52,6 +45,8 @@ public class PointerScript : MonoBehaviour
 
             var rotated = rotateRoot.transform.eulerAngles;
             rotateRoot.transform.eulerAngles = new Vector3(rotated.x, rotated.y, GetAngle(vec));
+
+            transform.position = playerObject.transform.position;
         }
         else
         {

@@ -533,55 +533,55 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: is_standing
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: is_knocked
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: jumped
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: wall_hitted
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: roof_hitted
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: slipped
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: webbed
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: spring_value
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -825,19 +825,19 @@ AnimatorStateMachine:
     m_Position: {x: 500, y: 100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7111377605928850961}
-    m_Position: {x: -400, y: 100, z: 0}
+    m_Position: {x: -400, y: 200, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8985994887115470546}
     m_Position: {x: -700, y: 0, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5570224577264067782}
-    m_Position: {x: -400, y: 400, z: 0}
+    m_Position: {x: -400, y: 300, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6441477105836739356}
-    m_Position: {x: -400, y: 200, z: 0}
+    m_Position: {x: -400, y: 100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2145646994829721239}
-    m_Position: {x: -400, y: 300, z: 0}
+    m_Position: {x: -400, y: 400, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6744887943134147299}
     m_Position: {x: 200, y: 200, z: 0}
