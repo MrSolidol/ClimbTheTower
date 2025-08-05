@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioClip: {fileID: 8300000, guid: 267419ba32d779e4383b86c39c7c9417, type: 3}
   _playIndex: 12
-  _maxVolume: 0.5
+  _maxVolume: 0.1

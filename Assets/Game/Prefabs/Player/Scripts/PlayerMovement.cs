@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -11,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector] public UnityEvent eDisplayRoofHit;
     [HideInInspector] public UnityEvent eDisplaySlide;
     [HideInInspector] public UnityEvent eDisplayGrounded;
+    [HideInInspector] public UnityEvent<Vector2> eDisplayShake;
 
     [HideInInspector] public UnityEvent<string> ePlaySound;
 
@@ -101,6 +103,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        eDisplayShake?.Invoke(preVelocity);
         switch (collision.transform.parent.tag) 
         {
             case "STONE":
@@ -148,7 +151,7 @@ public class PlayerMovement : MonoBehaviour
         JumpTrapCheck(collision);
     }
 
-
+    
     #region DISSPLATFORM_FUNCTIONS
     public void DisPlatformControl() 
     {
