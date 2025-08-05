@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: WoodMusic
   m_EditorClassIdentifier: 
   _audioClip: {fileID: 8300000, guid: c30b532b2107a644f86c6f0584e6d912, type: 3}
-  _playIndex: 2
-  _maxVolume: 1
+  _playIndex: 7
+  _maxVolume: 0.1
