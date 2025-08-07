@@ -50,7 +50,6 @@ public class CameraShaker : MonoBehaviour
 
             while (unit < 1)
             {
-                //coeff = Mathf.Sin(unit * shakeFrequency) * amplitudeCurve.Evaluate(unit) * amplitudeMultiplayer;
                 coeff = Mathf.Sin(unit * shakeFrequency)* amplitudeCurve.Evaluate(unit) * amplitudeMultiplayer;
                 shakeRoot.localPosition = coeff * vec.normalized * NormalizeAmplitude(vec.magnitude);
 
