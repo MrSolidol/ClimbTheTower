@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
@@ -11,6 +10,7 @@ public class UIMenuBook : MonoBehaviour
     [Inject] private SceneLoader sceneLoader;
     private Dictionary<string, UIPopup> popupMap;
     private bool isSetted = false;
+
 
     public UIPopup CurrentPopup { get; private set; }
 
@@ -31,7 +31,6 @@ public class UIMenuBook : MonoBehaviour
     {
         sceneLoader.LoadSceneWithFade(sceneName);
     }
-
 
     private void InitMap(params UIPopup[] uiPopups)
     {

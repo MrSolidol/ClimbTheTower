@@ -7,7 +7,7 @@ public class SceneLoader
 
     public bool IsLoading { get; private set; }
     public string CurrentScene { get; private set; }
-
+    public float FadeDuration { get; set; }
 
     public SceneLoader()
     {

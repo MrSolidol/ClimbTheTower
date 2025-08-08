@@ -25,13 +25,10 @@ public class MusicController : MonoBehaviour
         {
             musicMap[info.PlayIndex] = info;
         }
-        
-
-
     }
 
 
-    public async void CheckScreenMusic(ScreenZone screen)
+    public void CheckScreenMusic(ScreenZone screen)
     {
         var index = GetMusicIndex(screen.ScreenIndex);
 
@@ -49,6 +46,26 @@ public class MusicController : MonoBehaviour
         audioSource.volume = currentMusic.MaxVolume;
         audioSource.Play();
     }
+
+    public async void RemoveMusic(float removeTime)
+    {
+        float oldVolume = audioSource.volume;
+
+        float time = 0f;
+        float unit = 0f;
+
+        while (unit < 1)
+        {
+            audioSource.volume = Mathf.Lerp(oldVolume, 0, musicFadeCurve.Evaluate(unit));
+
+            time += Time.deltaTime;
+            unit = time / removeTime;
+            await Task.Yield();
+        }
+        audioSource.volume = 0f;
+        return;
+    }
+
 
     private int GetMusicIndex(int index) 
     {
@@ -108,4 +125,5 @@ public class MusicController : MonoBehaviour
         audioSource.volume = currentMusic.MaxVolume;
         return;
     }
+
 }

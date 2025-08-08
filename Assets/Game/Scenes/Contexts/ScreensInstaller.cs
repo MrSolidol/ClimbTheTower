@@ -13,4 +13,6 @@ public class ScreensInstaller : MonoInstaller
 
         Container.Bind<ScreenController>().AsSingle().WithArguments(camControll, musControll, screenZoneList).NonLazy();
     }
+
+
 }

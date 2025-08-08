@@ -3,12 +3,24 @@ using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Zenject;
+using static UnityEngine.Rendering.DebugUI;
 
 public class UIFader : MonoBehaviour
 {
-    [SerializeField] private GameObject animRoot;
+    private const float ANIMATION_DURATION = 2.5f;
 
-    public bool isFading { get; private set; } = false;
+    [SerializeField] private GameObject animRoot;
+    [SerializeField] private float fadeDuration = 2.5f; 
+
+    public bool IsFading { get; private set; } = false;
+    public float FadeDuration
+    {
+        get { return fadeDuration; }
+        set 
+        {
+            animRoot.GetComponent<Animator>().speed = ANIMATION_DURATION/value;     
+        }
+    }
 
 
     [Inject] public void Construct(SceneLoader sceneLoader)
@@ -16,6 +28,11 @@ public class UIFader : MonoBehaviour
         sceneLoader.fader = this;
     }
 
+
+    private void Awake()
+    {
+        animRoot.GetComponent<Animator>().speed = ANIMATION_DURATION/fadeDuration;
+    }
 
     private void OnEnable()
     {
@@ -32,11 +49,11 @@ public class UIFader : MonoBehaviour
 
     public async Task FadeIn()
     {
-        if (isFading) { Debug.Log("Not allow to fade"); return; }
+        if (IsFading) { Debug.Log("Not allow to fade"); return; }
 
-        isFading = true;
+        IsFading = true;
         animRoot.GetComponent<Animator>().SetBool("is_fade", true);
-        while (isFading)
+        while (IsFading)
         {
             await Task.Yield();
         }
@@ -44,11 +61,11 @@ public class UIFader : MonoBehaviour
 
     public async Task FadeOut()
     {
-        if (isFading) { Debug.Log("Not allow to fade"); return; }
+        if (IsFading) { Debug.Log("Not allow to fade"); return; }
 
-        isFading = true;
+        IsFading = true;
         animRoot.GetComponent<Animator>().SetBool("is_fade", false);
-        while (isFading)
+        while (IsFading)
         {
             await Task.Yield();
         }
@@ -56,12 +73,12 @@ public class UIFader : MonoBehaviour
 
     private void OnFaderHided()
     {
-        isFading = false;
+        IsFading = false;
     }
 
     private void OnFaderShowed()
     {
-        isFading = false;
+        IsFading = false;
     }
 
 }

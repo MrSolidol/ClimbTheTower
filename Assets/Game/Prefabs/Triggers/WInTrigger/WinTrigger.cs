@@ -8,7 +8,10 @@ public class WinTrigger : MonoBehaviour
     private const string FINAL_SCENE_NAME = "FinalScreen";
 
     [SerializeField] private Collider2D triggerCollider;
-    [SerializeField] private float timeToMove = 1f;
+    [SerializeField] private MusicController musicController;
+
+    [SerializeField] private float waitToFade = 1f;
+    [SerializeField] private float fadeDuration = 1f;
     [Inject] private SceneLoader sceneLoader;
 
 
@@ -17,12 +20,14 @@ public class WinTrigger : MonoBehaviour
         if (collision.gameObject.CompareTag("Player")) 
         {
             collision.gameObject.GetComponent<PlayerMovement>().IsNegativeGravity = true;
-            Invoke("MoveToFinal", timeToMove);
+            musicController.RemoveMusic(fadeDuration/4f);
+            Invoke("MoveToFinal", waitToFade);
         }
     }
 
     private void MoveToFinal() 
     {
+        sceneLoader.fader.FadeDuration = fadeDuration;
         sceneLoader.LoadSceneWithFade(FINAL_SCENE_NAME);
     }
 }
