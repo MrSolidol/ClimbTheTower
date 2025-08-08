@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
-public class UIMainMenuBook : MonoBehaviour
+public class UIMenuBook : MonoBehaviour
 {
     [SerializeField] private UIPopup[] uiPopupsToInsert;
-    [SerializeField] private string gameScene;
+    [SerializeField] private string originalPopup;
 
     [Inject] private SceneLoader sceneLoader;
     private Dictionary<string, UIPopup> popupMap;
@@ -19,7 +18,7 @@ public class UIMainMenuBook : MonoBehaviour
     private void Awake()
     {
         InitMap(uiPopupsToInsert);
-        SetNewPopup("Main");
+        SetNewPopup(originalPopup);
     }
 
 
@@ -28,9 +27,9 @@ public class UIMainMenuBook : MonoBehaviour
         ChangePopup(newPopup);
     }
 
-    public void MoveToGame() 
+    public void ChangeScene(string sceneName) 
     {
-        sceneLoader.LoadSceneWithFade(gameScene);
+        sceneLoader.LoadSceneWithFade(sceneName);
     }
 
 

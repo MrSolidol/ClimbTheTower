@@ -4,6 +4,7 @@ using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
+    #region AUDIO_AND_VISUAL_EVENTS
     [HideInInspector] public UnityEvent<bool> eDisplayFlip;
     [HideInInspector] public UnityEvent<float> eDisplaySpring;
     [HideInInspector] public UnityEvent eDisplayJump;
@@ -16,20 +17,15 @@ public class PlayerMovement : MonoBehaviour
 
     [HideInInspector] public UnityEvent<string> ePlaySound;
 
-    #region JUMP_VARIABLES
+    #endregion
+
+    #region DISSPLATFORM_VARIABLES
+    private DisappearPlatform disPlatform;
+    #endregion
+
 
     [SerializeField] private float PushForceMult = 300f;
     [SerializeField] AnimationCurve curveJumpValue;
-
-    private SwapCalculation swapCalculation;
-    private Rigidbody2D playerBody;
-
-    #endregion
-
-    #region CONTACT_VARIABLES
-    [HideInInspector] public UnityEvent<GameObject> eWallContact;
-    [HideInInspector] public UnityEvent<GameObject> eFloorContact;
-    [HideInInspector] public UnityEvent<GameObject> eInclineContact;
 
     [SerializeField] private float solidWallBounce = 10f;
     [SerializeField] private float limitBounceDown = 10f;
@@ -38,36 +34,41 @@ public class PlayerMovement : MonoBehaviour
 
     public Vector2 preVelocity = Vector2.zero;
     public Vector2 prePosition = Vector2.zero;
-    
-    private float absoluteGravity;
-
     public bool isGrounded = false;
 
-    #endregion
+    private SwapCalculation swapCalculation;
+    private Rigidbody2D playerBody;
+    private float absoluteGravity;
 
-    #region DISSPLATFORM_VARIABLES
-    private DisappearPlatform disPlatform;
-    #endregion
-    
-    #region FALL_VARIABLES
 
-    [SerializeField] private float toFallSpeed = 10f;
-    
-    #endregion
-    
+    public bool IsNegativeGravity 
+    {
+        get { return Mathf.Sign(playerBody.gravityScale) < 0; }
+        set { playerBody.gravityScale = value ? -absoluteGravity : absoluteGravity; }
+    }
+
+    public bool IsFreezeGravity 
+    {
+        get { return Mathf.Sign(playerBody.gravityScale) == 0f; }
+        set { playerBody.gravityScale = value ? 0 : absoluteGravity; }
+    }
+
+    public bool IsFreezeVelosity 
+    {
+        get { return Mathf.Sign(playerBody.velocity.magnitude) == 0f; }
+        set 
+        {
+            playerBody.velocity = value ? Vector2.zero : preVelocity;
+        }
+    }
+
 
     private void Awake()
     {
         playerBody = GetComponent<Rigidbody2D>();
         swapCalculation = GetComponent<SwapCalculation>();
 
-        #region CONTACT_AWAKE
-            eFloorContact.AddListener(FloorReact);
-            eInclineContact.AddListener(InclineReact);
-            eWallContact.AddListener(WallReact);
-
-            absoluteGravity = playerBody.gravityScale;
-        #endregion
+        absoluteGravity = playerBody.gravityScale;
     }
 
     private void OnEnable()
@@ -82,11 +83,6 @@ public class PlayerMovement : MonoBehaviour
         swapCalculation.eSwapContinued.RemoveListener(DifferenceCheck);
         swapCalculation.eSwapEnded.RemoveListener(BodyPush);
         swapCalculation.eSwapBlocked.RemoveListener(JumpBugCrutchFix);
-    }
-
-    private void Start()
-    {
-
     }
 
     private void Update()
@@ -125,16 +121,16 @@ public class PlayerMovement : MonoBehaviour
         switch (_degContact)
         {
             case <=2.5f and >= 0:
-                eFloorContact.Invoke(collision.gameObject);
+                FloorReact(collision.gameObject);
                 break;
             case <=92.5f and >= 87.5f:
-                eWallContact.Invoke(collision.gameObject);
+                WallReact(collision.gameObject);
                 break;
             case >= 177.5f:
                 RoofReact(collision.gameObject);
                 break;
             default:
-                eInclineContact.Invoke(collision.gameObject);
+                InclineReact(collision.gameObject);
                 break;
         }
 
@@ -151,25 +147,18 @@ public class PlayerMovement : MonoBehaviour
         JumpTrapCheck(collision);
     }
 
-    
-    #region DISSPLATFORM_FUNCTIONS
-    public void DisPlatformControl() 
-    {
-        isGrounded = false;
-        swapCalculation.IsEnabled = isGrounded;
-    }
-
-    #endregion
-
-    #region JUMP_FUNCTIONS
 
     public void JumpBugCrutchFix() 
     {
-        if (playerBody.velocity.magnitude == 0 && preVelocity.magnitude == 0) 
+        if (playerBody.velocity.magnitude == 0 && preVelocity.magnitude == 0)
         {
             isGrounded = true;
             swapCalculation.IsEnabled = isGrounded;
             eDisplayGrounded?.Invoke();
+        }
+        else 
+        {
+            Debug.Log(playerBody.velocity.magnitude.ToString() + "  " + preVelocity.magnitude.ToString());
         }
     }
 
@@ -212,9 +201,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    #endregion
-
-    #region CONTACT FUNCTIONS
     private void FloorReact(GameObject gm)
     {
         switch (gm.tag)
@@ -280,7 +266,6 @@ public class PlayerMovement : MonoBehaviour
         eDisplayRoofHit?.Invoke();
     }
 
-    #endregion
 
     #region JUMPTRAP_FUNCTIONS
 
@@ -299,6 +284,15 @@ public class PlayerMovement : MonoBehaviour
             ePlaySound?.Invoke("WEBB");
             eDisplayTrap?.Invoke();
         }
+    }
+
+    #endregion
+
+    #region DISSPLATFORM_FUNCTIONS
+    public void DisPlatformControl()
+    {
+        isGrounded = false;
+        swapCalculation.IsEnabled = isGrounded;
     }
 
     #endregion
