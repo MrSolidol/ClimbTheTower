@@ -273,15 +273,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.3137255}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 4a6f368e408a61846a333aaca99eb54d, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -301,6 +301,10 @@ PrefabInstance:
     - target: {fileID: 1061560070363815132, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
       propertyPath: m_text
       value: speech
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929745872344766479, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1929745872344766479, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
       propertyPath: m_AnchorMax.y
@@ -391,7 +395,15 @@ PrefabInstance:
       value: UI Audio Unit
       objectReference: {fileID: 0}
     - target: {fileID: 7481448216700127856, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481448216700127856, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481448216700127856, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -487,6 +499,10 @@ PrefabInstance:
       value: music
       objectReference: {fileID: 0}
     - target: {fileID: 1929745872344766479, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929745872344766479, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -575,7 +591,15 @@ PrefabInstance:
       value: UI Audio Unit
       objectReference: {fileID: 0}
     - target: {fileID: 7481448216700127856, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481448216700127856, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481448216700127856, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -671,6 +695,10 @@ PrefabInstance:
       value: sounds
       objectReference: {fileID: 0}
     - target: {fileID: 1929745872344766479, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929745872344766479, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -759,7 +787,15 @@ PrefabInstance:
       value: UI Audio Unit
       objectReference: {fileID: 0}
     - target: {fileID: 7481448216700127856, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481448216700127856, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481448216700127856, guid: 90d8fbcf1b3756045a364ad5273d7673, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
