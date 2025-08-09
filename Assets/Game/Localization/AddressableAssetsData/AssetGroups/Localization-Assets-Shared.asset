@@ -17,24 +17,15 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 65710893837e65c4297b1225fb19c134
   m_SerializeEntries:
-  - m_GUID: f180de082306fbc469c0128c32fb31f7
-    m_Address: Assets/Localization/LocalSettings/New Folder/LocalizationTable Shared
-      Data.asset
+  - m_GUID: 68653e12776c0804ca36203f40ab7ed7
+    m_Address: Assets/Game/Localization/LocalizationSettings/NewLocalizationSettings/Tables/UI_Strings_Table
+      Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 558aea8335381ba4cb12d08bd389855e
-    m_Address: Assets/Localization/LocalSettings/girl/Girl Table Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 99d1725e10f641a43b3b515765b0106d
-    m_Address: Assets/Localization/LocalSettings/brick/Brick Table Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2bf39489365b9c247951092c1c3b52d3
-    m_Address: Assets/Localization/LocalSettings/ui/UI Table Shared Data.asset
+  - m_GUID: f91c08a4e1ac07249afa8f230fc04c19
+    m_Address: Assets/Game/Localization/LocalizationSettings/NewLocalizationSettings/NPCDialogsTable/NPC_Dialoge_Table
+      Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

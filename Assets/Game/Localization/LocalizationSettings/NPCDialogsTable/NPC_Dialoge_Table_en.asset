@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: NPC_Dialoge_Table_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: f91c08a4e1ac07249afa8f230fc04c19, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 27971113246720
+    m_Localized: Ah... this building is all that remains of the great king's castle...
+      Later, the tower passed from hand to hand - and each owner added something
+      of his own, which only made it grow taller. They say that in his youth, the
+      king was a dreamer. He wanted to survey his entire kingdom - every city, every
+      village. So he ordered a tower to be built - as high as possible. But the years
+      passed, the king grew old, and the construction progressed too slowly.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5872650870784
+    m_Localized: Oho! Welcome, traveler! Another daredevil dreaming of climbing our
+      famous tower? If you can get to at least the second building, you can already
+      be called a hero. But trying to conquer the top on foot is pure madness. All
+      the stairs have long since collapsed, and the floors are rotten... Well...
+      I wish you luck and patience, boy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971113246721
+    m_Localized: I remember one story... There was a door in the castle that no one
+      opened. The king had been building the tower for so many years that he gradually
+      forgot about everything in the world. A small key to that door always hung
+      on his belt, but he himself no longer remembered what it was needed for. "Your
+      Majesty, what is there, behind that door?" the page once dared to ask. The
+      king frowned... and suddenly something flashed in his eyes. They opened the
+      door - behind it was a dusty closet. On the floor - a wooden sword and a cardboard
+      crown. And on the shelves - tattered books with fairy tales that his mother
+      read to him... I was happy here... - the king whispered.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971113246722
+    m_Localized: The years passed. One day, climbing to the top, the king again noticed
+      a crooked, carelessly laid stone in the wall. Again he had to redo it... Again
+      he had to call the craftsmen... When would everything be ready? But, having
+      climbed to the unfinished top, for the first time in many years he looked at
+      his city. Children were frolicking below, merchants were bargaining in the
+      square, life went on as usual... From then on he no longer went up to check
+      the masonry... ... The tower, once his pride, now only reminded him of the
+      years wasted.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441024
+    m_Localized: 'Ah, the king''s chambers... There stood an old clock there - a
+      gift from his mother from the time when he was a young prince. The clock had
+      long since stopped, but the king always put off repairing it: I''ll get to
+      it when I finish building the tower. Years passed. One day, already gray and
+      hunched over, he looked at it again and ordered it to be repaired. The master
+      he called examined the mechanism and threw up his hands. Your Majesty, the
+      gears are worn out, the spring has broken... Now it can''t be fixed. The king
+      stared for a long time at the tarnished glass, behind which the hands were
+      frozen forever. "It''s strange..." he whispered. "It seemed to me that I had
+      an eternity ahead of me... And outside the window the wind rocked the top of
+      the unfinished tower... . . .'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441025
+    m_Localized: Hi! Did you know that this building was built by a famous bandit?
+      Greedy to the point of horror - only he had to have the best! He bought a castle
+      and began to build it higher and higher. So that there would be enough space
+      for all his treasures... And, of course, so that he could live in the highest
+      tower in the world! Yes, he was a terrible person, did bad things... But he
+      was very cool!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441026
+    m_Localized: I heard that this bandit was the greediest of all. He took gold
+      and jewels from people, but it was still not enough for him. And then he decided
+      to steal the dawn itself. His tower grew so high that it reached the very clouds.
+      He climbed up, caught the first ray of sunlight, and locked it in a black chest.
+      Since then, the world has been plunged into darkness... People no longer saw
+      the sun, and the bandit laughed in his tower, admiring the stolen light.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441027
+    m_Localized: 'But one day a girl came to his gate with a tattered leash in her
+      hand. "My cat is missing," she said. "You''ve taken so much from people...
+      Maybe her too?" The bandit became curious and ordered the cat to be found.
+      Soon she was caught. But when the girl was happy, he suddenly laughed: "No.
+      Now she''s mine!" And he slammed the gate. The girl did not leave. She sat
+      by the fortress and waited. A day, two, a week... And the bandit kept the cat
+      in the tower, confident that now the girl would not go anywhere.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441028
+    m_Localized: But the cat was not going to put up with captivity. She scratched
+      the walls, climbed everywhere - and in the end she found the very chest with
+      the stolen dawn. She opened it - and suddenly a blinding light gushed out!
+      The cat swallowed the dawn and... BAM! She turned into a huge fiery tiger!!!
+      The tiger picked up the girl, who had been waiting at the gate all this time,
+      soared into the sky - and together they became a new dawn. And the next day
+      the sun rose as if it had never been stolen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441029
+    m_Localized: You know, that bandit... came to a bad end. After the dawn returned,
+      people gradually stopped being afraid of his tower. And he himself seemed to
+      have deflated - even treasures began to seem to him just... well, shiny stones.
+      And in his entire life, he never found anyone who truly loved him... He still
+      tried to command his remaining henchmen, but they quietly ran away. The fortress
+      was emptying. The gates creaked, the stairs wobbled, and thick cobwebs were
+      already woven in the corners. And then... he simply disappeared. No one saw
+      how. Only a lonely tower remained... :(
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441030
+    m_Localized: 'Hello, my friend! I am a young architect studying this amazing
+      tower. The archives of the port city contain many records of the sailor who
+      built it. Not for protection or glory - but simply because he could. Its height
+      seemed insufficient to him. He returned from each voyage with new people: engineers,
+      madmen, artists. Each added something - twisted staircases, rotating platforms,
+      transparent domes! The only sad thing is what it turned into in the end...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441031
+    m_Localized: "On the top tier, if you believe the old plans, there should have
+      been a reverse clock\u2026 One day, the captain brought an old clockmaker from
+      a distant country, almost blind, but with golden hands. He examined the tower,
+      nodded and asked to bring gears, springs and glass. A month later, a huge clock
+      appeared on one of its platforms - but not a simple one, but a reverse one.
+      Its hands went against the flow of time, and instead of striking, you could
+      hear the whisper of the surf\u2026 I went up to take a look\u2026 Now there
+      is just steel in that place. Smooth, seamless\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441032
+    m_Localized: On one of his voyages, the captain met a woman who claimed that
+      she could grow a garden where there was no soil or sun. He brought her to the
+      tower, and she brought with her only a handful of seeds and a bottle of muddy
+      water. Six months later, scarlet flowers bloomed on the steel beams, which
+      no one could identify. Their petals did not wither, and their roots grew through
+      the metal, as if it were soft soil for them. The captain then ordered a glass
+      dome to be built around the garden... Well, if you believe the records...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441033
+    m_Localized: I also read how he brought a man from a distant desert country who
+      spoke an unknown language. He brought with him dozens of mirrors - large and
+      small. The mirror maker silently climbed the tower and began to build them
+      into the steel walls at strange angles. A month later, those who climbed the
+      stairs began to notice something strange... Some mirrors reflected non-existent
+      lands, others - seas that were not on the maps. These were places where no
+      man had ever set foot - the captain said... ...this is nonsense of course...
+      But how poetic!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441034
+    m_Localized: 'The years passed. The tower grew, became covered with other people''s
+      creations, other people''s dreams. The captain no longer remembered where his
+      ended and theirs began. The stairs led to rooms he had not built and did not
+      know... ... The last records about the captain say one thing: he ordered to
+      fill everything with steel. To the very top. There was nothing beautiful or
+      amazing left. Only an ideal, dead surface... Too bad...'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

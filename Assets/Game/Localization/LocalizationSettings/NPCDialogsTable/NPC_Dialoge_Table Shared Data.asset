@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: NPC_Dialoge_Table Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: NPC_Dialoge_Table
+  m_TableCollectionNameGuidString: f91c08a4e1ac07249afa8f230fc04c19
+  m_Entries:
+  - m_Id: 5872650870784
+    m_Key: oldman_first
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971113246720
+    m_Key: oldman_second
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971113246721
+    m_Key: oldman_third
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971113246722
+    m_Key: oldman_fourth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441024
+    m_Key: oldman_fifth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441025
+    m_Key: girl_first
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441026
+    m_Key: girl_second
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441027
+    m_Key: girl_third
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441028
+    m_Key: girl_fourth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441029
+    m_Key: girl_fifth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441030
+    m_Key: brick_first
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441031
+    m_Key: brick_second
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441032
+    m_Key: brick_third
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441033
+    m_Key: brick_fourth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27971117441034
+    m_Key: brick_fifth
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1623068493639581739
+  references:
+    version: 2
+    RefIds:
+    - rid: 1623068493639581739
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1754748787145

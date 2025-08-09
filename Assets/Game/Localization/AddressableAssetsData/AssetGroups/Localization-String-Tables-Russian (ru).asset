@@ -17,26 +17,14 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: c1ddac66731eef548887c08b68689c07
   m_SerializeEntries:
-  - m_GUID: b25d91afd78c3ae4cb9e26817972351a
-    m_Address: OldMan Table_ru
+  - m_GUID: e364b8032996bb749a0ed5ee7fd103b8
+    m_Address: UI_Strings_Table_ru
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ru
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 56451100d276e394a8a470ca31f9bc6a
-    m_Address: Girl Table_ru
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-ru
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f53978736ffeb6d479f4fd22a290bf7b
-    m_Address: Brick Table_ru
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-ru
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ad5a174cb1c71d64c833882d305b42bd
-    m_Address: UI Table_ru
+  - m_GUID: 1064b82bffb89e443baa317841683a2c
+    m_Address: NPC_Dialoge_Table_ru
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ru
