@@ -19,156 +19,166 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 27971113246720
-    m_Localized: Ah... this building is all that remains of the great king's castle...
-      Later, the tower passed from hand to hand - and each owner added something
-      of his own, which only made it grow taller. They say that in his youth, the
+    m_Localized: Ah... this building is all that remains of the great king's castle.../w2.3/clerLater,
+      the tower passed from hand to hand - and each owner added something of his
+      own, which only made it grow taller./w2.3/clerThey say that in his youth, the
       king was a dreamer. He wanted to survey his entire kingdom - every city, every
-      village. So he ordered a tower to be built - as high as possible. But the years
-      passed, the king grew old, and the construction progressed too slowly.
+      village./w2.3/clerSo he ordered a tower to be built - as high as possible./w2.3/clerBut
+      the years went by, the king grew old, and the construction progressed too slowly.
     m_Metadata:
       m_Items: []
   - m_Id: 5872650870784
-    m_Localized: Oho! Welcome, traveler! Another daredevil dreaming of climbing our
-      famous tower? If you can get to at least the second building, you can already
-      be called a hero. But trying to conquer the top on foot is pure madness. All
-      the stairs have long since collapsed, and the floors are rotten... Well...
-      I wish you luck and patience, boy.
+    m_Localized: "Oh! Welcome, traveler!/w2.3/clerAnother daredevil dreaming of climbing
+      our famous tower?/w2.3/clerIf you can get to at least the second building,
+      you can already be called a hero./w2.3/clerBut trying to conquer the top on
+      foot is pure madness./w2.3/clerAll the stairs have long since collapsed, and
+      the floors have rotted\u2026/w2.3/clerWell\u2026 I wish you luck and patience,
+      boy."
     m_Metadata:
       m_Items: []
   - m_Id: 27971113246721
-    m_Localized: I remember one story... There was a door in the castle that no one
-      opened. The king had been building the tower for so many years that he gradually
-      forgot about everything in the world. A small key to that door always hung
-      on his belt, but he himself no longer remembered what it was needed for. "Your
-      Majesty, what is there, behind that door?" the page once dared to ask. The
-      king frowned... and suddenly something flashed in his eyes. They opened the
-      door - behind it was a dusty closet. On the floor - a wooden sword and a cardboard
-      crown. And on the shelves - tattered books with fairy tales that his mother
-      read to him... I was happy here... - the king whispered.
+    m_Localized: "I remember one story\u2026/w2.3/clerThere was a door in the castle
+      that no one opened. The king had been building the tower for so many years
+      that he gradually forgot about everything in the world./w2.3/clerA small key
+      to that door always hung on his belt, but he himself no longer remembered what
+      it was needed for./w2.3/clerYour Majesty, what is there, behind that door?
+      - the page once dared to ask./w2.3/clerThe king frowned\u2026 and suddenly
+      something flashed in his eyes./w2.3/clerThey opened the door - behind it was
+      a dusty closet./w2.3/clerOn the floor - a wooden sword and a cardboard crown.
+      And on the shelves - tattered books with fairy tales that his mother read to
+      him.../w2.3/clerI was happy here\u2026 - whispered the king."
     m_Metadata:
       m_Items: []
   - m_Id: 27971113246722
     m_Localized: The years passed. One day, climbing to the top, the king again noticed
-      a crooked, carelessly laid stone in the wall. Again he had to redo it... Again
-      he had to call the craftsmen... When would everything be ready? But, having
+      a crooked, carelessly laid stone in the wall./w2.3/clerRedo it again... Call
+      the craftsmen again... When will everything be ready?/w2.3/clerBut, having
       climbed to the unfinished top, for the first time in many years he looked at
-      his city. Children were frolicking below, merchants were bargaining in the
-      square, life went on as usual... From then on he no longer went up to check
-      the masonry... ... The tower, once his pride, now only reminded him of the
-      years wasted.
+      his city./w2.3/clerChildren frolicked below, merchants haggled in the square,
+      life went on as usual.../w2.3/clerFrom then on, he no longer went up to check
+      the masonry.../w2.3/clerThe tower, once his pride, now only reminded him of
+      the years wasted.
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441024
     m_Localized: 'Ah, the king''s chambers... There stood an old clock there - a
-      gift from his mother from the time when he was a young prince. The clock had
-      long since stopped, but the king always put off repairing it: I''ll get to
-      it when I finish building the tower. Years passed. One day, already gray and
-      hunched over, he looked at it again and ordered it to be repaired. The master
-      he called examined the mechanism and threw up his hands. Your Majesty, the
-      gears are worn out, the spring has broken... Now it can''t be fixed. The king
-      stared for a long time at the tarnished glass, behind which the hands were
-      frozen forever. "It''s strange..." he whispered. "It seemed to me that I had
-      an eternity ahead of me... And outside the window the wind rocked the top of
-      the unfinished tower... . . .'
+      gift from his mother from the time when he was a young prince./w2.3/clerThe
+      clock had long since stopped, but the king always put off repairing it: When
+      I finish building the tower, then I''ll get to it./w2.3/clerThe years passed.
+      One day, already grey and hunched over, he looked at them again and ordered
+      them to be repaired./w2.3/clerThe summoned repairman examined the mechanism
+      and threw up his hands./w2.3/clerYour Majesty, the gears are worn out, the
+      spring has broken... Now it can''t be fixed./w2.3/clerThe king looked for a
+      long time at the tarnished glass, behind which the hands were frozen forever./w2.3/clerIt''s
+      strange... - he whispered/w2.3/clerIt seemed to me that I had an eternity ahead
+      of me.../w2.3/clerAnd outside the window the wind rocked the top of the unfinished
+      tower.../w2.3/cler/w0.2./w0.2 ./w0.2 .'
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441025
-    m_Localized: Hi! Did you know that this building was built by a famous bandit?
-      Greedy to the point of horror - only he had to have the best! He bought a castle
-      and began to build it higher and higher. So that there would be enough space
-      for all his treasures... And, of course, so that he could live in the highest
-      tower in the world! Yes, he was a terrible person, did bad things... But he
-      was very cool!
+    m_Localized: Hi! Did you know that this building was built by a famous bandit?/w2.0/clerGreedy
+      to the point of horror - only he had the best of everything!/w2.0/clerHe bought
+      a castle and began to build it higher and higher./w2.0/clerSo that there would
+      be enough space for all his treasures.../w2.0/clerAnd, of course, so that he
+      could live in the tallest tower in the world!/w2.0/clerYes, he was a terrible
+      person, he did bad things.../w2.0/clerBut he was really cool!
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441026
-    m_Localized: I heard that this bandit was the greediest of all. He took gold
-      and jewels from people, but it was still not enough for him. And then he decided
-      to steal the dawn itself. His tower grew so high that it reached the very clouds.
-      He climbed up, caught the first ray of sunlight, and locked it in a black chest.
-      Since then, the world has been plunged into darkness... People no longer saw
-      the sun, and the bandit laughed in his tower, admiring the stolen light.
+    m_Localized: I heard that this bandit was the greediest of all./w2.0/clerHe took
+      gold and jewelry from people, but it was never enough for him./w2.0/clerAnd
+      then he decided to steal the dawn itself. His tower grew so high that it reached
+      the very clouds./w2.0/clerHe climbed up, caught the first ray of sunshine,
+      and locked it in a black chest./w2.0/clerSince then, the world has been plunged
+      into darkness.../w2.0/clerPeople no longer saw the sun, and the bandit laughed
+      in his tower, admiring the stolen light.
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441027
     m_Localized: 'But one day a girl came to his gate with a tattered leash in her
-      hand. "My cat is missing," she said. "You''ve taken so much from people...
-      Maybe her too?" The bandit became curious and ordered the cat to be found.
-      Soon she was caught. But when the girl was happy, he suddenly laughed: "No.
-      Now she''s mine!" And he slammed the gate. The girl did not leave. She sat
-      by the fortress and waited. A day, two, a week... And the bandit kept the cat
-      in the tower, confident that now the girl would not go anywhere.'
+      hand./w2.0/clerMy cat is missing, she said. You''ve taken so much from people...
+      Maybe her too?/w2.0/clerThe bandit became curious and ordered the cat to be
+      found. Soon she was caught./w2.0/clerBut when the girl was happy, he suddenly
+      laughed: No. Now she''s mine!/w2.0/clerAnd he slammed the gate./w2.0/clerThe
+      girl didn''t leave. She sat by the fortress and waited for a long time. And
+      then she began to return to the fortress every day.../w2.0/clerAnd the bandit
+      kept the cat in the tower, confident that now the girl would not go anywhere.'
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441028
-    m_Localized: But the cat was not going to put up with captivity. She scratched
-      the walls, climbed everywhere - and in the end she found the very chest with
-      the stolen dawn. She opened it - and suddenly a blinding light gushed out!
-      The cat swallowed the dawn and... BAM! She turned into a huge fiery tiger!!!
-      The tiger picked up the girl, who had been waiting at the gate all this time,
-      soared into the sky - and together they became a new dawn. And the next day
-      the sun rose as if it had never been stolen.
+    m_Localized: "But the cat was not going to put up with captivity./w2.0/clerShe
+      scratched the walls, climbed everywhere. And in the end she found that very
+      chest with the stolen dawn./w2.0/clerShe opened it and suddenly a blinding
+      light gushed out!/w2.0/clerThe cat swallowed the dawn and\u2026/w2.0/clerBAM!/w1.8/clerShe
+      turned into a huge fiery tiger!!!/w2.0/clerThe tiger picked up the girl, who
+      had been waiting at the gate all this time, and soared into the sky!/w2.0/clerTogether
+      they became a new dawn./w2.0/clerAnd the next day the sun rose, as if it had
+      never been stolen."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441029
-    m_Localized: You know, that bandit... came to a bad end. After the dawn returned,
-      people gradually stopped being afraid of his tower. And he himself seemed to
-      have deflated - even treasures began to seem to him just... well, shiny stones.
-      And in his entire life, he never found anyone who truly loved him... He still
-      tried to command his remaining henchmen, but they quietly ran away. The fortress
-      was emptying. The gates creaked, the stairs wobbled, and thick cobwebs were
-      already woven in the corners. And then... he simply disappeared. No one saw
-      how. Only a lonely tower remained... :(
+    m_Localized: You know, that bandit... came to a bad end./w2.0/clerAfter the return
+      of dawn, people gradually stopped being afraid of his tower./w2.0/clerAnd he
+      himself seemed to have deflated - even treasures began to seem to him just...
+      well, shiny stones./w2.0/clerAnd in his entire life he never found anyone who
+      truly loved him.../w2.0/clerHe still tried to command the remaining henchmen,
+      but they quietly ran away./w2.0/clerThe fortress was emptying. The gates creaked,
+      the stairs wobbled, and thick cobwebs were already woven in the corners./w2.0/clerAnd
+      then... he just disappeared. No one saw how./w2.0/clerOnly a lonely tower remained.../w2.0/cler:(
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441030
     m_Localized: 'Hello, my friend! I am a young architect studying this amazing
-      tower. The archives of the port city contain many records of the sailor who
-      built it. Not for protection or glory - but simply because he could. Its height
-      seemed insufficient to him. He returned from each voyage with new people: engineers,
-      madmen, artists. Each added something - twisted staircases, rotating platforms,
-      transparent domes! The only sad thing is what it turned into in the end...'
+      tower./w2.1/clerThe archives of the port city contain many records of the sailor
+      who built it./w2.1/clerNot for protection or glory - but simply because he
+      could. Its height seemed insufficient to him./w2.1/clerHe returned from each
+      voyage with new people: engineers, madmen, artists./w2.1/clerEach added something
+      - spiral staircases, rotating platforms, transparent domes!/w2.1/clerThe only
+      sad thing is what it eventually turned into...'
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441031
-    m_Localized: "On the top tier, if you believe the old plans, there should have
-      been a reverse clock\u2026 One day, the captain brought an old clockmaker from
-      a distant country, almost blind, but with golden hands. He examined the tower,
-      nodded and asked to bring gears, springs and glass. A month later, a huge clock
-      appeared on one of its platforms - but not a simple one, but a reverse one.
-      Its hands went against the flow of time, and instead of striking, you could
-      hear the whisper of the surf\u2026 I went up to take a look\u2026 Now there
-      is just steel in that place. Smooth, seamless\u2026"
+    m_Localized: "On the top tier, if you believe the old diagrams, there should
+      have been a reverse clock\u2026/w2.1/clerOnce a captain brought an old clockmaker
+      from a distant country, almost blind, but with golden hands./w2.1/clerHe examined
+      the tower, nodded and asked to bring gears, springs and glass./w2.1/clerA month
+      later, a huge clock appeared on one of its platforms - but not a simple one,
+      but a reverse one./w2.1/clerTheir hands went against the flow of time, and
+      instead of striking, you could hear the whisper of the surf\u2026/w2.1/clerI
+      went up to have a look\u2026/w2.1/clerNow in that place there is just steel.
+      Smooth, seamless\u2026"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441032
-    m_Localized: On one of his voyages, the captain met a woman who claimed that
-      she could grow a garden where there was no soil or sun. He brought her to the
-      tower, and she brought with her only a handful of seeds and a bottle of muddy
-      water. Six months later, scarlet flowers bloomed on the steel beams, which
-      no one could identify. Their petals did not wither, and their roots grew through
-      the metal, as if it were soft soil for them. The captain then ordered a glass
-      dome to be built around the garden... Well, if you believe the records...
+    m_Localized: "On one of his voyages, the captain met a woman who claimed that
+      she could grow a garden where there was no soil or sun./w2.1/clerHe brought
+      her to the tower, and she brought with her only a handful of seeds and a bottle
+      of muddy water./w2.1/clerSix months later, scarlet flowers bloomed on the steel
+      beams, which no one could identify./w2.1/clerTheir petals did not wither, and
+      the roots grew through the metal, as if it were soft soil for them./w2.1/clerThe
+      captain then ordered a glass dome to be built around the garden\u2026/w2.1/clerWell,
+      if you believe the records\u2026"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441033
     m_Localized: I also read how he brought a man from a distant desert country who
-      spoke an unknown language. He brought with him dozens of mirrors - large and
-      small. The mirror maker silently climbed the tower and began to build them
-      into the steel walls at strange angles. A month later, those who climbed the
-      stairs began to notice something strange... Some mirrors reflected non-existent
-      lands, others - seas that were not on the maps. These were places where no
-      man had ever set foot - the captain said... ...this is nonsense of course...
-      But how poetic!
+      spoke an unknown language./w2.1/clerHe brought with him dozens of mirrors -
+      large and small./w2.1/clerThe mirror maker silently climbed the tower and began
+      to build them into the steel walls at strange angles./w2.1/clerA month later,
+      those who climbed the stairs began to notice something strange.../w2.1/clerSome
+      mirrors reflected non-existent lands, others - seas that were not on the maps./w2.1/clerThese
+      were places where no man had ever set foot - said the captain.../w2.1/cler...this
+      is nonsense of course... But how poetic!
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441034
-    m_Localized: 'The years passed. The tower grew, became covered with other people''s
-      creations, other people''s dreams. The captain no longer remembered where his
-      ended and theirs began. The stairs led to rooms he had not built and did not
-      know... ... The last records about the captain say one thing: he ordered to
-      fill everything with steel. To the very top. There was nothing beautiful or
-      amazing left. Only an ideal, dead surface... Too bad...'
+    m_Localized: "The years passed. The tower grew, became overgrown with other people's
+      creations, other people's dreams./w2.1/clerThe captain no longer remembered
+      where his ended and theirs began./w2.1/clerThe stairs led to rooms he had not
+      built and did not know\u2026/w2.1/cler.../w0.8/clerThe last entries about the
+      captain say one thing: he ordered to fill everything with steel./w2.1/clerTo
+      the very top./w1.8/clerNothing beautiful or amazing remained./w2.1/clerOnly
+      an ideal, dead surface.../w2.1/clerIt's a pity..."
     m_Metadata:
       m_Items: []
   references:

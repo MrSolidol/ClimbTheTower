@@ -19,165 +19,179 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 27971113246720
-    m_Localized: "Ah... este edificio es todo lo que queda del castillo del gran
-      rey... M\xE1s tarde, la torre pas\xF3 de mano en mano, y cada propietario a\xF1adi\xF3
-      algo propio, lo que solo la hizo crecer. Dicen que en su juventud, el rey era
-      un so\xF1ador. Quer\xEDa inspeccionar todo su reino: cada ciudad, cada aldea.
-      As\xED que orden\xF3 construir una torre, lo m\xE1s alta posible. Pero pasaron
-      los a\xF1os, el rey envejeci\xF3 y la construcci\xF3n avanz\xF3 con demasiada
-      lentitud."
+    m_Localized: "Ah... este edificio es todo lo que queda del gran castillo del
+      rey.../w2.3/cler M\xE1s tarde, la torre pas\xF3 de mano en mano, y cada propietario
+      a\xF1adi\xF3 algo propio, lo que solo la hizo crecer./w2.3/cler Dicen que en
+      su juventud, el rey era un so\xF1ador. Quer\xEDa inspeccionar todo su reino:
+      cada ciudad, cada aldea./w2.3/cler As\xED que orden\xF3 construir una torre,
+      lo m\xE1s alta posible./w2.3/cler Pero los a\xF1os pasaron, el rey envejeci\xF3
+      y la construcci\xF3n avanz\xF3 demasiado lentamente."
     m_Metadata:
       m_Items: []
   - m_Id: 5872650870784
-    m_Localized: "\xA1Oh! \xA1Bienvenido, viajero! \xBFOtro temerario que sue\xF1a
-      con escalar nuestra famosa torre? Si logras llegar al menos al segundo edificio,
-      ya puedes ser considerado un h\xE9roe. Pero intentar llegar a la cima a pie
-      es una locura. Todas las escaleras se derrumbaron hace tiempo, y el suelo est\xE1
-      podrido... Bueno... Te deseo suerte y paciencia, chico."
+    m_Localized: "\xA1Oh! \xA1Bienvenido, viajero!/w2.3/cler \xBFOtro temerario sue\xF1a
+      con escalar nuestra famosa torre?/w2.3/cler Si logras llegar al menos al segundo
+      edificio, ya puedes ser considerado un h\xE9roe./w2.3/cler Pero intentar conquistar
+      la cima a pie es una locura./w2.3/cler Todas las escaleras se derrumbaron hace
+      tiempo, y el suelo se pudri\xF3\u2026/w2.3/cler Bueno\u2026 Te deseo suerte
+      y paciencia, chico."
     m_Metadata:
       m_Items: []
   - m_Id: 27971113246721
-    m_Localized: "Recuerdo una historia... Hab\xEDa una puerta en el castillo que
-      nadie abr\xEDa. El rey llevaba tantos a\xF1os construyendo la torre que poco
-      a poco se olvid\xF3 de todo en el mundo. Una peque\xF1a llave de esa puerta
-      siempre colgaba de su cintur\xF3n, pero \xE9l mismo ya no recordaba para qu\xE9
-      serv\xEDa. \xABMajestad, \xBFqu\xE9 hay detr\xE1s de esa puerta?\xBB, se atrevi\xF3
-      a preguntar el paje. El rey frunci\xF3 el ce\xF1o... y de repente algo brill\xF3
-      en sus ojos. Abrieron la puerta; detr\xE1s hab\xEDa un armario polvoriento.
-      En el suelo, una espada de madera y una corona de cart\xF3n. Y en los estantes,
-      libros destrozados con cuentos de hadas que su madre le le\xEDa... \xABEra
-      feliz aqu\xED...\xBB, susurr\xF3 el rey."
+    m_Localized: "Recuerdo una historia\u2026/w2.3/cler Hab\xEDa una puerta en el
+      castillo que nadie abr\xEDa. El rey llevaba tantos a\xF1os construyendo la
+      torre que poco a poco se olvid\xF3 de todo en el mundo./w2.3/cler Una peque\xF1a
+      llave de esa puerta siempre colgaba de su cintur\xF3n, pero \xE9l mismo ya
+      no recordaba para qu\xE9 serv\xEDa./w2.3/cler Su Majestad, \xBFqu\xE9 hay detr\xE1s
+      de esa puerta? \u2014se atrevi\xF3 a preguntar una vez el paje./w2.3/cler El
+      rey frunci\xF3 el ce\xF1o\u2026 y de repente algo brill\xF3 en sus ojos./w2.3/cler
+      Abrieron la puerta; detr\xE1s hab\xEDa un armario polvoriento./w2.3/cler En
+      el suelo, una espada de madera y una corona de cart\xF3n. Y en los estantes,
+      libros andrajosos con cuentos de hadas que su madre le le\xEDa\u2026/w2.3/cler
+      Yo era feliz aqu\xED\u2026 \u2014susurr\xF3 el rey."
     m_Metadata:
       m_Items: []
   - m_Id: 27971113246722
     m_Localized: "Pasaron los a\xF1os. Un d\xEDa, subiendo a la cima, el rey volvi\xF3
-      a notar una piedra torcida y descuidadamente colocada en la muralla. Tuvo que
-      rehacerla de nuevo... Tuvo que llamar a los artesanos de nuevo... \xBFCu\xE1ndo
-      estar\xEDa todo listo? Pero, tras subir a la cima inacabada, por primera vez
-      en muchos a\xF1os contempl\xF3 su ciudad. Los ni\xF1os retozaban abajo, los
-      comerciantes regateaban en la plaza, la vida segu\xEDa como siempre... Desde
-      entonces, ya no subi\xF3 a revisar la mamposter\xEDa... ... La torre, anta\xF1o
-      su orgullo, ahora solo le recordaba los a\xF1os perdidos."
+      a notar una piedra torcida y descuidadamente colocada en la muralla./w2.3/cler
+      Rehacerlo... Llamar a los artesanos de nuevo... \xBFCu\xE1ndo estar\xE1 todo
+      listo?/w2.3/cler Pero, tras subir a la cima inacabada, por primera vez en muchos
+      a\xF1os contempl\xF3 su ciudad./w2.3/cler Los ni\xF1os retozaban abajo, los
+      comerciantes regateaban en la plaza, la vida segu\xEDa como siempre.../w2.3/cler
+      A partir de entonces, ya no subi\xF3 a revisar la mamposter\xEDa.../w2.3/cler
+      La torre, anta\xF1o su orgullo, ahora solo le recordaba los a\xF1os perdidos."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441024
-    m_Localized: "Ah, los aposentos del rey... All\xED se alzaba un viejo reloj,
-      un regalo de su madre de su juventud. El reloj se hab\xEDa parado hac\xEDa
-      tiempo, pero el rey siempre pospon\xEDa su reparaci\xF3n: \xABYa me ocupar\xE9
-      de \xE9l cuando termine de construir la torre\xBB. Pasaron los a\xF1os. Un
-      d\xEDa, ya gris y encorvado, lo volvi\xF3 a mirar y orden\xF3 que lo repararan.
-      El maestro al que llam\xF3 examin\xF3 el mecanismo y levant\xF3 las manos.
-      \xABMajestad, los engranajes est\xE1n desgastados, el muelle se ha roto...
-      Ahora no se puede arreglar\xBB. El rey contempl\xF3 largo rato el cristal deslustrado,
-      tras el cual las manecillas estaban congeladas para siempre. \xABEs extra\xF1o...\xBB,
-      susurr\xF3. \xABMe parec\xEDa que ten\xEDa una eternidad por delante... Y fuera
-      de la ventana, el viento mec\xEDa la cima de la torre inacabada...\xBB."
+    m_Localized: "Ah, las c\xE1maras del rey... All\xED hab\xEDa un viejo reloj,
+      un regalo de su madre de la \xE9poca en que era un joven pr\xEDncipe./w2.3/clerEl
+      reloj se hab\xEDa detenido hac\xEDa tiempo, pero el rey siempre pospon\xEDa
+      su reparaci\xF3n: Cuando termine de construir la torre, entonces me pondr\xE9
+      manos a la obra./w2.3/clerPasaron los a\xF1os. Un d\xEDa, ya gris y encorvado,
+      los mir\xF3 de nuevo y orden\xF3 que los repararan./w2.3/clerEl reparador llamado
+      examin\xF3 el mecanismo y alz\xF3 las manos./w2.3/clerMajestad, los engranajes
+      est\xE1n desgastados, el resorte se ha roto... Ahora no se puede arreglar./w2.3/clerEl
+      rey mir\xF3 durante largo rato el cristal deslustrado, tras el cual las manecillas
+      estaban congeladas para siempre./w2.3/clerEs extra\xF1o... - susurr\xF3/w2.3/clerMe
+      parec\xEDa que ten\xEDa una eternidad por delante.../w2.3/clerY fuera de la
+      ventana el viento mec\xEDa la cima de la torre inacabada.../w2.3/cler/w0.2./w0.2
+      ./w0.2 ."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441025
     m_Localized: "\xA1Hola! \xBFSab\xEDas que este edificio fue construido por un
-      famoso bandido? Codicioso hasta el horror, \xA1solo que necesitaba lo mejor!
-      Compr\xF3 un castillo y comenz\xF3 a construirlo cada vez m\xE1s alto. Para
-      tener espacio suficiente para todos sus tesoros... Y, por supuesto, \xA1para
-      poder vivir en la torre m\xE1s alta del mundo! S\xED, era una persona terrible,
-      hac\xEDa cosas malas... \xA1Pero era genial!"
+      famoso bandido?/w2.0/cler \xA1Avaricioso hasta el horror! \xA1Solo que \xE9l
+      ten\xEDa lo mejor de todo!/w2.0/cler Compr\xF3 un castillo y empez\xF3 a construirlo
+      cada vez m\xE1s alto./w2.0/cler Para tener espacio suficiente para todos sus
+      tesoros.../w2.0/cler Y, por supuesto, \xA1para poder vivir en la torre m\xE1s
+      alta del mundo!/w2.0/cler S\xED, era una persona terrible, hac\xEDa cosas malas.../w2.0/cler
+      \xA1Pero era genial!"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441026
-    m_Localized: "O\xED que este bandido era el m\xE1s codicioso de todos. Le quitaba
-      oro y joyas a la gente, pero a\xFAn as\xED no le bastaba. Entonces decidi\xF3
-      robar el amanecer mismo. Su torre creci\xF3 tanto que llegaba hasta las nubes.
-      Subi\xF3, capt\xF3 el primer rayo de sol y lo guard\xF3 en un cofre negro.
-      Desde entonces, el mundo se sumi\xF3 en la oscuridad... La gente ya no ve\xEDa
-      el sol, y el bandido re\xEDa en su torre, admirando la luz robada."
+    m_Localized: "O\xED que este bandido era el m\xE1s codicioso de todos./w2.0/cler
+      Le quitaba oro y joyas a la gente, pero nunca le bastaba./w2.0/cler Y entonces
+      decidi\xF3 robar el amanecer mismo. Su torre se alz\xF3 tanto que lleg\xF3
+      hasta las nubes./w2.0/cler Subi\xF3, capt\xF3 el primer rayo de sol y lo guard\xF3
+      en un cofre negro./w2.0/cler Desde entonces, el mundo se ha sumido en la oscuridad.../w2.0/cler
+      La gente ya no ve\xEDa el sol, y el bandido re\xEDa en su torre, admirando
+      la luz robada."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441027
     m_Localized: "Pero un d\xEDa, una ni\xF1a lleg\xF3 a su puerta con una correa
-      rota en la mano. \xABMi gata ha desaparecido\xBB, dijo. \xABLe has quitado
-      tanto a la gente... \xBFQuiz\xE1s a ella tambi\xE9n?\xBB. El bandido sinti\xF3
-      curiosidad y orden\xF3 que encontraran a la gata. Pronto la atraparon. Pero
-      cuando la ni\xF1a se alegr\xF3, \xE9l de repente ri\xF3: \xAB\xA1No! \xA1Ahora
-      es m\xEDa!\xBB. Y cerr\xF3 la puerta de golpe. La ni\xF1a no se fue. Se sent\xF3
-      junto a la fortaleza y esper\xF3. Un d\xEDa, dos, una semana... Y el bandido
+      hecha jirones en la mano./w2.0/cler Mi gata ha desaparecido, dijo. Le has quitado
+      tanto a la gente... \xBFQuiz\xE1s a ella tambi\xE9n?/w2.0/cler El bandido sinti\xF3
+      curiosidad y orden\xF3 que encontraran a la gata. Pronto la atraparon./w2.0/cler
+      Pero cuando la ni\xF1a estaba feliz, \xE9l de repente ri\xF3: No. \xA1Ahora
+      es m\xEDa!/w2.0/cler Y cerr\xF3 la puerta de golpe./w2.0/cler La ni\xF1a no
+      se fue. Se sent\xF3 junto a la fortaleza y esper\xF3 un buen rato. Y luego
+      comenz\xF3 a regresar a la fortaleza todos los d\xEDas.../w2.0/cler Y el bandido
       mantuvo a la gata en la torre, seguro de que ahora la ni\xF1a no ir\xEDa a
       ninguna parte."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441028
-    m_Localized: "Pero la gata no iba a aguantar el cautiverio. Ara\xF1\xF3 las paredes,
-      trep\xF3 por todas partes, y al final encontr\xF3 el cofre con el amanecer
-      robado. Lo abri\xF3, \xA1y de repente brot\xF3 una luz cegadora! La gata se
-      trag\xF3 el amanecer y... \xA1BAM! \xA1Se convirti\xF3 en un enorme tigre feroz!
-      El tigre recogi\xF3 a la ni\xF1a, que hab\xEDa estado esperando en la puerta
-      todo este tiempo, se elev\xF3 hacia el cielo, y juntos se convirtieron en un
-      nuevo amanecer. Y al d\xEDa siguiente, el sol sali\xF3 como si nunca lo hubieran
-      robado."
+    m_Localized: "Pero la gata no iba a aguantar el cautiverio./w2.0/cler Ara\xF1\xF3
+      las paredes, trep\xF3 por todas partes. Y al final encontr\xF3 el mismo cofre
+      con el amanecer robado./w2.0/cler Lo abri\xF3 y, de repente, \xA1una luz cegadora
+      brot\xF3!/w2.0/cler La gata se trag\xF3 el amanecer y\u2026/w2.0/cler \xA1BAM!/w1.8/cler
+      \xA1Se convirti\xF3 en un enorme tigre feroz!/w2.0/cler El tigre recogi\xF3
+      a la ni\xF1a, que hab\xEDa estado esperando en la puerta todo este tiempo,
+      \xA1y se elev\xF3 hacia el cielo!/w2.0/cler Juntos se convirtieron en un nuevo
+      amanecer./w2.0/cler Y al d\xEDa siguiente sali\xF3 el sol, como si nunca lo
+      hubieran robado."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441029
-    m_Localized: "Sabes, ese bandido... tuvo un mal final. Tras el amanecer, la gente
-      dej\xF3 de temerle a su torre. Y \xE9l mismo parec\xEDa haberse desanimado;
-      incluso los tesoros empezaron a parecerle simplemente... bueno, piedras brillantes.
-      Y en toda su vida, nunca encontr\xF3 a nadie que lo amara de verdad... Intent\xF3
-      dar \xF3rdenes a sus secuaces restantes, pero huyeron en silencio. La fortaleza
-      se vaciaba. Las puertas crujieron, las escaleras se tambalearon y gruesas telara\xF1as
-      ya se tej\xEDan en las esquinas. Y entonces... simplemente desapareci\xF3.
-      Nadie vio c\xF3mo. Solo qued\xF3 una torre solitaria... :("
+    m_Localized: "Sabes, ese bandido... tuvo un mal final./w2.0/cler Tras el regreso
+      del amanecer, la gente poco a poco dej\xF3 de temerle a su torre./w2.0/cler
+      Y \xE9l mismo parec\xEDa haberse desinflado; incluso los tesoros empezaron
+      a parecerle simplemente... bueno, piedras brillantes./w2.0/cler Y en toda su
+      vida nunca encontr\xF3 a nadie que lo amara de verdad.../w2.0/cler Aun as\xED
+      intent\xF3 comandar a los secuaces restantes, pero huyeron en silencio./w2.0/cler
+      La fortaleza se estaba vaciando. Las puertas crujieron, las escaleras se tambalearon
+      y gruesas telara\xF1as ya se tej\xEDan en las esquinas./w2.0/cler Y entonces...
+      simplemente desapareci\xF3. Nadie vio c\xF3mo./w2.0/cler Solo quedaba una torre
+      solitaria.../w2.0/cler :("
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441030
-    m_Localized: "\xA1Hola, amigo! Soy un joven arquitecto que estudia esta asombrosa
-      torre. Los archivos de la ciudad portuaria contienen muchos registros del marinero
-      que la construy\xF3. No por protecci\xF3n ni gloria, sino simplemente porque
-      pudo. Su altura le parec\xEDa insuficiente. Regresaba de cada viaje con gente
-      nueva: ingenieros, locos, artistas. Cada uno aportaba algo nuevo: escaleras
-      retorcidas, plataformas giratorias, c\xFApulas transparentes. Lo \xFAnico triste
-      es en qu\xE9 se convirti\xF3 al final..."
+    m_Localized: "\xA1Hola, amigo! Soy un joven arquitecto que estudia esta incre\xEDble
+      torre./w2.1/cler Los archivos de la ciudad portuaria contienen muchos registros
+      del marinero que la construy\xF3./w2.1/cler No por protecci\xF3n ni gloria,
+      sino simplemente porque pod\xEDa. Su altura le parec\xEDa insuficiente./w2.1/cler
+      Regresaba de cada viaje con gente nueva: ingenieros, locos, artistas./w2.1/cler
+      Cada uno a\xF1ad\xEDa algo nuevo: escaleras de caracol, plataformas giratorias,
+      c\xFApulas transparentes./w2.1/cler Lo \xFAnico triste es en lo que finalmente
+      se convirti\xF3..."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441031
-    m_Localized: "En la planta superior, si se cree en los antiguos planos, deber\xEDa
-      haber habido un reloj inverso\u2026 Un d\xEDa, el capit\xE1n trajo a un viejo
-      relojero de un pa\xEDs lejano, casi ciego, pero con manecillas de oro. Examin\xF3
-      la torre, asinti\xF3 y pidi\xF3 que le trajeran engranajes, muelles y cristal.
-      Un mes despu\xE9s, apareci\xF3 un enorme reloj en una de sus plataformas, pero
-      no uno sencillo, sino inverso. Sus manecillas iban contra el paso del tiempo,
-      y en lugar de sonar, se o\xEDa el susurro de las olas\u2026 Sub\xED a echar
-      un vistazo\u2026 Ahora solo hay acero en ese lugar. Liso, sin costuras\u2026"
+    m_Localized: "En la planta superior, si se cree en los diagramas antiguos, deber\xEDa
+      haber habido un reloj inverso\u2026/w2.1/cler Una vez, un capit\xE1n trajo
+      a un viejo relojero de un pa\xEDs lejano, casi ciego, pero con manecillas de
+      oro./w2.1/cler Examin\xF3 la torre, asinti\xF3 y pidi\xF3 que le trajeran engranajes,
+      resortes y cristal./w2.1/cler Un mes despu\xE9s, apareci\xF3 un enorme reloj
+      en una de sus plataformas, pero no uno simple, sino inverso./w2.1/cler Sus
+      manecillas iban contra el paso del tiempo, y en lugar de sonar, se o\xEDa el
+      susurro de las olas\u2026/w2.1/cler Sub\xED a echar un vistazo\u2026/w2.1/cler
+      Ahora, en ese lugar, solo hay acero. Liso, sin costuras\u2026"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441032
     m_Localized: "En uno de sus viajes, el capit\xE1n conoci\xF3 a una mujer que
-      afirmaba poder cultivar un jard\xEDn donde no hab\xEDa tierra ni sol. La llev\xF3
-      a la torre, y ella solo trajo consigo un pu\xF1ado de semillas y una botella
-      de agua turbia. Seis meses despu\xE9s, flores escarlatas florecieron en las
-      vigas de acero, que nadie pudo identificar. Sus p\xE9talos no se marchitaron,
-      y sus ra\xEDces crecieron a trav\xE9s del metal, como si fuera tierra blanda
-      para ellas. El capit\xE1n orden\xF3 entonces que se construyera una c\xFApula
-      de cristal alrededor del jard\xEDn... Bueno, si se cree en los registros..."
+      afirmaba poder cultivar un jard\xEDn donde no hab\xEDa tierra ni sol./w2.1/clerLa
+      llev\xF3 a la torre, y ella solo trajo consigo un pu\xF1ado de semillas y una
+      botella de agua fangosa./w2.1/clerSeis meses despu\xE9s, florecieron flores
+      escarlatas en las vigas de acero, que nadie pudo identificar./w2.1/clerSus
+      p\xE9talos no se marchitaron, y las ra\xEDces crecieron a trav\xE9s del metal,
+      como si fuera tierra blanda para ellas./w2.1/clerEl capit\xE1n entonces orden\xF3
+      que se construyera una c\xFApula de vidrio alrededor del jard\xEDn\u2026/w2.1/clerBueno,
+      si crees en los registros\u2026"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441033
     m_Localized: "Tambi\xE9n le\xED c\xF3mo trajo a un hombre de un lejano pa\xEDs
-      des\xE9rtico que hablaba un idioma desconocido. Trajo consigo docenas de espejos,
-      grandes y peque\xF1os. El fabricante de espejos subi\xF3 silenciosamente a
-      la torre y comenz\xF3 a colocarlos en las paredes de acero en \xE1ngulos extra\xF1os.
-      Un mes despu\xE9s, quienes sub\xEDan las escaleras empezaron a notar algo extra\xF1o...
-      Algunos espejos reflejaban tierras inexistentes, otros, mares que no aparec\xEDan
-      en los mapas. Eran lugares donde ning\xFAn hombre hab\xEDa puesto jam\xE1s
-      un pie \u2014dijo el capit\xE1n\u2014... esto es una tonter\xEDa, por supuesto...
-      \xA1Pero qu\xE9 po\xE9tico!"
+      des\xE9rtico que hablaba un idioma desconocido./w2.1/clerTrajo consigo docenas
+      de espejos, grandes y peque\xF1os./w2.1/clerEl fabricante de espejos subi\xF3
+      silenciosamente a la torre y comenz\xF3 a construirlos en las paredes de acero
+      en \xE1ngulos extra\xF1os./w2.1/clerUn mes despu\xE9s, los que subieron las
+      escaleras comenzaron a notar algo extra\xF1o.../w2.1/clerAlgunos espejos reflejaban
+      tierras inexistentes, otros, mares que no estaban en los mapas./w2.1/clerEstos
+      eran lugares donde ning\xFAn hombre hab\xEDa puesto un pie - dijo el capit\xE1n.../w2.1/cler...esto
+      es una tonter\xEDa, por supuesto... \xA1Pero qu\xE9 po\xE9tico!"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441034
-    m_Localized: "Pasaron los a\xF1os. La torre creci\xF3, se cubri\xF3 de creaciones
-      ajenas, de sue\xF1os ajenos. El capit\xE1n ya no recordaba d\xF3nde terminaba
-      la suya y d\xF3nde empezaba la de los dem\xE1s. Las escaleras conduc\xEDan
-      a habitaciones que no hab\xEDa construido y que desconoc\xEDa... ... Los \xFAltimos
-      registros sobre el capit\xE1n dicen una cosa: orden\xF3 llenarlo todo de acero.
-      Hasta la cima. No quedaba nada bello ni asombroso. Solo una superficie ideal,
-      muerta... Qu\xE9 l\xE1stima..."
+    m_Localized: "Pasaron los a\xF1os. La torre creci\xF3, se llen\xF3 de creaciones
+      ajenas, de sue\xF1os ajenos./w2.1/cler El capit\xE1n ya no recordaba d\xF3nde
+      terminaba el suyo y d\xF3nde empezaba el de los dem\xE1s./w2.1/cler Las escaleras
+      conduc\xEDan a habitaciones que \xE9l no hab\xEDa construido y que desconoc\xEDa\u2026/w2.1/cler.../w0.8/cler
+      Las \xFAltimas entradas sobre el capit\xE1n dicen una cosa: orden\xF3 llenarlo
+      todo de acero./w2.1/cler Hasta la cima./w1.8/cler No qued\xF3 nada bello ni
+      asombroso./w2.1/cler Solo una superficie ideal, muerta\u2026/w2.1/cler Es una
+      l\xE1stima\u2026"
     m_Metadata:
       m_Items: []
   references:

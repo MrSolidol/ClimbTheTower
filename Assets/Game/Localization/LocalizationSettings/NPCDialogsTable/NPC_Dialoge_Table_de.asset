@@ -20,176 +20,184 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 27971113246720
     m_Localized: "Ah ... dieses Geb\xE4ude ist alles, was von der Burg des gro\xDFen
-      K\xF6nigs \xFCbrig geblieben ist ... Sp\xE4ter ging der Turm von Hand zu Hand
-      \u2013 und jeder Besitzer f\xFCgte etwas Eigenes hinzu, wodurch er nur noch
-      h\xF6her wurde. Man sagt, der K\xF6nig sei in seiner Jugend ein Tr\xE4umer
-      gewesen. Er wollte sein ganzes K\xF6nigreich \xFCberblicken \u2013 jede Stadt,
-      jedes Dorf. Also befahl er den Bau eines Turms \u2013 so hoch wie m\xF6glich.
-      Doch die Jahre vergingen, der K\xF6nig wurde alt und der Bau ging zu langsam
-      voran."
+      K\xF6nigs \xFCbrig geblieben ist .../w2.3/clerSp\xE4ter ging der Turm von Hand
+      zu Hand \u2013 und jeder Besitzer f\xFCgte etwas Eigenes hinzu, wodurch er
+      nur noch h\xF6her wurde./w2.3/clerMan sagt, der K\xF6nig sei in seiner Jugend
+      ein Tr\xE4umer gewesen. Er wollte sein gesamtes K\xF6nigreich \xFCberblicken
+      \u2013 jede Stadt, jedes Dorf./w2.3/clerAlso befahl er, einen Turm zu bauen
+      \u2013 so hoch wie m\xF6glich./w2.3/clerAber die Jahre vergingen, der K\xF6nig
+      wurde alt und der Bau ging zu langsam voran."
     m_Metadata:
       m_Items: []
   - m_Id: 5872650870784
-    m_Localized: "Oho! Willkommen, Reisender! Noch ein Draufg\xE4nger, der davon
-      tr\xE4umt, unseren ber\xFChmten Turm zu besteigen? Wenn du es bis zum zweiten
-      Geb\xE4ude schaffst, bist du schon ein Held. Aber zu Fu\xDF nach oben zu klettern,
-      ist purer Wahnsinn. Alle Treppen sind l\xE4ngst eingest\xFCrzt, und die B\xF6den
-      sind morsch... Also... ich w\xFCnsche dir Gl\xFCck und Geduld, Junge."
+    m_Localized: "Oh! Willkommen, Reisender!/w2.3/clerNoch ein Draufg\xE4nger, der
+      davon tr\xE4umt, unseren ber\xFChmten Turm zu besteigen?/w2.3/clerWenn du es
+      bis zum zweiten Geb\xE4ude schaffst, kannst du dich schon als Held bezeichnen./w2.3/clerAber
+      zu versuchen, die Spitze zu Fu\xDF zu erklimmen, ist purer Wahnsinn./w2.3/clerAlle
+      Treppen sind l\xE4ngst eingest\xFCrzt und die B\xF6den verrottet\u2026/w2.3/clerAlso\u2026
+      ich w\xFCnsche dir Gl\xFCck und Geduld, Junge."
     m_Metadata:
       m_Items: []
   - m_Id: 27971113246721
-    m_Localized: "Ich erinnere mich an eine Geschichte ... Es gab eine T\xFCr im
-      Schloss, die niemand \xF6ffnete. Der K\xF6nig hatte so viele Jahre an dem Turm
-      gebaut, dass er allm\xE4hlich alles auf der Welt verga\xDF. Ein kleiner Schl\xFCssel
-      zu dieser T\xFCr hing immer an seinem G\xFCrtel, aber er selbst erinnerte sich
-      nicht mehr, wozu er ihn brauchte. \u201EEure Majest\xE4t, was ist da hinter
-      dieser T\xFCr?\u201C, wagte der Page einmal zu fragen. Der K\xF6nig runzelte
-      die Stirn ... und pl\xF6tzlich blitzte etwas in seinen Augen auf. Sie \xF6ffneten
-      die T\xFCr \u2013 dahinter war ein staubiger Schrank. Auf dem Boden \u2013
-      ein Holzschwert und eine Pappkrone. Und in den Regalen \u2013 zerfledderte
-      B\xFCcher mit M\xE4rchen, die ihm seine Mutter vorgelesen hatte \u2026 Ich
-      war gl\xFCcklich hier \u2026 \u2013 fl\xFCsterte der K\xF6nig."
+    m_Localized: "Ich erinnere mich an eine Geschichte \u2026/w2.3/clerIm Schloss
+      gab es eine T\xFCr, die niemand \xF6ffnete. Der K\xF6nig hatte so viele Jahre
+      an dem Turm gebaut, dass er allm\xE4hlich alles auf der Welt verga\xDF./w2.3/clerEin
+      kleiner Schl\xFCssel zu dieser T\xFCr hing immer an seinem G\xFCrtel, aber
+      er selbst wusste nicht mehr, wozu er ihn brauchte./w2.3/clerEure Majest\xE4t,
+      was ist da hinter dieser T\xFCr? \u2013 wagte der Page einmal zu fragen./w2.3/clerDer
+      K\xF6nig runzelte die Stirn \u2026 und pl\xF6tzlich blitzte etwas in seinen
+      Augen auf./w2.3/clerSie \xF6ffneten die T\xFCr \u2013 dahinter war ein staubiger
+      Schrank./w2.3/clerAuf dem Boden \u2013 ein Holzschwert und eine Pappkrone.
+      Und in den Regalen \u2013 zerfledderte B\xFCcher mit M\xE4rchen, die seine
+      Mutter ihm vorgelesen hatte \u2026/w2.3/clerIch war gl\xFCcklich hier \u2026
+      \u2013 fl\xFCsterte der K\xF6nig."
     m_Metadata:
       m_Items: []
   - m_Id: 27971113246722
-    m_Localized: "Die Jahre vergingen. Eines Tages, als er den Turm erklomm, bemerkte
-      der K\xF6nig erneut einen schiefen, achtlos verlegten Stein in der Mauer. Wieder
-      musste er ihn erneuern ... Wieder musste er die Handwerker rufen ... Wann w\xFCrde
-      alles fertig sein? Doch nachdem er den unfertigen Turm erklommen hatte, blickte
-      er zum ersten Mal seit vielen Jahren wieder auf seine Stadt. Unten tollten
-      Kinder herum, H\xE4ndler feilschten auf dem Platz, das Leben ging seinen gewohnten
-      Gang ... Von da an ging er nicht mehr hinauf, um das Mauerwerk zu \xFCberpr\xFCfen
-      ... ... Der Turm, einst sein ganzer Stolz, erinnerte ihn nun nur noch an die
-      vergeudeten Jahre."
+    m_Localized: "Die Jahre vergingen. Als der K\xF6nig eines Tages nach oben kletterte,
+      bemerkte er erneut einen schiefen, achtlos verlegten Stein in der Mauer./w2.3/cler
+      Noch einmal machen ... Die Handwerker noch einmal rufen ... Wann wird alles
+      fertig sein?/w2.3/clerDoch als er auf die unfertige Spitze geklettert war,
+      blickte er zum ersten Mal seit vielen Jahren wieder auf seine Stadt./w2.3/clerUnten
+      tollten Kinder herum, Kaufleute feilschten auf dem Platz, das Leben ging seinen
+      gewohnten Gang.../w2.3/clerVon da an ging er nicht mehr hinauf, um das Mauerwerk
+      zu \xFCberpr\xFCfen.../w2.3/clerDer Turm, einst sein ganzer Stolz, erinnerte
+      ihn nun nur noch an die vergeudeten Jahre."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441024
     m_Localized: "Ah, die Gem\xE4cher des K\xF6nigs ... Dort stand eine alte Uhr
-      \u2013 ein Geschenk seiner Mutter aus seiner Zeit als junger Prinz. Die Uhr
-      war schon lange stehen geblieben, aber der K\xF6nig schob die Reparatur immer
-      wieder auf: Ich werde mich darum k\xFCmmern, wenn ich den Turm fertig gebaut
-      habe. Jahre vergingen. Eines Tages, bereits grau und gebeugt, sah er sie sich
-      noch einmal an und befahl, sie reparieren zu lassen. Der Meister, den er rief,
-      untersuchte den Mechanismus und warf die H\xE4nde in die Luft. Eure Majest\xE4t,
-      die Zahnr\xE4der sind abgenutzt, die Feder ist gebrochen ... Jetzt kann sie
-      nicht mehr repariert werden. Der K\xF6nig starrte lange auf das angelaufene
-      Glas, hinter dem die Zeiger f\xFCr immer eingefroren waren. \u201EEs ist seltsam
-      ...\u201C, fl\xFCsterte er. \u201EMir kam es vor, als l\xE4ge eine Ewigkeit
-      vor mir ... Und drau\xDFen vor dem Fenster wiegte der Wind die Spitze des unvollendeten
-      Turms ..."
+      \u2013 ein Geschenk seiner Mutter aus der Zeit, als er ein junger Prinz war./w2.3/clerDie
+      Uhr war schon lange stehen geblieben, aber der K\xF6nig schob ihre Reparatur
+      immer wieder auf: Wenn ich mit dem Bau des Turms fertig bin, dann werde ich
+      mich darum k\xFCmmern./w2.3/clerDie Jahre vergingen. Eines Tages, als er bereits
+      grau und gebeugt war, sah er sie sich noch einmal an und befahl, sie zu reparieren./w2.3/clerDer
+      herbeigerufene Mechaniker untersuchte den Mechanismus und warf die H\xE4nde
+      in die Luft./w2.3/clerEure Majest\xE4t, die Zahnr\xE4der sind abgenutzt, die
+      Feder ist gebrochen ... Jetzt kann es nicht mehr repariert werden./w2.3/clerDer
+      K\xF6nig betrachtete lange Zeit das angelaufene Glas, hinter dem die Zeiger
+      f\xFCr immer eingefroren waren./w2.3/clerEs ist seltsam ... - fl\xFCsterte
+      er/w2.3/clerMir kam es vor, als l\xE4ge eine Ewigkeit vor mir .../w2.3/clerUnd
+      drau\xDFen vor dem Fenster wiegte der Wind die Spitze des unvollendeten Turms
+      .../w2.3/cler/w0.2./w0.2 ./w0.2 ."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441025
     m_Localized: "Hallo! Wussten Sie, dass dieses Geb\xE4ude von einem ber\xFChmten
-      Banditen erbaut wurde? Gierig bis zum Horror \u2013 er wollte nur das Beste!
-      Er kaufte ein Schloss und begann, es immer h\xF6her zu bauen. Damit genug Platz
-      f\xFCr all seine Sch\xE4tze war ... Und nat\xFCrlich, damit er im h\xF6chsten
-      Turm der Welt leben konnte! Ja, er war ein schrecklicher Mensch, hat schlimme
-      Dinge getan ... Aber er war sehr cool!"
+      Banditen erbaut wurde?/w2.0/clerGierig bis zum Grauen \u2013 nur er hatte von
+      allem das Beste!/w2.0/clerEr kaufte ein Schloss und begann, es immer h\xF6her
+      zu bauen./w2.0/clerDamit genug Platz f\xFCr all seine Sch\xE4tze w\xE4re.../w2.0/clerUnd
+      nat\xFCrlich, damit er im h\xF6chsten Turm der Welt leben konnte!/w2.0/clerJa,
+      er war ein schrecklicher Mensch, er hat schlimme Dinge getan.../w2.0/clerAber
+      er war echt cool!"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441026
-    m_Localized: "Ich habe geh\xF6rt, dieser Bandit war der gierigste von allen.
-      Er nahm den Leuten Gold und Juwelen ab, aber es war ihm immer noch nicht genug.
-      Dann beschloss er, die Morgend\xE4mmerung selbst zu stehlen. Sein Turm wuchs
-      so hoch, dass er bis an die Wolken reichte. Er kletterte hinauf, fing den ersten
-      Sonnenstrahl ein und schloss ihn in eine schwarze Truhe ein. Seitdem ist die
-      Welt in Dunkelheit getaucht ... Die Menschen sahen die Sonne nicht mehr, und
-      der Bandit lachte in seinem Turm und bewunderte das gestohlene Licht."
+    m_Localized: "Ich habe geh\xF6rt, dieser Bandit sei der gierigste von allen gewesen./w2.0/clerEr
+      nahm den Leuten Gold und Schmuck ab, aber es war ihm nie genug./w2.0/clerUnd
+      dann beschloss er, die Morgend\xE4mmerung selbst zu stehlen. Sein Turm wurde
+      so hoch, dass er bis an die Wolken reichte./w2.0/clerEr kletterte hinauf, fing
+      den ersten Sonnenstrahl ein und schloss ihn in einer schwarzen Truhe ein./w2.0/clerSeitdem
+      ist die Welt in Dunkelheit getaucht.../w2.0/clerDie Menschen sahen die Sonne
+      nicht mehr und der Bandit lachte in seinem Turm und bewunderte das gestohlene
+      Licht."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441027
     m_Localized: "Doch eines Tages kam ein M\xE4dchen mit einer zerfetzten Leine
-      in der Hand an sein Tor. \u201EMeine Katze ist verschwunden\u201C, sagte sie.
-      \u201EDu hast den Leuten so viel genommen \u2026 Vielleicht sie auch?\u201C
-      Der Bandit wurde neugierig und befahl, die Katze zu suchen. Bald wurde sie
-      gefasst. Doch als das M\xE4dchen sich freute, lachte er pl\xF6tzlich: \u201ENein.
-      Jetzt geh\xF6rt sie mir!\u201C Und er schlug das Tor zu. Das M\xE4dchen ging
-      nicht weg. Sie sa\xDF bei der Festung und wartete. Einen Tag, zwei, eine Woche
-      \u2026 Und der Bandit hielt die Katze im Turm fest, \xFCberzeugt, dass das
-      M\xE4dchen nun nirgendwo hingehen w\xFCrde."
+      in der Hand an sein Tor./w2.0/clerMeine Katze wird vermisst, sagte sie. Du
+      hast den Menschen so viel genommen ... Vielleicht sie auch?/w2.0/clerDer Bandit
+      wurde neugierig und befahl, die Katze zu suchen. Bald wurde sie gefasst./w2.0/clerAber
+      als das M\xE4dchen gl\xFCcklich war, lachte er pl\xF6tzlich: Nein. Jetzt geh\xF6rt
+      sie mir!/w2.0/clerUnd er schlug das Tor zu./w2.0/clerDas M\xE4dchen ging nicht
+      weg. Sie sa\xDF bei der Festung und wartete lange. Und dann begann sie, jeden
+      Tag zur Festung zur\xFCckzukehren .../w2.0/clerUnd der Bandit hielt die Katze
+      im Turm, \xFCberzeugt, dass das M\xE4dchen nun nirgendwo hingehen w\xFCrde."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441028
-    m_Localized: "Doch die Katze lie\xDF sich die Gefangenschaft nicht gefallen.
-      Sie kratzte an den W\xE4nden, kletterte \xFCberall herum \u2013 und fand schlie\xDFlich
-      die Truhe mit der gestohlenen Morgenr\xF6te. Sie \xF6ffnete sie \u2013 und
-      pl\xF6tzlich str\xF6mte ein blendendes Licht heraus! Die Katze verschluckte
-      die Morgenr\xF6te und \u2026 B\xC4M! Sie verwandelte sich in einen riesigen
-      feurigen Tiger!!! Der Tiger nahm das M\xE4dchen, das die ganze Zeit am Tor
-      gewartet hatte, mit sich, stieg in den Himmel auf \u2013 und gemeinsam wurden
-      sie zu einer neuen Morgenr\xF6te. Und am n\xE4chsten Tag ging die Sonne auf,
-      als w\xE4re sie nie gestohlen worden."
+    m_Localized: "Aber die Katze lie\xDF sich die Gefangenschaft nicht gefallen./w2.0/clerSie
+      kratzte an den W\xE4nden, kletterte \xFCberall herum. Und schlie\xDFlich fand
+      sie genau die Truhe mit der gestohlenen Morgend\xE4mmerung./w2.0/clerSie \xF6ffnete
+      sie und pl\xF6tzlich str\xF6mte ein blendendes Licht heraus!/w2.0/clerDie Katze
+      verschluckte die Morgend\xE4mmerung und\u2026/w2.0/clerB\xC4M!/w1.8/clerSie
+      verwandelte sich in einen riesigen feurigen Tiger!!!/w2.0/clerDer Tiger nahm
+      das M\xE4dchen, das die ganze Zeit am Tor gewartet hatte, und erhob sich in
+      den Himmel!/w2.0/clerZusammen wurden sie zu einer neuen Morgend\xE4mmerung./w2.0/clerUnd
+      am n\xE4chsten Tag ging die Sonne auf, als w\xE4re sie nie gestohlen worden."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441029
-    m_Localized: "Wei\xDFt du, dieser Bandit ... nahm ein b\xF6ses Ende. Nach Einbruch
-      der Dunkelheit hatten die Menschen allm\xE4hlich keine Angst mehr vor seinem
-      Turm. Und er selbst schien die Luft abgelassen zu haben \u2013 selbst Sch\xE4tze
-      erschienen ihm nur noch ... nun ja, gl\xE4nzende Steine. Und in seinem ganzen
-      Leben hatte er nie jemanden gefunden, der ihn wirklich liebte ... Er versuchte
-      immer noch, seinen verbliebenen Gefolgsleuten Befehle zu erteilen, aber sie
-      rannten leise davon. Die Festung leerte sich. Die Tore knarrten, die Treppen
-      wackelten und dicke Spinnweben waren bereits in die Ecken gewoben. Und dann
-      ... verschwand er einfach. Niemand sah, wie. Nur ein einsamer Turm blieb \xFCbrig
-      ... :("
+    m_Localized: "Wissen Sie, dieser Bandit ... nahm ein b\xF6ses Ende./w2.0/clerNachdem
+      die Morgend\xE4mmerung wieder angebrochen war, hatten die Leute allm\xE4hlich
+      keine Angst mehr vor seinem Turm./w2.0/clerUnd er selbst schien die Luft abgelassen
+      zu haben \u2013 selbst Sch\xE4tze erschienen ihm nur noch ... nun ja, gl\xE4nzende
+      Steine./w2.0/clerUnd in seinem ganzen Leben fand er nie jemanden, der ihn wirklich
+      liebte .../w2.0/clerEr versuchte immer noch, den verbliebenen Schergen Befehle
+      zu erteilen, aber sie rannten leise davon./w2.0/clerDie Festung leerte sich.
+      Die Tore knarrten, die Treppen wackelten und in den Ecken waren bereits dicke
+      Spinnweben gewebt./w2.0/clerUnd dann ... verschwand er einfach. Niemand sah,
+      wie./w2.0/clerNur ein einsamer Turm blieb \xFCbrig .../w2.0/cler:("
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441030
-    m_Localized: "Hallo, mein Freund! Ich bin ein junger Architekt und studiere diesen
-      erstaunlichen Turm. Die Archive der Hafenstadt enthalten viele Aufzeichnungen
-      \xFCber den Seemann, der ihn erbaut hat. Nicht aus Schutz oder Ruhm \u2013
-      sondern einfach, weil er es konnte. Seine H\xF6he erschien ihm zu gering. Von
-      jeder Reise kehrte er mit neuen Leuten zur\xFCck: Ingenieuren, Verr\xFCckten,
-      K\xFCnstlern. Jeder f\xFCgte etwas hinzu \u2013 Wendeltreppen, rotierende Plattformen,
-      transparente Kuppeln! Das einzig Traurige ist, was am Ende daraus geworden
-      ist \u2026"
+    m_Localized: "Hallo, mein Freund! Ich bin ein junger Architekt und besch\xE4ftige
+      mich mit diesem erstaunlichen Turm./w2.1/clerDie Archive der Hafenstadt enthalten
+      viele Aufzeichnungen \xFCber den Seemann, der ihn erbaut hat./w2.1/clerNicht
+      aus Schutz oder Ruhm \u2013 sondern einfach, weil er es konnte. Seine H\xF6he
+      erschien ihm nicht ausreichend./w2.1/clerVon jeder Reise kehrte er mit neuen
+      Leuten zur\xFCck: Ingenieuren, Verr\xFCckten, K\xFCnstlern./w2.1/clerJeder
+      f\xFCgte etwas hinzu \u2013 Wendeltreppen, Drehplattformen, transparente Kuppeln!/w2.1/clerDas
+      einzig Traurige ist, was letztendlich daraus wurde \u2026"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441031
-    m_Localized: "Glaubt man den alten Pl\xE4nen, h\xE4tte es auf der obersten Ebene
-      eine Uhr mit umgekehrtem Lauf geben sollen \u2026 Eines Tages brachte der Kapit\xE4n
-      einen alten Uhrmacher aus einem fernen Land mit, fast blind, aber mit goldenen
-      Zeigern. Er untersuchte den Turm, nickte und bat darum, Zahnr\xE4der, Federn
-      und Glas mitzubringen. Einen Monat sp\xE4ter erschien auf einer seiner Plattformen
-      eine riesige Uhr \u2013 allerdings keine einfache, sondern eine mit umgekehrtem
-      Lauf. Ihre Zeiger bewegten sich gegen den Lauf der Zeit, und statt zu schlagen,
-      h\xF6rte man das Rauschen der Brandung \u2026 Ich ging hinauf, um nachzusehen
-      \u2026 Jetzt ist dort nur noch Stahl. Glatt, nahtlos \u2026"
+    m_Localized: "Auf der obersten Ebene h\xE4tte es, wenn man den alten Diagrammen
+      Glauben schenkt, eine umgekehrte Uhr geben m\xFCssen \u2026/w2.1/clerEinmal
+      brachte ein Kapit\xE4n einen alten Uhrmacher aus einem fernen Land mit, fast
+      blind, aber mit goldenen Zeigern./w2.1/clerEr untersuchte den Turm, nickte
+      und bat darum, Zahnr\xE4der, Federn und Glas mitzubringen./w2.1/clerEinen Monat
+      sp\xE4ter erschien auf einer seiner Plattformen eine riesige Uhr \u2013 aber
+      keine einfache, sondern eine umgekehrte./w2.1/clerIhre Zeiger bewegten sich
+      gegen den Lauf der Zeit, und statt zu schlagen, konnte man das Fl\xFCstern
+      der Brandung h\xF6ren \u2026/w2.1/clerIch ging hinauf, um nachzusehen \u2026/w2.1/clerJetzt
+      ist an dieser Stelle nur noch Stahl. Glatt, nahtlos \u2026"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441032
     m_Localized: "Auf einer seiner Reisen traf der Kapit\xE4n eine Frau, die behauptete,
-      sie k\xF6nne einen Garten anlegen, wo es weder Erde noch Sonne g\xE4be. Er
+      sie k\xF6nne einen Garten anlegen, wo es weder Erde noch Sonne g\xE4be./w2.1/clerEr
       brachte sie zum Turm, und sie brachte nur eine Handvoll Samen und eine Flasche
-      schlammiges Wasser mit. Sechs Monate sp\xE4ter bl\xFChten scharlachrote Blumen
-      auf den Stahltr\xE4gern, die niemand identifizieren konnte. Ihre Bl\xFCtenbl\xE4tter
-      verwelkten nicht, und ihre Wurzeln wuchsen durch das Metall, als w\xE4re es
-      weicher Boden f\xFCr sie. Daraufhin befahl der Kapit\xE4n, eine Glaskuppel
-      um den Garten zu bauen ... Nun ja, wenn man den Aufzeichnungen Glauben schenkt
-      ..."
+      schlammiges Wasser mit./w2.1/clerSechs Monate sp\xE4ter bl\xFChten scharlachrote
+      Blumen auf den Stahltr\xE4gern, die niemand identifizieren konnte./w2.1/clerIhre
+      Bl\xFCtenbl\xE4tter verwelkten nicht, und die Wurzeln wuchsen durch das Metall,
+      als w\xE4re es weicher Boden f\xFCr sie./w2.1/clerDann befahl der Kapit\xE4n,
+      eine Glaskuppel um den Garten zu bauen\u2026/w2.1/clerNun, wenn man den Aufzeichnungen
+      Glauben schenkt\u2026"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441033
-    m_Localized: "Ich las auch, wie er einen Mann aus einem fernen W\xFCstenland
-      mitbrachte, der eine unbekannte Sprache sprach. Er brachte Dutzende von Spiegeln
-      mit \u2013 gro\xDFe und kleine. Der Spiegelmacher kletterte leise den Turm
-      hinauf und begann, sie in seltsamen Winkeln in die Stahlw\xE4nde einzubauen.
-      Einen Monat sp\xE4ter bemerkten diejenigen, die die Treppe hinaufstiegen, etwas
-      Seltsames \u2026 Einige Spiegel spiegelten nicht existierende L\xE4nder wider,
-      andere Meere, die nicht auf den Karten verzeichnet waren. Dies waren Orte,
-      die noch nie ein Mensch betreten hatte \u2013 sagte der Kapit\xE4n \u2026 \u2026
-      Das ist nat\xFCrlich Unsinn \u2026 Aber wie poetisch!"
+    m_Localized: "Ich habe auch gelesen, wie er einen Mann aus einem fernen W\xFCstenland
+      mitbrachte, der eine unbekannte Sprache sprach./w2.1/clerEr brachte Dutzende
+      von Spiegeln mit \u2013 gro\xDFe und kleine./w2.1/clerDer Spiegelmacher stieg
+      lautlos den Turm hinauf und begann, sie in seltsamen Winkeln in die Stahlw\xE4nde
+      einzubauen./w2.1/clerEinen Monat sp\xE4ter bemerkten diejenigen, die die Treppe
+      hinaufstiegen, etwas Seltsames \u2026/w2.1/clerEinige Spiegel spiegelten nicht
+      existierende L\xE4nder wider, andere Meere, die nicht auf den Karten verzeichnet
+      waren./w2.1/clerDies seien Orte, die noch nie ein Mensch betreten habe \u2013
+      sagte der Kapit\xE4n \u2026/w2.1/cler \u2026 das ist nat\xFCrlich Unsinn \u2026
+      Aber wie poetisch!"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441034
-    m_Localized: "Die Jahre vergingen. Der Turm wuchs, wurde mit den Sch\xF6pfungen
-      anderer Leute, den Tr\xE4umen anderer Leute bedeckt. Der Kapit\xE4n erinnerte
-      sich nicht mehr daran, wo seine endeten und ihre begannen. Die Treppe f\xFChrte
-      zu R\xE4umen, die er nicht gebaut hatte und nicht kannte ... ... Die letzten
-      Aufzeichnungen \xFCber den Kapit\xE4n sagen eines: Er befahl, alles mit Stahl
-      zu f\xFCllen. Bis ganz nach oben. Nichts Sch\xF6nes oder Erstaunliches war
-      \xFCbrig geblieben. Nur eine ideale, tote Oberfl\xE4che ... Schade ..."
+    m_Localized: "Die Jahre vergingen. Der Turm wuchs, wurde \xFCberwuchert von den
+      Sch\xF6pfungen anderer Leute, den Tr\xE4umen anderer Leute./w2.1/clerDer Kapit\xE4n
+      wusste nicht mehr, wo seiner endete und ihrer begann./w2.1/clerDie Treppe f\xFChrte
+      zu R\xE4umen, die er nicht gebaut hatte und nicht kannte\u2026/w2.1/cler.../w0.8/clerDie
+      letzten Eintr\xE4ge \xFCber den Kapit\xE4n sagen eines: Er befahl, alles mit
+      Stahl zu f\xFCllen./w2.1/clerBis ganz nach oben./w1.8/clerNichts Sch\xF6nes
+      oder Erstaunliches blieb \xFCbrig./w2.1/clerNur eine ideale, tote Oberfl\xE4che\u2026/w2.1/clerEs
+      ist schade\u2026"
     m_Metadata:
       m_Items: []
   references:

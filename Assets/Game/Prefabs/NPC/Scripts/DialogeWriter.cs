@@ -63,28 +63,32 @@ public class DialogeWriter : MonoBehaviour
             if (character == '/')
             {
                 string command = textToWrite.Substring(currentCharacterIndex + 1, 4);
-                Debug.Log(command);
                 switch (command[0]) 
                 {
                     case 'c':
                         labelBuilder.Clear();
                         break;
                     case 'w':
+                        eDisplayTalk?.Invoke(false);
                         yield return new WaitForSeconds(float.Parse(command.Substring(1, 3), CultureInfo.InvariantCulture.NumberFormat));
                         break;
-
                 }
                 currentCharacterIndex += 4;
             }
             else 
-            { labelBuilder.Append(character); }
+            { 
+                labelBuilder.Append(character);
+                eCharacterWrited?.Invoke();
+                eDisplayTalk?.Invoke(true);
+            }
 
             currentCharacterIndex++;
             npcLabel.text = labelBuilder.ToString();
             yield return new WaitForSeconds(writingSpeed);
         }
 
-        Invoke("ClearLabel", 0.1f);
+        eDisplayTalk?.Invoke(false);
+        Invoke("ClearLabel", 2.6f);
     }
 
 }

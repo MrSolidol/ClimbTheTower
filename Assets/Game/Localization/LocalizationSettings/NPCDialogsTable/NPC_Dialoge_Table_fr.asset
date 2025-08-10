@@ -20,175 +20,183 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 27971113246720
     m_Localized: "Ah\u2026 ce b\xE2timent est tout ce qui reste du ch\xE2teau du
-      grand roi\u2026 Plus tard, la tour passa de main en main, et chaque propri\xE9taire
-      y ajouta sa propre pierre, ce qui ne fit que la rendre plus haute. On raconte
-      que dans sa jeunesse, le roi \xE9tait un r\xEAveur. Il voulait dominer tout
-      son royaume \u2013 chaque ville, chaque village. Il ordonna donc la construction
-      d'une tour, la plus haute possible. Mais les ann\xE9es pass\xE8rent, le roi
-      vieillit, et la construction progressa trop lentement."
+      grand roi\u2026/w2.3/clerPlus tard, la tour passa de main en main, et chaque
+      propri\xE9taire y ajouta sa propre pierre, ce qui ne fit que la faire grandir./w2.3/clerOn
+      dit que dans sa jeunesse, le roi \xE9tait un r\xEAveur. Il voulait dominer
+      tout son royaume \u2013 chaque ville, chaque village./w2.3/clerIl ordonna donc
+      la construction d'une tour, la plus haute possible./w2.3/clerMais les ann\xE9es
+      pass\xE8rent, le roi vieillit et la construction progressa trop lentement."
     m_Metadata:
       m_Items: []
   - m_Id: 5872650870784
-    m_Localized: "Oh ! Bienvenue, voyageur ! Encore un casse-cou qui r\xEAve de gravir
-      notre c\xE9l\xE8bre tour ? Si tu parviens \xE0 atteindre au moins le deuxi\xE8me
-      b\xE2timent, tu seras d\xE9j\xE0 un h\xE9ros. Mais tenter d'en atteindre le
-      sommet \xE0 pied est une pure folie. Tous les escaliers se sont effondr\xE9s
-      depuis longtemps et les sols sont pourris\u2026 Bon\u2026 Je te souhaite bonne
-      chance et patience, mon gar\xE7on."
+    m_Localized: "Oh ! Bienvenue, voyageur !/w2.3/clerUn autre casse-cou r\xEAvant
+      de gravir notre c\xE9l\xE8bre tour ?/w2.3/clerSi tu peux atteindre au moins
+      le deuxi\xE8me b\xE2timent, tu peux d\xE9j\xE0 \xEAtre appel\xE9 un h\xE9ros./w2.3/clerMais
+      essayer de conqu\xE9rir le sommet \xE0 pied est de la pure folie./w2.3/clerTous
+      les escaliers se sont effondr\xE9s depuis longtemps et les sols ont pourri.../w2.3/clerEh
+      bien... je te souhaite bonne chance et patience, mon gar\xE7on."
     m_Metadata:
       m_Items: []
   - m_Id: 27971113246721
-    m_Localized: "Je me souviens d'une histoire\u2026 Il y avait une porte dans le
-      ch\xE2teau que personne n'ouvrait. Le roi avait construit la tour pendant tant
-      d'ann\xE9es qu'il avait peu \xE0 peu tout oubli\xE9 du monde. Une petite cl\xE9
-      de cette porte \xE9tait toujours accroch\xE9e \xE0 sa ceinture, mais lui-m\xEAme
-      ne se souvenait plus \xE0 quoi elle servait. \xAB\_Votre Majest\xE9, qu'y a-t-il
-      derri\xE8re cette porte\_?\_\xBB osa un jour demander le page. Le roi fron\xE7a
-      les sourcils\u2026 et soudain, quelque chose brilla dans son regard. Ils ouvrirent
-      la porte \u2013 derri\xE8re elle se trouvait un placard poussi\xE9reux. Par
-      terre, une \xE9p\xE9e en bois et une couronne en carton. Et sur les \xE9tag\xE8res,
-      des livres en lambeaux avec des contes de f\xE9es que sa m\xE8re lui lisait\u2026
-      J'\xE9tais heureux ici\u2026 \u2013 murmura le roi."
+    m_Localized: "Je me souviens d'une histoire\u2026/w2.3/cler Il y avait une porte
+      dans le ch\xE2teau que personne n'ouvrait. Le roi avait construit la tour pendant
+      tant d'ann\xE9es qu'il avait peu \xE0 peu tout oubli\xE9./w2.3/cler Une petite
+      cl\xE9 de cette porte \xE9tait toujours accroch\xE9e \xE0 sa ceinture, mais
+      lui-m\xEAme ne se souvenait plus \xE0 quoi elle servait./w2.3/cler Votre Majest\xE9,
+      qu'y a-t-il derri\xE8re cette porte\_? \u2013 osa un jour demander le page./w2.3/cler
+      Le roi fron\xE7a les sourcils\u2026 et soudain, quelque chose brilla dans son
+      regard./w2.3/cler Ils ouvrirent la porte \u2013 derri\xE8re se trouvait un
+      placard poussi\xE9reux./w2.3/cler Par terre \u2013 une \xE9p\xE9e en bois et
+      une couronne en carton. Et sur les \xE9tag\xE8res \u2013 des livres en lambeaux
+      avec des contes de f\xE9es que sa m\xE8re lui lisait\u2026/w2.3/cler J'\xE9tais
+      heureux ici\u2026 \u2013 murmura le roi."
     m_Metadata:
       m_Items: []
   - m_Id: 27971113246722
     m_Localized: "Les ann\xE9es pass\xE8rent. Un jour, en grimpant au sommet, le
-      roi remarqua \xE0 nouveau une pierre tordue, pos\xE9e avec n\xE9gligence, dans
-      le mur. Il dut la refaire\u2026 De nouveau, il dut appeler les artisans\u2026
-      Quand tout serait-il pr\xEAt\_? Mais, apr\xE8s avoir gravi le sommet inachev\xE9,
-      pour la premi\xE8re fois depuis des ann\xE9es, il contempla sa ville. Des enfants
-      gambadaient en contrebas, des marchands marchandaient sur la place, la vie
-      continuait comme d'habitude\u2026 D\xE8s lors, il ne monta plus v\xE9rifier
-      la ma\xE7onnerie\u2026 \u2026 La tour, autrefois sa fiert\xE9, ne lui rappelait
+      roi remarqua de nouveau une pierre tordue, pos\xE9e avec n\xE9gligence, dans
+      le mur./w2.3/clerRefaites-le... Appelez \xE0 nouveau les artisans... Quand
+      tout sera-t-il pr\xEAt ?/w2.3/clerMais, apr\xE8s \xEAtre mont\xE9 au sommet
+      inachev\xE9, pour la premi\xE8re fois depuis des ann\xE9es, il regarda sa ville./w2.3/clerLes
+      enfants gambadaient en bas, les marchands marchandaient sur la place, la vie
+      continuait comme d'habitude.../w2.3/clerD\xE8s lors, il ne monta plus v\xE9rifier
+      la ma\xE7onnerie.../w2.3/clerLa tour, autrefois sa fiert\xE9, ne lui rappelait
       plus que les ann\xE9es perdues."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441024
-    m_Localized: "Ah, les appartements du roi\u2026 L\xE0 se trouvait une vieille
-      horloge, un cadeau de sa m\xE8re datant de son jeune \xE2ge. L\u2019horloge
-      s\u2019\xE9tait arr\xEAt\xE9e depuis longtemps, mais le roi remettait toujours
-      sa r\xE9paration \xE0 plus tard\_: \xAB\_Je m\u2019en occuperai quand j\u2019aurai
-      fini de construire la tour.\_\xBB Les ann\xE9es pass\xE8rent. Un jour, d\xE9j\xE0
-      gris et vo\xFBt\xE9, il la regarda de nouveau et ordonna qu\u2019elle soit
-      r\xE9par\xE9e. Le ma\xEEtre qu\u2019il appela examina le m\xE9canisme et leva
-      les mains. Votre Majest\xE9, les engrenages sont us\xE9s, le ressort est cass\xE9\u2026
-      Impossible de le r\xE9parer. Le roi fixa longuement le verre terni, derri\xE8re
-      lequel les aiguilles \xE9taient fig\xE9es \xE0 jamais. \xAB\_C\u2019est \xE9trange\u2026\_\xBB
-      murmura-t-il. \xAB\_Il me semblait que j\u2019avais une \xE9ternit\xE9 devant
-      moi\u2026\_\xBB Et par la fen\xEAtre, le vent secouait le sommet de la tour
-      inachev\xE9e\u2026"
+    m_Localized: "Ah, les appartements du roi... Il y avait l\xE0 une vieille horloge,
+      un cadeau de sa m\xE8re datant de l'\xE9poque o\xF9 il \xE9tait un jeune prince./w2.3/clerL'horloge
+      s'\xE9tait arr\xEAt\xE9e depuis longtemps, mais le roi remettait toujours \xE0
+      plus tard sa r\xE9paration : Quand j'aurai fini de construire la tour, je m'y
+      mettrai./w2.3/clerLes ann\xE9es pass\xE8rent. Un jour, d\xE9j\xE0 gris et vo\xFBt\xE9,
+      il les regarda de nouveau et ordonna qu'on les r\xE9pare./w2.3/clerLe r\xE9parateur
+      appel\xE9 examina le m\xE9canisme et leva les mains./w2.3/clerVotre Majest\xE9,
+      les engrenages sont us\xE9s, le ressort s'est cass\xE9... Maintenant, on ne
+      peut plus le r\xE9parer./w2.3/clerLe roi regarda longuement le verre terni,
+      derri\xE8re lequel les aiguilles \xE9taient fig\xE9es \xE0 jamais./w2.3/clerC'est
+      \xE9trange... - chuchota-t-il/w2.3/clerIl me semblait que j'avais une \xE9ternit\xE9
+      devant moi.../w2.3/clerEt \xE0 l'ext\xE9rieur de la fen\xEAtre, le vent secouait
+      le sommet de la tour inachev\xE9e.../w2.3/cler/w0.2./w0.2 ./w0.2 ."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441025
     m_Localized: "Salut ! Saviez-vous que ce b\xE2timent a \xE9t\xE9 construit par
-      un c\xE9l\xE8bre bandit ? Avide \xE0 l'extr\xEAme, il voulait juste avoir le
-      meilleur ! Il acheta un ch\xE2teau et commen\xE7a \xE0 le construire de plus
-      en plus haut. Pour qu'il y ait assez de place pour tous ses tr\xE9sors\u2026
-      Et, bien s\xFBr, pour pouvoir vivre dans la plus haute tour du monde ! Oui,
-      c'\xE9tait quelqu'un d'horrible, il faisait des b\xEAtises\u2026 Mais il \xE9tait
-      vraiment cool !"
+      un c\xE9l\xE8bre bandit ?/w2.0/clerAvide jusqu'\xE0 l'horreur - lui seul avait
+      le meilleur de tout !/w2.0/clerIl a achet\xE9 un ch\xE2teau et a commenc\xE9
+      \xE0 le construire de plus en plus haut./w2.0/clerPour qu'il y ait assez de
+      place pour tous ses tr\xE9sors.../w2.0/clerEt, bien s\xFBr, pour qu'il puisse
+      vivre dans la plus haute tour du monde !/w2.0/clerOui, c'\xE9tait une personne
+      horrible, il a fait des choses mauvaises.../w2.0/clerMais il \xE9tait vraiment
+      cool !"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441026
-    m_Localized: "J'ai entendu dire que ce bandit \xE9tait le plus avide de tous.
-      Il volait l'or et les bijoux des gens, mais cela ne lui suffisait toujours
-      pas. Alors, il d\xE9cida de voler l'aube elle-m\xEAme. Sa tour s'\xE9leva si
-      haut qu'elle atteignait les nuages. Il grimpa, capta le premier rayon de soleil
-      et l'enferma dans un coffre noir. Depuis, le monde est plong\xE9 dans les t\xE9n\xE8bres\u2026
-      On ne voyait plus le soleil, et le bandit riait dans sa tour, admirant la lumi\xE8re
-      vol\xE9e."
+    m_Localized: "J'ai entendu dire que ce bandit \xE9tait le plus avide de tous./w2.0/cler
+      Il volait l'or et les bijoux des gens, mais cela ne lui suffisait jamais./w2.0/cler
+      Puis il d\xE9cida de voler l'aube elle-m\xEAme. Sa tour s'\xE9leva si haut
+      qu'elle atteignait les nuages./w2.0/cler Il grimpa, capta le premier rayon
+      de soleil et l'enferma dans un coffre noir./w2.0/cler Depuis lors, le monde
+      est plong\xE9 dans les t\xE9n\xE8bres\u2026/w2.0/cler Les gens ne voyaient
+      plus le soleil, et le bandit riait dans sa tour, admirant la lumi\xE8re vol\xE9e."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441027
-    m_Localized: "Mais un jour, une jeune fille se pr\xE9senta \xE0 son portail,
-      une laisse en lambeaux \xE0 la main. \xAB Mon chat a disparu \xBB, dit-elle.
-      \xAB Vous avez tant vol\xE9 aux gens\u2026 Peut-\xEAtre elle aussi ? \xBB Le
-      bandit, intrigu\xE9, ordonna de retrouver le chat. Bient\xF4t, il fut attrap\xE9.
-      Mais, la jeune fille heureuse, il rit soudain : \xAB Non. Maintenant, elle
-      est \xE0 moi ! \xBB Et il claqua le portail. La jeune fille ne partit pas.
-      Elle resta assise pr\xE8s de la forteresse et attendit. Un jour, deux, une
-      semaine\u2026 Et le bandit garda le chat dans la tour, persuad\xE9 que d\xE9sormais,
-      la jeune fille ne partirait plus."
+    m_Localized: "Mais un jour, une fille se pr\xE9senta \xE0 son portail, une laisse
+      en lambeaux \xE0 la main./w2.0/cler \xAB\_Mon chat a disparu\_\xBB, dit-elle.
+      \xAB\_Tu as tant pris aux gens\u2026 Peut-\xEAtre elle aussi\_?\_\xBB/w2.0/cler
+      \xAB\_Le bandit, intrigu\xE9, ordonna de retrouver le chat. Bient\xF4t, il
+      fut attrap\xE9./w2.0/cler \xAB\_Mais quand la fille fut contente, il rit soudain\_:
+      \xAB\_Non. Maintenant, elle est \xE0 moi\_!\_\xBB/w2.0/cler \xAB\_Et il claqua
+      le portail.\_\xBB/w2.0/cler \xAB\_La fille ne partit pas. Elle resta assise
+      pr\xE8s de la forteresse et attendit longtemps. Puis elle commen\xE7a \xE0
+      y retourner chaque jour\u2026\_\xBB/w2.0/cler \xAB\_Et le bandit garda le chat
+      dans la tour, persuad\xE9 que la fille ne partirait plus.\_\xBB"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441028
-    m_Localized: "Mais la chatte refusait la captivit\xE9. Elle gratta les murs,
-      grimpa partout, et finit par trouver le coffre contenant l'aube vol\xE9e. Elle
-      l'ouvrit, et soudain une lumi\xE8re aveuglante jaillit ! La chatte avala l'aube
-      et\u2026 BOUM ! Elle se transforma en un immense tigre fougueux ! Le tigre
-      prit la fille qui attendait \xE0 la porte depuis tout ce temps, s'envola dans
-      le ciel, et ensemble, ils form\xE8rent une nouvelle aube. Et le lendemain,
-      le soleil se leva comme s'il n'avait jamais \xE9t\xE9 vol\xE9."
+    m_Localized: "Mais la chatte ne supportait pas la captivit\xE9./w2.0/clerElle
+      gratta les murs, grimpa partout. Et finalement, elle trouva ce coffre contenant
+      l'aube vol\xE9e./w2.0/clerElle l'ouvrit et soudain une lumi\xE8re aveuglante
+      jaillit !/w2.0/clerLa chatte avala l'aube et\u2026/w2.0/clerBAM !/w1.8/clerElle
+      se transforma en un \xE9norme tigre fougueux !/w2.0/clerLe tigre prit la fille
+      qui attendait \xE0 la porte depuis tout ce temps et s'envola dans le ciel !/w2.0/clerEnsemble,
+      ils form\xE8rent une nouvelle aube./w2.0/clerEt le lendemain, le soleil se
+      leva, comme s'il n'avait jamais \xE9t\xE9 vol\xE9."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441029
-    m_Localized: "Vous savez, ce bandit\u2026 a connu une fin tragique. Avec le retour
-      de l'aube, les gens ont progressivement cess\xE9 d'avoir peur de sa tour. Et
-      lui-m\xEAme semblait s'\xEAtre d\xE9gonfl\xE9 \u2013 m\xEAme les tr\xE9sors
-      commen\xE7aient \xE0 lui ressembler \xE0\u2026 des pierres brillantes. Et de
-      toute sa vie, il n'a jamais rencontr\xE9 quelqu'un qui l'aimait vraiment\u2026
-      Il a quand m\xEAme essay\xE9 de commander ses derniers hommes de main, mais
-      ils se sont enfuis discr\xE8tement. La forteresse se vidait. Les portes grin\xE7aient,
-      les escaliers vacillaient, et d'\xE9paisses toiles d'araign\xE9e se tissaient
-      d\xE9j\xE0 dans les coins. Et puis\u2026 il a tout simplement disparu. Personne
-      ne l'a vu. Seule une tour solitaire est rest\xE9e\u2026 :("
+    m_Localized: "Tu sais, ce bandit\u2026 a connu une fin tragique./w2.0/cler Apr\xE8s
+      le retour de l'aube, les gens ont progressivement cess\xE9 d'avoir peur de
+      sa tour./w2.0/cler Et lui-m\xEAme semblait d\xE9moralis\xE9 \u2013 m\xEAme
+      les tr\xE9sors commen\xE7aient \xE0 lui ressembler\u2026 eh bien, \xE0 des
+      pierres brillantes./w2.0/cler Et de toute sa vie, il n'a jamais rencontr\xE9
+      quelqu'un qui l'aimait vraiment\u2026/w2.0/cler Il a quand m\xEAme essay\xE9
+      de commander les hommes de main restants, mais ils se sont enfuis discr\xE8tement./w2.0/cler
+      La forteresse se vidait. Les portes grin\xE7aient, les escaliers vacillaient
+      et d'\xE9paisses toiles d'araign\xE9e s'\xE9taient d\xE9j\xE0 tiss\xE9es dans
+      les coins./w2.0/cler Et puis\u2026 il a disparu. Personne n'a vu comment./w2.0/cler
+      Il ne restait qu'une tour solitaire\u2026/w2.0/cler:("
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441030
     m_Localized: "Bonjour mon ami ! Je suis un jeune architecte qui \xE9tudie cette
-      tour \xE9tonnante. Les archives de la ville portuaire contiennent de nombreux
-      t\xE9moignages sur le marin qui l'a construite. Non pas pour la protection
-      ou la gloire, mais simplement parce qu'il le pouvait. Sa hauteur lui semblait
-      insuffisante. Il revenait de chaque voyage avec de nouvelles personnes : ing\xE9nieurs,
-      fous, artistes. Chacun y ajoutait quelque chose : escaliers tournants, plateformes
-      tournantes, d\xF4mes transparents ! Le seul regret, c'est ce qu'elle est devenue
-      au final\u2026"
+      tour \xE9tonnante./w2.1/cler Les archives de la ville portuaire contiennent
+      de nombreux t\xE9moignages sur le marin qui l'a construite./w2.1/cler Non pas
+      pour la protection ou la gloire, mais simplement parce qu'il le pouvait. Sa
+      hauteur lui semblait insuffisante./w2.1/cler Il revenait de chaque voyage avec
+      de nouvelles personnes : ing\xE9nieurs, fous, artistes./w2.1/cler Chacun ajoutait
+      quelque chose : escaliers en colima\xE7on, plateformes tournantes, d\xF4mes
+      transparents !/w2.1/cler La seule chose triste, c'est ce qu'elle est devenue\u2026"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441031
-    m_Localized: "Au dernier \xE9tage, si l'on en croit les anciens plans, il aurait
-      d\xFB y avoir une horloge invers\xE9e\u2026 Un jour, le capitaine fit venir
-      d'un pays lointain un vieil horloger, presque aveugle, mais aux aiguilles d'or.
-      Il examina la tour, acquies\xE7a et demanda qu'on lui apporte des engrenages,
-      des ressorts et du verre. Un mois plus tard, une immense horloge apparut sur
-      l'une de ses plateformes \u2013 mais pas une simple, mais une horloge invers\xE9e.
-      Ses aiguilles allaient \xE0 contre-courant du temps, et au lieu de sonner,
-      on entendait le murmure des vagues\u2026 Je montai voir\u2026 Maintenant, il
-      n'y a plus que de l'acier \xE0 cet endroit. Lisse, sans joint\u2026"
+    m_Localized: "Au dernier \xE9tage, si l'on en croit les anciens sch\xE9mas, il
+      aurait d\xFB y avoir une horloge invers\xE9e\u2026/w2.1/clerUn jour, un capitaine
+      fit venir d'un pays lointain un vieil horloger, presque aveugle, mais aux aiguilles
+      d'or./w2.1/clerIl examina la tour, hocha la t\xEAte et demanda qu'on lui apporte
+      des engrenages, des ressorts et du verre./w2.1/clerUn mois plus tard, une immense
+      horloge apparut sur l'une de ses plateformes \u2013 pas une simple, mais une
+      horloge invers\xE9e./w2.1/clerLeurs aiguilles allaient \xE0 contre-courant
+      du temps, et au lieu de sonner, on entendait le murmure des vagues\u2026/w2.1/clerJe
+      montai voir\u2026/w2.1/clerMaintenant, \xE0 cet endroit, il n'y a plus que
+      de l'acier. Lisse, sans joint\u2026"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441032
     m_Localized: "Lors d'un de ses voyages, le capitaine rencontra une femme qui
       pr\xE9tendait pouvoir cultiver un jardin l\xE0 o\xF9 il n'y avait ni terre
-      ni soleil. Il l'emmena \xE0 la tour, et elle n'apporta avec elle qu'une poign\xE9e
-      de graines et une bouteille d'eau boueuse. Six mois plus tard, des fleurs \xE9carlates
-      s'\xE9panouirent sur les poutres d'acier, que personne ne put identifier. Leurs
-      p\xE9tales ne se fan\xE8rent pas et leurs racines perc\xE8rent le m\xE9tal,
-      comme si c'\xE9tait un sol meuble pour elles. Le capitaine ordonna alors la
-      construction d'un d\xF4me de verre autour du jardin\u2026 Enfin, si l'on en
-      croit les archives\u2026"
+      ni soleil./w2.1/clerIl l'emmena \xE0 la tour, et elle n'apporta avec elle qu'une
+      poign\xE9e de graines et une bouteille d'eau boueuse./w2.1/clerSix mois plus
+      tard, des fleurs \xE9carlates fleurirent sur les poutres d'acier, que personne
+      ne put identifier./w2.1/clerLeurs p\xE9tales ne se fan\xE8rent pas, et les
+      racines pouss\xE8rent \xE0 travers le m\xE9tal, comme si c'\xE9tait un sol
+      meuble pour elles./w2.1/clerLe capitaine ordonna alors qu'un d\xF4me de verre
+      soit construit autour du jardin.../w2.1/clerEh bien, si l'on en croit les archives..."
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441033
-    m_Localized: "J'ai aussi lu comment il avait fait venir un homme d'un lointain
-      pays d\xE9sertique qui parlait une langue inconnue. Il avait apport\xE9 avec
-      lui des dizaines de miroirs, grands et petits. Le miroitier escalada silencieusement
-      la tour et commen\xE7a \xE0 les int\xE9grer aux murs d'acier selon des angles
-      \xE9tranges. Un mois plus tard, ceux qui montaient les escaliers commenc\xE8rent
-      \xE0 remarquer quelque chose d'\xE9trange\u2026 Certains miroirs refl\xE9taient
-      des terres inexistantes, d'autres des mers qui ne figuraient pas sur les cartes.
-      Des lieux o\xF9 personne n'avait jamais mis les pieds, dit le capitaine\u2026
-      \u2026c'est absurde, bien s\xFBr\u2026 Mais quelle po\xE9sie !"
+    m_Localized: "J'ai aussi lu comment il avait amen\xE9 un homme d'un pays d\xE9sertique
+      lointain qui parlait une langue inconnue./w2.1/clerIl avait apport\xE9 avec
+      lui des dizaines de miroirs - grands et petits./w2.1/clerLe miroitier grimpa
+      silencieusement dans la tour et commen\xE7a \xE0 les construire dans les murs
+      d'acier \xE0 des angles \xE9tranges./w2.1/clerUn mois plus tard, ceux qui montaient
+      les escaliers commenc\xE8rent \xE0 remarquer quelque chose d'\xE9trange.../w2.1/clerCertains
+      miroirs refl\xE9taient des terres inexistantes, d'autres - des mers qui ne
+      figuraient pas sur les cartes./w2.1/clerC'\xE9taient des endroits o\xF9 aucun
+      homme n'avait jamais mis les pieds - dit le capitaine.../w2.1/cler...c'est
+      un non-sens bien s\xFBr... Mais comme c'est po\xE9tique !"
     m_Metadata:
       m_Items: []
   - m_Id: 27971117441034
-    m_Localized: "Les ann\xE9es pass\xE8rent. La tour grandit, se couvrit des cr\xE9ations
-      et des r\xEAves d'autrui. Le capitaine ne se souvenait plus o\xF9 s'arr\xEAtait
-      la sienne et o\xF9 commen\xE7aient les leurs. L'escalier menait \xE0 des pi\xE8ces
-      qu'il n'avait pas construites et qu'il ignorait\u2026 \u2026 Les derniers documents
-      concernant le capitaine disent une chose\_: il ordonna de tout remplir d'acier.
-      Jusqu'au sommet. Il ne restait plus rien de beau ni d'extraordinaire. Seulement
-      une surface id\xE9ale, sans vie\u2026 Dommage\u2026"
+    m_Localized: "Les ann\xE9es pass\xE8rent. La tour grandit, envahie par les cr\xE9ations
+      et les r\xEAves des autres./w2.1/clerLe capitaine ne se souvenait plus o\xF9
+      finissait la sienne et o\xF9 commen\xE7aient les leurs./w2.1/clerL'escalier
+      menait \xE0 des pi\xE8ces qu'il n'avait pas construites et qu'il ignorait\u2026/w2.1/cler.../w0.8/clerLes
+      derni\xE8res mentions concernant le capitaine disent une chose\_: il ordonna
+      de tout remplir d'acier./w2.1/clerJusqu'au sommet./w1.8/clerIl ne subsistait
+      plus rien de beau ni d'extraordinaire./w2.1/clerIl ne restait qu'une surface
+      id\xE9ale, sans vie\u2026/w2.1/clerC'est dommage\u2026"
     m_Metadata:
       m_Items: []
   references:
