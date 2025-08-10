@@ -13,13 +13,13 @@ public class DisappearPlatform : MonoBehaviour
     public UnityEvent eSpawn;
 
     private SpriteRenderer sprite;
-    private Collider2D collider;
+    private Collider2D platformCollider;
 
     private GameObject player;
 
     private void Awake()
-    {     
-        collider = gameObject.GetComponent<Collider2D>();
+    {
+        platformCollider = gameObject.GetComponent<Collider2D>();
         sprite = gameObject.GetComponent<SpriteRenderer>();
 
         eDisSpawn.AddListener(delegate () { Invoke("DisSpawn", timeToDisSpawn); });
@@ -30,14 +30,14 @@ public class DisappearPlatform : MonoBehaviour
 
     private void DisSpawn() 
     {
-        collider.enabled = false;
+        platformCollider.enabled = false;
         sprite.enabled = false;
         eSpawn.Invoke();
     }
 
     private void Spawn() 
     {
-        collider.enabled = true;
+        platformCollider.enabled = true;
         sprite.enabled = true;
     }
 
@@ -69,6 +69,3 @@ public class DisappearPlatform : MonoBehaviour
 
 }
 
-/// TODO:
-/// Говнокодинг? Я пьяный :D
-/// Нахождение игрока на сцене происходит очень спорным способом

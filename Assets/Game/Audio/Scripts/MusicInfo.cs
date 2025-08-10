@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 [CreateAssetMenu(fileName = "MusicInfo", menuName = "Gameplay/Music Info")]
 public class MusicInfo : ScriptableObject
 {

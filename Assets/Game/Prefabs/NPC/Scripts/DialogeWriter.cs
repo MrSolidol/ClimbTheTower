@@ -1,49 +1,90 @@
 using System.Collections;
-using System.Collections.Generic;
+using System.Globalization;
+using System.Text;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Localization;
-using UnityEngine.Localization.Settings;
 
 public class DialogeWriter : MonoBehaviour
 {
-    public UnityEvent dialogWrited;
+    [HideInInspector] public UnityEvent eDialogeEnded;
+    [HideInInspector] public UnityEvent eCharacterWrited;
+    [HideInInspector] public UnityEvent<bool> eDisplayTalk;
 
-    [SerializeField] private int npcIndex;
+    [SerializeField] private DialogeSelector dialogeSelector;
+    [SerializeField] private TextMeshProUGUI npcLabel;
+    [SerializeField] private float writingSpeed = 0.5f;
 
-    [SerializeField] private LabelWriter writer;
-    [SerializeField] private float pause;
-    [SerializeField] private float speed;
+    private string textToWrite;
+    private StringBuilder labelBuilder;
+    private int currentCharacterIndex;
 
-    private List<List<string>> dialogs;
 
-    private int currentDialog = -1;
-    private int currentPhrase = 0;
-
-    private void Start()
+    private void Awake()    
     {
-        writer.labelWrited.AddListener(delegate () { Invoke("NextPhrase", pause); });
-        dialogs = PhraseDataBase.GetDialogs(npcIndex);
+        labelBuilder = new StringBuilder("", 10000);
     }
 
-    private string ReturnLocalString(int _currentDialog, int _currentPhrase) 
+    private void OnEnable()
     {
-        var _result = new LocalizedString(PhraseDataBase.GetTables(npcIndex), dialogs[_currentDialog][_currentPhrase]);
-        return _result.GetLocalizedString();
+        dialogeSelector.eDialogeSelected.AddListener(SetText);
     }
 
-    public void NextDialoge() 
+    private void OnDisable()
     {
-        currentDialog++;
-        currentPhrase = 0;
-        if (currentDialog == dialogs.Count) { currentDialog = 1; }
-        NextPhrase();
+        dialogeSelector.eDialogeSelected.RemoveListener(SetText);
     }
 
-    public void NextPhrase() 
+
+    private void SetText(string newText) 
     {
-        if (dialogs[currentDialog].Count == currentPhrase) {  writer.Clean(); dialogWrited.Invoke(); return; }
-        writer.TypeNewText(ReturnLocalString(currentDialog, currentPhrase), speed);
-        currentPhrase++;
+        if (newText == "") { return; }
+
+        textToWrite = newText;
+        currentCharacterIndex = 0;
+        labelBuilder.Clear();
+
+        StartCoroutine(TextWriter());
     }
+
+    private void ClearLabel() 
+    {
+        npcLabel.text = "";
+        eDialogeEnded?.Invoke();
+    }
+
+
+    private IEnumerator TextWriter()
+    {
+        while (currentCharacterIndex < textToWrite.Length) 
+        {
+            var character = textToWrite[currentCharacterIndex];
+
+            if (character == '/')
+            {
+                string command = textToWrite.Substring(currentCharacterIndex + 1, 4);
+                Debug.Log(command);
+                switch (command[0]) 
+                {
+                    case 'c':
+                        labelBuilder.Clear();
+                        break;
+                    case 'w':
+                        yield return new WaitForSeconds(float.Parse(command.Substring(1, 3), CultureInfo.InvariantCulture.NumberFormat));
+                        break;
+
+                }
+                currentCharacterIndex += 4;
+            }
+            else 
+            { labelBuilder.Append(character); }
+
+            currentCharacterIndex++;
+            npcLabel.text = labelBuilder.ToString();
+            yield return new WaitForSeconds(writingSpeed);
+        }
+
+        Invoke("ClearLabel", 0.1f);
+    }
+
 }

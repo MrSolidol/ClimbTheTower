@@ -156,10 +156,10 @@ public class PlayerMovement : MonoBehaviour
             swapCalculation.IsEnabled = isGrounded;
             eDisplayGrounded?.Invoke();
         }
-        else 
-        {
-            Debug.Log(playerBody.velocity.magnitude.ToString() + "  " + preVelocity.magnitude.ToString());
-        }
+        //else 
+        //{
+        //    Debug.Log(playerBody.velocity.magnitude.ToString() + "  " + preVelocity.magnitude.ToString());
+        //}
     }
 
     public void SetSwapActive(bool flag) 
