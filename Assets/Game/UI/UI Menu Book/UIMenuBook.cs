@@ -8,9 +8,11 @@ public class UIMenuBook : MonoBehaviour
     [SerializeField] private string originalPopup;
 
     [Inject] private SceneLoader sceneLoader;
+    [Inject] private PauseService pauseService;
+    
     private Dictionary<string, UIPopup> popupMap;
     private bool isSetted = false;
-
+    private bool isLocked = false;
 
     public UIPopup CurrentPopup { get; private set; }
 
@@ -19,18 +21,39 @@ public class UIMenuBook : MonoBehaviour
     {
         InitMap(uiPopupsToInsert);
         SetNewPopup(originalPopup);
+        pauseService.ResumeGame();
+    }
+
+    private void OnEnable()
+    {
+        pauseService.eInterfaceLocked.AddListener(OnInterfaceLocked);
+    }
+
+    private void OnDisable()
+    {
+        pauseService.eInterfaceLocked.RemoveListener(OnInterfaceLocked);
     }
 
 
+    
     public void SetNewPopup(string newPopup)
     {
+        if (isLocked) { return; }
         ChangePopup(newPopup);
     }
 
     public void ChangeScene(string sceneName) 
     {
+        if (isLocked) { return; }
         sceneLoader.LoadSceneWithFade(sceneName);
     }
+
+    public void SetPause(bool flag) 
+    {
+        if (flag) { pauseService.StopGame(); }
+        else { pauseService.ResumeGame(); }
+    }
+
 
     private void InitMap(params UIPopup[] uiPopups)
     {
@@ -43,6 +66,9 @@ public class UIMenuBook : MonoBehaviour
 
     private async void ChangePopup(string newPopup)
     {
+        if (isLocked) 
+        { return; }
+
         if (isSetted)
         { return; }
 
@@ -65,4 +91,8 @@ public class UIMenuBook : MonoBehaviour
         isSetted = false;
     }
 
+    private void OnInterfaceLocked(bool flag)
+    {
+        isLocked = flag;
+    }
 }

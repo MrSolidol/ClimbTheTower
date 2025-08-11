@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87f099cdbf771d745a7461667f4f28a1, type: 3}
-  m_Name: GirlDialogeInfo
+  m_Name: BrickInfo
   m_EditorClassIdentifier: 
-  npcName: girl
+  npcName: brick
   dialogeKeys:
-  - girl_first
-  - girl_second
-  - girl_third
-  - girl_fourth
-  - girl_fifth
+  - brick_first
+  - brick_second
+  - brick_third
+  - brick_fourth
+  - brick_fifth

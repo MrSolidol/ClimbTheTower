@@ -4,6 +4,7 @@ using System.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using Zenject;
 
 public class DialogeWriter : MonoBehaviour
 {
@@ -15,9 +16,14 @@ public class DialogeWriter : MonoBehaviour
     [SerializeField] private TextMeshProUGUI npcLabel;
     [SerializeField] private float writingSpeed = 0.5f;
 
+    [Inject] private PauseService pauseService;
+
+    private Coroutine WriteCoroutine;
+
     private string textToWrite;
     private StringBuilder labelBuilder;
     private int currentCharacterIndex;
+    private bool isWrite = false;
 
 
     private void Awake()    
@@ -28,11 +34,13 @@ public class DialogeWriter : MonoBehaviour
     private void OnEnable()
     {
         dialogeSelector.eDialogeSelected.AddListener(SetText);
+        pauseService.eGameStopped.AddListener(OnGameStopped);
     }
 
     private void OnDisable()
     {
         dialogeSelector.eDialogeSelected.RemoveListener(SetText);
+        pauseService.eGameStopped.RemoveListener(OnGameStopped);
     }
 
 
@@ -44,7 +52,8 @@ public class DialogeWriter : MonoBehaviour
         currentCharacterIndex = 0;
         labelBuilder.Clear();
 
-        StartCoroutine(TextWriter());
+        isWrite = true;
+        WriteCoroutine = StartCoroutine(TextWriter());
     }
 
     private void ClearLabel() 
@@ -53,6 +62,21 @@ public class DialogeWriter : MonoBehaviour
         eDialogeEnded?.Invoke();
     }
 
+    private void OnGameStopped(bool flag) 
+    {
+        if (flag) { OnPause(); }
+        else { OnResume(); }
+    }
+
+    private void OnPause() 
+    {
+        if (isWrite) { StopCoroutine(WriteCoroutine); }
+    }
+
+    private void OnResume()
+    {
+        if (isWrite) { WriteCoroutine = StartCoroutine(TextWriter()); }
+    }
 
     private IEnumerator TextWriter()
     {
@@ -88,6 +112,8 @@ public class DialogeWriter : MonoBehaviour
         }
 
         eDisplayTalk?.Invoke(false);
+        isWrite = false;
+        WriteCoroutine = null;
         Invoke("ClearLabel", 2.6f);
     }
 

@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.Events;
+using Zenject;
 
-public class SwapCalculation : MonoBehaviour, IControlable
+public class SwapCalculation : MonoBehaviour
 {
     [HideInInspector] public UnityEvent<Vector2> eSwapStarted;
     [HideInInspector] public UnityEvent<Vector2, float, bool> eSwapContinued;
@@ -14,31 +15,37 @@ public class SwapCalculation : MonoBehaviour, IControlable
     [HideInInspector] public bool IsDifferenceEnough { get; private set; } = false;
     [HideInInspector] public bool IsDegreesAllowed { get; private set; } = false;
     [HideInInspector] public bool IsFullHorizon { get; set; } = false;
-    [HideInInspector] public bool IsEnabled
-    {
-        get { return isEnabled; }
-        set
-        {
-            if (value != isEnabled) 
-            {
-                isEnabled = value;
-                startVec = Vector2.zero;
-                eSwapContinued?.Invoke(Vector2.up, 0f, false);
-                eSwapEnded?.Invoke(Vector2.up, 0f, false);
-            }
-        }
-    }
 
+    [SerializeField] private InputController controller;
     [SerializeField] private float maxDegrees = 70;
     [SerializeField] private float maxSwapDistance = 3.5f;
     [SerializeField] private float minSwapDistance = 1f;
 
     private Vector2 startVec = Vector2.zero;
-    private bool isEnabled = true;
+
+
+    private void OnEnable()
+    {
+        controller.ePressOn.AddListener(PressOn);
+        controller.ePress.AddListener(Press);
+        controller.ePressUp.AddListener(PressUp);
+    }
+
+    private void OnDisable()
+    {
+        controller.ePressOn.RemoveListener(PressOn);
+        controller.ePress.RemoveListener(Press);
+        controller.ePressUp.RemoveListener(PressUp);
+
+        startVec = Vector2.zero;
+        eSwapContinued?.Invoke(Vector2.up, 0f, false);
+        eSwapEnded?.Invoke(Vector2.up, 0f, false);
+    }
+
 
     public void PressOn(Vector2 vec)
     {
-        if (!IsEnabled) { eSwapBlocked?.Invoke(); return; }
+        if (!enabled) { eSwapBlocked?.Invoke(); return; }
 
         startVec = vec;
 
@@ -49,7 +56,8 @@ public class SwapCalculation : MonoBehaviour, IControlable
 
     public void Press(Vector2 vec)
     {
-        if (!IsEnabled) { return; }
+        if (!enabled) { return; }
+        if (startVec == Vector2.zero) { startVec = vec; }
 
         Difference = vec - startVec;
 
@@ -58,7 +66,7 @@ public class SwapCalculation : MonoBehaviour, IControlable
 
     public void PressUp(Vector2 vec)
     {
-        if (!IsEnabled) { return; }
+        if (!enabled) { return; }
 
         if (IsDegreesAllowed && IsDifferenceEnough)
         {

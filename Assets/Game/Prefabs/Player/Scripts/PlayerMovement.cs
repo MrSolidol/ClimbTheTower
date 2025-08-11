@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using Zenject;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float bounceFactor = 0.75f;
     [SerializeField] private float minWallBounce = .1f;
 
+    [Inject] PauseService pauseService;
+
     public Vector2 preVelocity = Vector2.zero;
     public Vector2 prePosition = Vector2.zero;
     public bool isGrounded = false;
@@ -39,27 +42,13 @@ public class PlayerMovement : MonoBehaviour
     private SwapCalculation swapCalculation;
     private Rigidbody2D playerBody;
     private float absoluteGravity;
-
+    private bool isFreezed = false;
+    private Vector2 rememberedVelocity = Vector2.zero;
 
     public bool IsNegativeGravity 
     {
         get { return Mathf.Sign(playerBody.gravityScale) < 0; }
         set { playerBody.gravityScale = value ? -absoluteGravity : absoluteGravity; }
-    }
-
-    public bool IsFreezeGravity 
-    {
-        get { return Mathf.Sign(playerBody.gravityScale) == 0f; }
-        set { playerBody.gravityScale = value ? 0 : absoluteGravity; }
-    }
-
-    public bool IsFreezeVelosity 
-    {
-        get { return Mathf.Sign(playerBody.velocity.magnitude) == 0f; }
-        set 
-        {
-            playerBody.velocity = value ? Vector2.zero : preVelocity;
-        }
     }
 
 
@@ -76,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
         swapCalculation.eSwapContinued.AddListener(DifferenceCheck);
         swapCalculation.eSwapEnded.AddListener(BodyPush);
         swapCalculation.eSwapBlocked.AddListener(JumpBugCrutchFix);
+        pauseService.eGameStopped.AddListener(OnGameStopped);
     }
 
     private void OnDisable()
@@ -83,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
         swapCalculation.eSwapContinued.RemoveListener(DifferenceCheck);
         swapCalculation.eSwapEnded.RemoveListener(BodyPush);
         swapCalculation.eSwapBlocked.RemoveListener(JumpBugCrutchFix);
+        pauseService.eGameStopped.RemoveListener(OnGameStopped);
     }
 
     private void Update()
@@ -139,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         isGrounded = false;
-        swapCalculation.IsEnabled = isGrounded;
+        swapCalculation.enabled = isGrounded;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -153,7 +144,7 @@ public class PlayerMovement : MonoBehaviour
         if (playerBody.velocity.magnitude == 0 && preVelocity.magnitude == 0)
         {
             isGrounded = true;
-            swapCalculation.IsEnabled = isGrounded;
+            swapCalculation.enabled = isGrounded;
             eDisplayGrounded?.Invoke();
         }
         //else 
@@ -164,7 +155,16 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetSwapActive(bool flag) 
     {
-        swapCalculation.IsEnabled = flag;
+        swapCalculation.enabled = flag;
+    }
+
+
+    private void OnGameStopped(bool flag) 
+    {
+        if (flag)
+        { FreezePlayer(); }
+        else 
+        { UnFreezePlayer(true); }
     }
 
     private void DifferenceCheck(Vector2 vec, float value, bool flag)
@@ -184,10 +184,10 @@ public class PlayerMovement : MonoBehaviour
         value = curveJumpValue.Evaluate(value);
         
         isGrounded = false;
-        swapCalculation.IsEnabled = isGrounded;
+        swapCalculation.enabled = isGrounded;
 
-        playerBody.velocity = Vector2.zero;
-        playerBody.gravityScale = absoluteGravity;
+        UnFreezePlayer(false);
+
         playerBody.AddForce(vec * value * -PushForceMult);
 
         eDisplayFlip?.Invoke(vec.x < 0);
@@ -222,7 +222,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         isGrounded = true;
-        swapCalculation.IsEnabled = isGrounded;
+        swapCalculation.enabled = isGrounded;
 
         eDisplayFlip?.Invoke(preVelocity.x < 0);
         eDisplayGrounded?.Invoke();
@@ -266,6 +266,26 @@ public class PlayerMovement : MonoBehaviour
         eDisplayRoofHit?.Invoke();
     }
 
+    private void FreezePlayer() 
+    {
+        if (isFreezed) { return; }
+        isFreezed = true;
+        playerBody.gravityScale = 0;
+        rememberedVelocity = playerBody.velocity;
+        playerBody.velocity = Vector2.zero;
+    }
+
+    private void UnFreezePlayer(bool keepVelocity) 
+    {
+        if (!isFreezed) { return; }
+        isFreezed = false;
+        if (keepVelocity) 
+        {
+            playerBody.velocity = rememberedVelocity;
+        }
+        playerBody.gravityScale = absoluteGravity;
+    }
+
 
     #region JUMPTRAP_FUNCTIONS
 
@@ -274,11 +294,10 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("JumpTrap"))
         {
             isGrounded = true;
-            swapCalculation.IsEnabled = isGrounded;
+            swapCalculation.enabled = isGrounded;
 
             swapCalculation.IsFullHorizon = true;
-            playerBody.gravityScale = 0;
-            playerBody.velocity = Vector2.zero;
+            FreezePlayer();
             transform.position = new Vector2(collision.transform.position.x, collision.transform.position.y);
 
             ePlaySound?.Invoke("WEBB");
@@ -292,7 +311,7 @@ public class PlayerMovement : MonoBehaviour
     public void DisPlatformControl()
     {
         isGrounded = false;
-        swapCalculation.IsEnabled = isGrounded;
+        swapCalculation.enabled = isGrounded;
     }
 
     #endregion

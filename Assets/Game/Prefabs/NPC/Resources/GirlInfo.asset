@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87f099cdbf771d745a7461667f4f28a1, type: 3}
-  m_Name: OldManDialogeInfo
+  m_Name: GirlInfo
   m_EditorClassIdentifier: 
-  npcName: oldman
+  npcName: girl
   dialogeKeys:
-  - oldman_first
-  - oldman_second
-  - oldman_third
-  - oldman_fourth
-  - oldman_fifth
+  - girl_first
+  - girl_second
+  - girl_third
+  - girl_fourth
+  - girl_fifth

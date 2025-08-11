@@ -1,22 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
-using Zenject;
 
-public class WindowsController : MonoBehaviour, IController
+public class WindowsController : InputController
 {
-    [SerializeField]
-    private SwapCalculation swapCalculation;
-
-    private List<IControlable> controlablesList;
-
-
-    private void Awake()
-    {
-        controlablesList = new List<IControlable>();
-        controlablesList.Add(swapCalculation);
-    }
-    
-
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -28,40 +14,25 @@ public class WindowsController : MonoBehaviour, IController
     }
 
 
-    private void PressOn() 
+    public override void PressOn() 
     {
-        if (controlablesList.Count == 0) { return; }
-
         var value = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        foreach (var controlGetter in controlablesList) 
-        {
-            controlGetter.PressOn(value);
-        } 
+        ePressOn?.Invoke(value);
     }
 
-    private void Press()
+    public override void Press()
     {
-        if (controlablesList.Count == 0) { return; }
-
         var value = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        foreach (var controlGetter in controlablesList)
-        {
-            controlGetter.Press(value);
-        }
+        ePress?.Invoke(value);
     }
 
-    private void PressUp() 
+    public override void PressUp() 
     {
-        if (controlablesList.Count == 0) { return; }
-
         var value = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        foreach (var controlGetter in controlablesList)
-        {
-            controlGetter.PressUp(value);
-        }
+        ePressUp?.Invoke(value);
     }
 
 }

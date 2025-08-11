@@ -9,9 +9,13 @@ public class SceneLoader
     public string CurrentScene { get; private set; }
     public float FadeDuration { get; set; }
 
-    public SceneLoader()
+    private PauseService pauseService;
+
+
+    public SceneLoader(PauseService pauseService)
     {
         CurrentScene = SceneManager.GetActiveScene().name;
+        this.pauseService = pauseService;
     }
 
 
@@ -36,6 +40,8 @@ public class SceneLoader
         asyncLoad.allowSceneActivation = false;
 
         var sceneFade = fader.FadeIn();
+        pauseService.LockInterface();
+        pauseService.StopGame();
 
         while (asyncLoad.progress < 0.9f)
             await Task.Yield();
@@ -50,6 +56,9 @@ public class SceneLoader
         sceneFade = fader.FadeOut();
 
         await sceneFade;
+
+        pauseService.UnlockInterface();
+        pauseService.ResumeGame();
 
         CurrentScene = sceneName;
 

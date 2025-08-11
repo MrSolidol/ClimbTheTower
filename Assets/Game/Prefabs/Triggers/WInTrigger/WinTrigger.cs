@@ -13,6 +13,7 @@ public class WinTrigger : MonoBehaviour
     [SerializeField] private float waitToFade = 1f;
     [SerializeField] private float fadeDuration = 1f;
     [Inject] private SceneLoader sceneLoader;
+    [Inject] private PauseService pauseService;
 
 
     private void OnTriggerEnter2D(Collider2D collision)

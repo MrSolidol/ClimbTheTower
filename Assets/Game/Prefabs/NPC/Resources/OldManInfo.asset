@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87f099cdbf771d745a7461667f4f28a1, type: 3}
-  m_Name: BrickDialogeInfo
+  m_Name: OldManInfo
   m_EditorClassIdentifier: 
-  npcName: brick
+  npcName: oldman
   dialogeKeys:
-  - brick_first
-  - brick_second
-  - brick_third
-  - brick_fourth
-  - brick_fifth
+  - oldman_first
+  - oldman_second
+  - oldman_third
+  - oldman_fourth
+  - oldman_fifth
