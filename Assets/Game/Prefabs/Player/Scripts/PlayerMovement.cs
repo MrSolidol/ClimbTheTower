@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     private DisappearPlatform disPlatform;
     #endregion
 
+    [HideInInspector] public UnityEvent eFloorContact;
 
     [SerializeField] private float PushForceMult = 300f;
     [SerializeField] AnimationCurve curveJumpValue;
@@ -162,9 +163,15 @@ public class PlayerMovement : MonoBehaviour
     private void OnGameStopped(bool flag) 
     {
         if (flag)
-        { FreezePlayer(); }
+        { 
+            FreezePlayer();
+            swapCalculation.enabled = false;
+        }
         else 
-        { UnFreezePlayer(true); }
+        { 
+            UnFreezePlayer(true);
+            swapCalculation.enabled = true;
+        }
     }
 
     private void DifferenceCheck(Vector2 vec, float value, bool flag)
@@ -223,6 +230,8 @@ public class PlayerMovement : MonoBehaviour
 
         isGrounded = true;
         swapCalculation.enabled = isGrounded;
+        
+        eFloorContact?.Invoke();
 
         eDisplayFlip?.Invoke(preVelocity.x < 0);
         eDisplayGrounded?.Invoke();

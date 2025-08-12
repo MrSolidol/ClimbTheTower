@@ -575,6 +575,7 @@ GameObject:
   - component: {fileID: 4175438689135294816}
   - component: {fileID: 5283227115269203289}
   - component: {fileID: 2577955319795185393}
+  - component: {fileID: 5444182736105493236}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -735,7 +736,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9297c6dcb538ffe4086d3a9b00d1c7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swapCalculation: {fileID: 5283227115269203289}
+  ePressOn:
+    m_PersistentCalls:
+      m_Calls: []
+  ePress:
+    m_PersistentCalls:
+      m_Calls: []
+  ePressUp:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &5283227115269203289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,6 +769,7 @@ MonoBehaviour:
   eSwapBlocked:
     m_PersistentCalls:
       m_Calls: []
+  controller: {fileID: 0}
   maxDegrees: 70
   maxSwapDistance: 3.5
   minSwapDistance: 1
@@ -799,7 +809,13 @@ MonoBehaviour:
   eDisplayGrounded:
     m_PersistentCalls:
       m_Calls: []
+  eDisplayShake:
+    m_PersistentCalls:
+      m_Calls: []
   ePlaySound:
+    m_PersistentCalls:
+      m_Calls: []
+  eFloorContact:
     m_PersistentCalls:
       m_Calls: []
   PushForceMult: 950
@@ -827,15 +843,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  eWallContact:
-    m_PersistentCalls:
-      m_Calls: []
-  eFloorContact:
-    m_PersistentCalls:
-      m_Calls: []
-  eInclineContact:
-    m_PersistentCalls:
-      m_Calls: []
   solidWallBounce: 2
   limitBounceDown: 10
   bounceFactor: 0.5
@@ -843,4 +850,16 @@ MonoBehaviour:
   preVelocity: {x: 0, y: 0}
   prePosition: {x: 0, y: 0}
   isGrounded: 0
-  toFallSpeed: 10
+--- !u!114 &5444182736105493236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826596385159327209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf34828d6b787c44aa3ebb4429f16c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement: {fileID: 2577955319795185393}

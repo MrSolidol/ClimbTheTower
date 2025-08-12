@@ -1,43 +1,44 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class UIMixerController : MonoBehaviour
 {
+    public UnityEvent<float, float> eMixerUpdate;
+
     [SerializeField] private AudioMixer gameMixer;
 
     [SerializeField] private AnimationCurve volumeCurve;
 
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider soundSlider;
-    [SerializeField] private Slider speechSlider;
 
-
-    private void Awake()
-    {
-        Initialization();
-    }
 
     private void OnEnable()
     {
         musicSlider.onValueChanged.AddListener(SetMusicVolume);
+        musicSlider.onValueChanged.AddListener(SliderChange);
         soundSlider.onValueChanged.AddListener(SetSoundVolume);
-        speechSlider.onValueChanged.AddListener(SetSpeechVolume);
+        soundSlider.onValueChanged.AddListener(SliderChange);
+
     }
 
     private void OnDisable()
     {
         musicSlider.onValueChanged.RemoveListener(SetMusicVolume);
+        musicSlider.onValueChanged.RemoveListener(SliderChange);
         soundSlider.onValueChanged.RemoveListener(SetSoundVolume);
-        speechSlider.onValueChanged.RemoveListener(SetSpeechVolume);
+        soundSlider.onValueChanged.RemoveListener(SliderChange);
     }
 
 
-    private void Initialization() 
+    public void Initialization(float musVal, float souVal) 
     {
-        SetMusicVolume(0.5f);
-        SetSoundVolume(0.5f);
-        SetSpeechVolume(0.5f);
+        SetMusicVolume(musVal);
+        musicSlider.value = musVal;
+        SetSoundVolume(souVal);
+        soundSlider.value = souVal;
     }
 
     private void SetMusicVolume(float value)
@@ -50,8 +51,8 @@ public class UIMixerController : MonoBehaviour
         gameMixer.SetFloat("sound_volume", Mathf.Lerp(-80, 0, volumeCurve.Evaluate(value)));
     }
 
-    private void SetSpeechVolume(float value)
+    private void SliderChange(float value) 
     {
-        gameMixer.SetFloat("speech_volume", Mathf.Lerp(-80, 0, volumeCurve.Evaluate(value)));
+        eMixerUpdate?.Invoke(musicSlider.value, soundSlider.value);
     }
 }
