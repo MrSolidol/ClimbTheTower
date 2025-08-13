@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -10,12 +11,15 @@ public class MusicController : MonoBehaviour
     [SerializeField] private AnimationCurve musicFadeCurve;
     [SerializeField] private float musicFade = 1;
 
+    private CancellationTokenSource token;
     private Dictionary<int, MusicInfo> musicMap;
     private MusicInfo currentMusic;
 
 
     private void Awake()
     {
+        token = new CancellationTokenSource();
+
         List<MusicInfo> allMusicInfo = Resources.LoadAll<MusicInfo>("").ToList();
         musicMap = new Dictionary<int, MusicInfo>();
 
@@ -32,7 +36,9 @@ public class MusicController : MonoBehaviour
 
         if (currentMusic.PlayIndex != index)
         {
-            var musTask = FadeMusic(musicMap[index]);
+            token.Cancel();
+            token = new CancellationTokenSource();
+            var musTask = FadeMusic(musicMap[index], token);
         }
     }
 
@@ -84,44 +90,51 @@ public class MusicController : MonoBehaviour
         return index;
     }
 
-    private async Task FadeMusic(MusicInfo newMusic) 
+    private async Task FadeMusic(MusicInfo newMusic, CancellationTokenSource token) 
     {
-        currentMusic = newMusic;
-
-        float oldVolume = audioSource.volume;
-        
-        float time = 0f;
-        float unit = 0f;
-
-        while (unit < 1)
+        try
         {
-            audioSource.volume = Mathf.Lerp(oldVolume, 0, musicFadeCurve.Evaluate(unit));
+            currentMusic = newMusic;
 
-            time += Time.deltaTime;
-            unit = time / musicFade;
-            await Task.Yield();
+            float oldVolume = audioSource.volume;
+
+            float time = 0f;
+            float unit = 0f;
+
+            while (unit < 1)
+            {
+                audioSource.volume = Mathf.Lerp(oldVolume, 0, musicFadeCurve.Evaluate(unit));
+
+                time += Time.deltaTime;
+                unit = time / musicFade;
+                await Task.Yield();
+            }
+            audioSource.volume = 0f;
+
+
+            audioSource.Stop();
+            audioSource.clip = currentMusic.AudioClip;
+            audioSource.Play();
+
+
+            time = 0f;
+            unit = 0f;
+
+            while (unit < 1)
+            {
+                audioSource.volume = Mathf.Lerp(currentMusic.MaxVolume, 0, musicFadeCurve.Evaluate(1 - unit));
+
+                time += Time.deltaTime;
+                unit = time / musicFade;
+                await Task.Yield();
+            }
+            audioSource.volume = currentMusic.MaxVolume;
+            return;
         }
-        audioSource.volume = 0f;
-
-
-        audioSource.Stop();
-        audioSource.clip = currentMusic.AudioClip;
-        audioSource.Play();
-
-
-        time = 0f;
-        unit = 0f;
-
-        while (unit < 1)
+        catch (TaskCanceledException)
         {
-            audioSource.volume = Mathf.Lerp(currentMusic.MaxVolume, 0, musicFadeCurve.Evaluate(1 - unit));
-
-            time += Time.deltaTime;
-            unit = time / musicFade;
-            await Task.Yield();
+            Debug.Log("Music change cancelled");
         }
-        audioSource.volume = currentMusic.MaxVolume;
-        return;
     }
 
 }

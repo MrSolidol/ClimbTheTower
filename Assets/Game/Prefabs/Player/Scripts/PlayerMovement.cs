@@ -44,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D playerBody;
     private float absoluteGravity;
     private bool isFreezed = false;
+    private bool isSleeped = false;
     private Vector2 rememberedVelocity = Vector2.zero;
 
     public bool IsNegativeGravity 
@@ -130,8 +131,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        isGrounded = false;
-        swapCalculation.enabled = isGrounded;
+        if (isSleeped) { isSleeped = false; return; }
+
+        if (isGrounded) 
+        {
+            isGrounded = false;
+            swapCalculation.enabled = false;
+            eDisplaySlide?.Invoke();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -140,10 +147,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    public void JumpBugCrutchFix() 
+    public void JumpBugCrutchFix()
     {
         if (playerBody.velocity.magnitude == 0 && preVelocity.magnitude == 0)
         {
+            Debug.Log("Fixed");
             isGrounded = true;
             swapCalculation.enabled = isGrounded;
             eDisplayGrounded?.Invoke();
@@ -156,7 +164,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetSwapActive(bool flag) 
     {
-        swapCalculation.enabled = flag;
+        //Debug.Log("Swap active");
+        ////swapCalculation.enabled = flag;
     }
 
 
@@ -230,7 +239,8 @@ public class PlayerMovement : MonoBehaviour
 
         isGrounded = true;
         swapCalculation.enabled = isGrounded;
-        
+        isSleeped = false;
+
         eFloorContact?.Invoke();
 
         eDisplayFlip?.Invoke(preVelocity.x < 0);
@@ -239,6 +249,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void InclineReact(GameObject gm) 
     {
+        isSleeped = true;
         eDisplaySlide?.Invoke();
     }
 
@@ -257,6 +268,7 @@ public class PlayerMovement : MonoBehaviour
                 eDisplayWallHit?.Invoke();
                 break;
         }
+        isSleeped = false;
         eDisplayFlip?.Invoke(playerBody.velocity.x < 0);
     }
 
@@ -272,6 +284,7 @@ public class PlayerMovement : MonoBehaviour
                 break;
         }
 
+        isSleeped = false;
         eDisplayRoofHit?.Invoke();
     }
 

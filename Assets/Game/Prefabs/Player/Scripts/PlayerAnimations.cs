@@ -97,6 +97,7 @@ public class PlayerAnimations : MonoBehaviour
     private void OnSlideDisplay()
     {
         playerAnimator.SetTrigger("slipped");
+        playerAnimator.SetBool("is_standing", false);
     }
 
     private void OnWebbDisplay()
