@@ -1,14 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class PlayerAnimations : MonoBehaviour
 {
+    [HideInInspector] public UnityEvent ePlayerKnocked;
+
     [SerializeField] private Animator playerAnimator;
     [SerializeField] private PlayerMovement playerMove;
     [SerializeField] private SpriteRenderer playerSprite;
     [SerializeField] private SwapCalculation swapCalculation;
+
+    private bool isKnockable = false;
+
+    public bool IsKnockable 
+    {
+        get { return isKnockable; }
+        set { isKnockable = value; playerAnimator.SetBool("is_knocked", value); }
+    }
+
 
     private void OnEnable()
     {
@@ -34,10 +43,20 @@ public class PlayerAnimations : MonoBehaviour
         playerMove.eDisplaySlide.RemoveListener(OnSlideDisplay);
     }
 
+
+    public void HandlerIdleAnimation() 
+    {
+        playerMove.SetSwapActive(true);
+    }
+
     public void HandlerFallAnimation() 
     {
         playerAnimator.SetBool("is_falling", false);
-        playerMove.SetSwapActive(true);
+    }
+
+    public void HandlerKnockAnimation() 
+    {
+        ePlayerKnocked?.Invoke();
     }
 
     private void OnFlipDisplay(bool flag) 
@@ -80,16 +99,9 @@ public class PlayerAnimations : MonoBehaviour
         playerAnimator.SetTrigger("slipped");
     }
 
-    private void OnFallingDisplay()
-    {
-        playerAnimator.SetBool("is_falling", true);
-    }
-
     private void OnWebbDisplay()
     {
         playerAnimator.SetBool("is_falling", false);
         playerAnimator.SetTrigger("webbed");
     }
-
-
 }

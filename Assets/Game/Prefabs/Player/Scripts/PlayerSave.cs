@@ -1,13 +1,10 @@
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 using Zenject;
 
 public class PlayerSave : MonoBehaviour
 {
     [SerializeField] private PlayerMovement playerMovement;
-    
     [SerializeField] private bool UseSave = true;
-
     [SerializeField] private bool ResetSave = false;
 
     [Inject] private DataService dataService;
