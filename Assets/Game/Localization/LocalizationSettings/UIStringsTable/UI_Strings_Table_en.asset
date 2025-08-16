@@ -88,6 +88,18 @@ MonoBehaviour:
     m_Localized: Finish the game
     m_Metadata:
       m_Items: []
+  - m_Id: 2603950390173696
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2603950423728128
+    m_Localized: Press and hold anywhere on the screen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2603950423728129
+    m_Localized: Pull to set the trajectory, then release to jump.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

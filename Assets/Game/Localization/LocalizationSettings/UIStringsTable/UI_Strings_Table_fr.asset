@@ -47,30 +47,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 28660824596483
-    m_Localized: '<b>Code, visuel, conception du jeu: </b>
-
-      @mr_solidol (tg,
-      github)
-
-
-      <b>Sons: </b>
-
-      freesond.org
-
-
-      <b>Musique: </b>
-
-      (freetouse.com)
-
-      Whales
-      - Zambolino
-
-      Relax - Zambolino
-
-      Fallen Kingdom - Epic Spectrum
-
-      Blacksmith
-      - Conquest'
+    m_Localized: "<b>Code, visuel, conception du jeu\_: </b>\n@mr_solidol (tg, github)\n\n<b>Sons\_:
+      </b>\nfreesond.org\n\n<b>Musique\_: </b>\n(freetouse.com)\nWhales - Zambolino\nRelax
+      - Zambolino\nFallen Kingdom - Epic Spectrum\nBlacksmith - Conquest"
     m_Metadata:
       m_Items: []
   - m_Id: 28660824596484
@@ -107,6 +86,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 28660824596492
     m_Localized: Terminer le jeu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2603950390173696
+    m_Localized: D'ACCORD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2603950423728128
+    m_Localized: "Appuyez et maintenez n'importe o\xF9 sur l'\xE9cran."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2603950423728129
+    m_Localized: "Tirez pour d\xE9finir la trajectoire, puis rel\xE2chez pour sauter."
     m_Metadata:
       m_Items: []
   references:

@@ -29,6 +29,21 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f94db2a0bc7f85642baf24178cd958cb
+    m_Address: Assets/Game/Localization/LocalizationSettings/TextureTable/Texture_Table
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a72384888b2a9b34d9e0c6de827dec46
+    m_Address: Tilte_En1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-es
+    - Locale-de
+    - Locale-fr
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: ca7b7f3078d7dd6498a500cb6e753431, type: 2}
   m_SchemaSet:

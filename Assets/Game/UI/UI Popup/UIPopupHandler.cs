@@ -3,8 +3,8 @@ using UnityEngine.Events;
 
 public class UIPopupHandler : MonoBehaviour
 {
-    [HideInInspector] public UnityEvent ePopupShowed;
-    [HideInInspector] public UnityEvent ePopupHided;
+    public UnityEvent ePopupShowed;
+    public UnityEvent ePopupHided;
 
     public void HandlerAppearAnimation()
     {

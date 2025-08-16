@@ -35,7 +35,6 @@ public class UIMenuBook : MonoBehaviour
     }
 
 
-    
     public void SetNewPopup(string newPopup)
     {
         if (isLocked) { return; }

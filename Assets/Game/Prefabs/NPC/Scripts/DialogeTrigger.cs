@@ -21,7 +21,7 @@ public class DialogeTrigger : MonoBehaviour
         dialogeWriter.eDialogeEnded.RemoveListener(OnDialogeEnded);
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isReady && collision.gameObject.CompareTag("Player"))
         {

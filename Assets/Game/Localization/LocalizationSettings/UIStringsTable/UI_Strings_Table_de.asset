@@ -77,7 +77,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 28660824596490
-    m_Localized: Endlich bist du oben!
+    m_Localized: Sie haben es bis ganz nach oben geschafft!
     m_Metadata:
       m_Items: []
   - m_Id: 28660824596491
@@ -86,6 +86,19 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 28660824596492
     m_Localized: Beende das Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2603950390173696
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2603950423728128
+    m_Localized: "Dr\xFCcken und halten Sie eine beliebige Stelle auf dem Bildschirm."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2603950423728129
+    m_Localized: Ziehen Sie, um die Flugbahn festzulegen, und lassen Sie dann los,
+      um zu springen.
     m_Metadata:
       m_Items: []
   references:
