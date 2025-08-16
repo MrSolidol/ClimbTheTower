@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using UnityEditor.Localization.Plugins.XLIFF.V20;
 
 public class DataService
 {

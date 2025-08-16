@@ -45,7 +45,7 @@ public class SwapCalculation : MonoBehaviour
 
     public void PressOn(Vector2 vec)
     {
-        if (!enabled) { eSwapBlocked?.Invoke(); return; }
+        //eSwapBlocked?.Invoke();
 
         startVec = vec;
 

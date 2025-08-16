@@ -131,10 +131,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (isSleeped) { isSleeped = false; return; }
+        if (isSleeped) { Debug.Log("Incline exit"); isSleeped = false; return; }
 
-        if (isGrounded) 
+        if (isGrounded && collision.gameObject.CompareTag("SLIPPERY")) 
         {
+            Vector2 _vecContact = collision.contacts[0].normal;
+            float _degContact = Vector2.Angle(Vector2.up, _vecContact);
+
             isGrounded = false;
             swapCalculation.enabled = false;
             eDisplaySlide?.Invoke();
@@ -151,15 +154,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if (playerBody.velocity.magnitude == 0 && preVelocity.magnitude == 0)
         {
-            Debug.Log("Fixed");
             isGrounded = true;
             swapCalculation.enabled = isGrounded;
             eDisplayGrounded?.Invoke();
+            Debug.Log("RER");
         }
-        //else 
-        //{
-        //    Debug.Log(playerBody.velocity.magnitude.ToString() + "  " + preVelocity.magnitude.ToString());
-        //}
+        else 
+        {
+            Debug.Log(playerBody.velocity.magnitude.ToString() + "  " + preVelocity.magnitude.ToString());
+        }
     }
 
     public void SetSwapActive(bool flag) 
@@ -219,6 +222,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FloorReact(GameObject gm)
     {
+        Debug.Log("Floor");
         switch (gm.tag)
         {
             case "SOLID":
@@ -249,6 +253,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void InclineReact(GameObject gm) 
     {
+        Debug.Log("Incline");
+        if (isGrounded) { isSleeped = false; return; }
         isSleeped = true;
         eDisplaySlide?.Invoke();
     }

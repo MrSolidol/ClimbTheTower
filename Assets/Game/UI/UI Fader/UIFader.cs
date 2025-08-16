@@ -1,9 +1,6 @@
 using System.Threading.Tasks;
-using UnityEditor.SearchService;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Zenject;
-using static UnityEngine.Rendering.DebugUI;
 
 public class UIFader : MonoBehaviour
 {
