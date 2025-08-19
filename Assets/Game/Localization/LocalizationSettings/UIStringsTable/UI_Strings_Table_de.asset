@@ -47,9 +47,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 28660824596483
-    m_Localized: "<b>Code, Grafik, Spieldesign:</b>\n@mr_solidol (tg, github)\n\n<b>Sounds:</b>
-      \nfreesond.org\n\n<b>Musik:</b>\n(freetouse.com)\nWhales \u2013 Zambolino\nRelax
-      \u2013 Zambolino\nFallen Kingdom \u2013 Epic Spectrum\nBlacksmith \u2013 Conquest"
+    m_Localized: "<b>Code, Grafik, Spieldesign:</b>\ntelegramm: @mr_solidol\n\n<b>Sounds:</b>
+      \nfreesond.org\n\n<b>Musik:</b>\n(freetouse.com)\nRelax \u2013 Zambolino\nFallen
+      Kingdom \u2013 Epic Spectrum\nBlacksmith \u2013 Conquest"
     m_Metadata:
       m_Items: []
   - m_Id: 28660824596484
@@ -99,6 +99,15 @@ MonoBehaviour:
   - m_Id: 2603950423728129
     m_Localized: Ziehen Sie, um die Flugbahn festzulegen, und lassen Sie dann los,
       um zu springen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3662005475905536
+    m_Localized: "Das Erklimmen dieses Turms ist eine Herausforderung, der nur wenige
+      gewachsen sind \u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3662160304443392
+    m_Localized: Genau deshalb sind Sie hierher gekommen.
     m_Metadata:
       m_Items: []
   references:

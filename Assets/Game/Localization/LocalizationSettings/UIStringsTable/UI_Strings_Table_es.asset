@@ -43,10 +43,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 28660824596483
-    m_Localized: "<b>C\xF3digo, dise\xF1o visual y del juego:</b>\n@mr_solidol (tg,
-      github)\n\n<b>Sonidos:</b>\nfreesond.org\n\n<b>M\xFAsica:</b>\n(freetouse.com)\nWhales
-      - Zambolino\nRelax - Zambolino\nFallen Kingdom - Epic Spectrum\nBlacksmith
-      - Conquest"
+    m_Localized: "<b>C\xF3digo, dise\xF1o visual y del juego:</b>\ntelegramm: @mr_solidol\n\n<b>Sonidos:</b>\nfreesond.org\n\n<b>M\xFAsica:</b>\n(freetouse.com)\nRelax
+      - Zambolino\nFallen Kingdom - Epic Spectrum\nBlacksmith - Conquest"
     m_Metadata:
       m_Items: []
   - m_Id: 28660824596484
@@ -99,6 +97,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2603950423728129
     m_Localized: Tira para fijar la trayectoria y luego suelta para saltar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3662005475905536
+    m_Localized: "Escalar esta torre es un reto que s\xF3lo unos pocos pueden afrontar..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3662160304443392
+    m_Localized: "Es exactamente por eso que viniste aqu\xED."
     m_Metadata:
       m_Items: []
   references:

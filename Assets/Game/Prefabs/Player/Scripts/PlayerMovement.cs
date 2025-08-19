@@ -207,6 +207,7 @@ public class PlayerMovement : MonoBehaviour
 
         UnFreezePlayer(false);
 
+        playerBody.velocity = Vector2.zero;
         playerBody.AddForce(vec * value * -PushForceMult);
 
         eDisplayFlip?.Invoke(vec.x < 0);
@@ -269,7 +270,7 @@ public class PlayerMovement : MonoBehaviour
                 break;
             default:
                 var sign = Mathf.Sign(preVelocity.x);
-                playerBody.velocity = new Vector2(-sign * Mathf.Clamp(Mathf.Abs(preVelocity.x) / 2, minWallBounce, solidWallBounce), preVelocity.y / 2);
+                playerBody.velocity = new Vector2(-sign * 1.5f, preVelocity.y / 2);
                 eDisplayWallHit?.Invoke();
                 break;
         }

@@ -47,9 +47,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 28660824596483
-    m_Localized: "<b>Code, visual, game design: </b>\n@mr_solidol (tg, github)\n\n<b>Sounds:</b>
-      \nfreesond.org\n\n<b>Music:</b>\n(freetouse.com)\nWhales - Zambolino\nRelax
-      - Zambolino\nFallen Kingdom - Epic Spectrum\nBlacksmith - Conquest"
+    m_Localized: "<b>Code, visual, game design: </b>\ntelegramm: @mr_solidol\n\n<b>Sounds:</b>
+      \nfreesond.org\n\n<b>Music:</b>\n(freetouse.com)\nRelax - Zambolino\nFallen
+      Kingdom - Epic Spectrum\nBlacksmith - Conquest"
     m_Metadata:
       m_Items: []
   - m_Id: 28660824596484
@@ -98,6 +98,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2603950423728129
     m_Localized: Pull to set the trajectory, then release to jump.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3662005475905536
+    m_Localized: Climbing this tower is a challenge that only a few can handle...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3662160304443392
+    m_Localized: That's exactly why you came here.
     m_Metadata:
       m_Items: []
   references:

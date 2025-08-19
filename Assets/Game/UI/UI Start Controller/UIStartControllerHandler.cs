@@ -8,6 +8,8 @@ public class UIStartControllerHandler : MonoBehaviour
 
     [Inject] private SceneLoader sceneLoader;
 
+    [SerializeField] private string nextSceneName;
+
     public void HandlerStartSound()
     {
         ePlaySound?.Invoke();
@@ -15,6 +17,6 @@ public class UIStartControllerHandler : MonoBehaviour
 
     public void HandlerStartAnimation() 
     {
-        sceneLoader.LoadSceneWithFade("MainMenu");
+        sceneLoader.LoadSceneWithFade(nextSceneName);
     }
 }

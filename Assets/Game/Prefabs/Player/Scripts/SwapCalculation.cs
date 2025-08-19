@@ -24,16 +24,19 @@ public class SwapCalculation : MonoBehaviour
     private Vector2 startVec = Vector2.zero;
 
 
-    private void OnEnable()
+    private void Awake()
     {
         controller.ePressOn.AddListener(PressOn);
+    }
+
+    private void OnEnable()
+    {
         controller.ePress.AddListener(Press);
         controller.ePressUp.AddListener(PressUp);
     }
 
     private void OnDisable()
     {
-        controller.ePressOn.RemoveListener(PressOn);
         controller.ePress.RemoveListener(Press);
         controller.ePressUp.RemoveListener(PressUp);
 
@@ -41,12 +44,12 @@ public class SwapCalculation : MonoBehaviour
         eSwapContinued?.Invoke(Vector2.up, 0f, false);
         eSwapEnded?.Invoke(Vector2.up, 0f, false);
     }
-
-
+     
+       
     public void PressOn(Vector2 vec)
     {
-        //eSwapBlocked?.Invoke();
-
+        if (!enabled) { eSwapBlocked?.Invoke(); return; }
+        else { Debug.Log("!!!"); }
         startVec = vec;
 
         Difference = Vector2.zero;

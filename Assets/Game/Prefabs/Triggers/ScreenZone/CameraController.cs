@@ -119,10 +119,7 @@ public class CameraController : MonoBehaviour
     private float GetAspectMultiplayer() 
     {
         float currentAspect = (float)Screen.width / Screen.height;
-        //Debug.Log(widthScale + " " + heightScale);
-        //Debug.Log(widthAspect + " " + heightAspect);
         float unit = (widthAspect - Mathf.Clamp(currentAspect, heightAspect, widthAspect)) / (widthAspect - heightAspect);
-        Debug.Log(Mathf.Lerp(widthScale, heightScale, unit));
         return Mathf.Lerp(widthScale, heightScale, aspectCurve.Evaluate(unit));
     }
 }

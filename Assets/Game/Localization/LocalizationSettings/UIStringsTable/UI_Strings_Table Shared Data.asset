@@ -95,6 +95,14 @@ MonoBehaviour:
     m_Key: tutor2
     m_Metadata:
       m_Items: []
+  - m_Id: 3662005475905536
+    m_Key: legend1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3662160304443392
+    m_Key: legend2
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
