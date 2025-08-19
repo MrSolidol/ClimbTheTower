@@ -7,7 +7,7 @@ public class PushZone : MonoBehaviour
         if (collision.CompareTag("Player")) 
         {
             var oldPos = collision.gameObject.transform.position;
-            float yPos = transform.position.y + transform.localScale.y / 2 + 1f;
+            float yPos = transform.position.y + transform.localScale.y / 2 + 1.5f;
 
             collision.gameObject.transform.position = new Vector3(oldPos.x, yPos, oldPos.z);
         }

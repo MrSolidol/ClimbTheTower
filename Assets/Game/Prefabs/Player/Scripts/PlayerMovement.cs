@@ -135,8 +135,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (isGrounded && collision.gameObject.CompareTag("SLIPPERY")) 
         {
-            Vector2 _vecContact = collision.contacts[0].normal;
-            float _degContact = Vector2.Angle(Vector2.up, _vecContact);
+            //Vector2 _vecContact = collision.contacts[0].normal;
+            //float _degContact = Vector2.Angle(Vector2.up, _vecContact);
 
             isGrounded = false;
             swapCalculation.enabled = false;
@@ -222,7 +222,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FloorReact(GameObject gm)
     {
-        Debug.Log("Floor");
         switch (gm.tag)
         {
             case "SOLID":

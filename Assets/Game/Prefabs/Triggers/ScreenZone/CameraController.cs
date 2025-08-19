@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    private const float CAMERA_SCALE = 6.1875f;
+    private float CAMERA_SCALE = 6.1875f;
+
 
     [SerializeField] private Camera currentCamera;
 
@@ -14,30 +15,48 @@ public class CameraController : MonoBehaviour
     [SerializeField] private AnimationCurve scaleCurve;
     [SerializeField] private float scaleDuration = 1;
 
+    [SerializeField] private AnimationCurve aspectCurve;
+
+    private float widthAspect = 3f;
+    private float widthScale = 5.6f;
+
+    private float heightAspect = 1f;
+    private float heightScale = 10f;
+
+    private float currentScale;
+
     private CancellationTokenSource token;
 
 
     private void Awake()
     {
         token = new CancellationTokenSource();
+        widthScale = widthScale / CAMERA_SCALE;
+        heightScale = heightScale/ CAMERA_SCALE;
+    }
+
+    private void Update()
+    {
+        UpdateCameraScale();
     }
 
 
     public void SetCamera(Vector3 newPosition, float newScale) 
     {
         transform.position = newPosition;
-        currentCamera.gameObject.GetComponent<Camera>().orthographicSize = CAMERA_SCALE * newScale;
+        currentScale = newScale;
+        UpdateCameraScale();
     }
 
     public async void MoveCamera(Vector3 newPosition, float newScale) 
     {
         Vector3 _oldPosition = transform.position;
-        float _oldScale = currentCamera.gameObject.GetComponent<Camera>().orthographicSize;
+        float _oldScale = currentCamera.gameObject.GetComponent<Camera>().orthographicSize / (GetAspectMultiplayer() * CAMERA_SCALE);
 
         token.Cancel();
         token = new CancellationTokenSource();
 
-        var scaleTask = ChangeScale(newScale * CAMERA_SCALE, _oldScale, token);
+        var scaleTask = ChangeScale(newScale, _oldScale, token);
         var posTask = ChangePosition(newPosition, _oldPosition, token);
 
         await scaleTask;
@@ -53,14 +72,14 @@ public class CameraController : MonoBehaviour
 
             while (unit < 1)
             {
-                currentCamera.gameObject.GetComponent<Camera>().orthographicSize = Mathf.Lerp(oldScale, newScale, scaleCurve.Evaluate(unit));
+                currentScale = Mathf.Lerp(oldScale, newScale, scaleCurve.Evaluate(unit));
 
                 time += Time.deltaTime;
                 unit = time / scaleDuration;
                 await Task.Yield();
             }
 
-            currentCamera.gameObject.GetComponent<Camera>().orthographicSize = newScale;
+            currentScale = newScale;
         }
         catch (TaskCanceledException)
         {
@@ -92,4 +111,18 @@ public class CameraController : MonoBehaviour
         }
     }
 
+    private void UpdateCameraScale() 
+    {
+        currentCamera.gameObject.GetComponent<Camera>().orthographicSize = currentScale * CAMERA_SCALE * GetAspectMultiplayer();
+    }
+
+    private float GetAspectMultiplayer() 
+    {
+        float currentAspect = (float)Screen.width / Screen.height;
+        //Debug.Log(widthScale + " " + heightScale);
+        //Debug.Log(widthAspect + " " + heightAspect);
+        float unit = (widthAspect - Mathf.Clamp(currentAspect, heightAspect, widthAspect)) / (widthAspect - heightAspect);
+        Debug.Log(Mathf.Lerp(widthScale, heightScale, unit));
+        return Mathf.Lerp(widthScale, heightScale, aspectCurve.Evaluate(unit));
+    }
 }
