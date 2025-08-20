@@ -49,7 +49,7 @@ public class SwapCalculation : MonoBehaviour
     public void PressOn(Vector2 vec)
     {
         if (!enabled) { eSwapBlocked?.Invoke(); return; }
-        else { Debug.Log("!!!"); }
+        
         startVec = vec;
 
         Difference = Vector2.zero;

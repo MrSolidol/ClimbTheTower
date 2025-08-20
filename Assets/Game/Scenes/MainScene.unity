@@ -43995,7 +43995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd60aedd9b8d3154dada7ec1b99dfe9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  advertisingCooldown: 240
+  advertisingCooldown: 210
   advertisingMode: 0
 --- !u!114 &752872222
 MonoBehaviour:
@@ -132807,6 +132807,10 @@ PrefabInstance:
     - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
       propertyPath: PushForceMult
       value: 975
+      objectReference: {fileID: 0}
+    - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
+      propertyPath: minWallBounce
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2577955319795185393, guid: e7945e21e3b697549b5ab68c9ea93662, type: 3}
       propertyPath: eFalled.m_PersistentCalls.m_Calls.Array.size

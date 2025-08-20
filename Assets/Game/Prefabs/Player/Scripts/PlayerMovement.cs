@@ -29,10 +29,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float PushForceMult = 300f;
     [SerializeField] AnimationCurve curveJumpValue;
 
-    [SerializeField] private float solidWallBounce = 10f;
     [SerializeField] private float limitBounceDown = 10f;
     [SerializeField] private float bounceFactor = 0.75f;
-    [SerializeField] private float minWallBounce = .1f;
+    [SerializeField] private float minWallBounce = 1.5f;
 
     [Inject] PauseService pauseService;
 
@@ -135,9 +134,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (isGrounded && collision.gameObject.CompareTag("SLIPPERY")) 
         {
-            //Vector2 _vecContact = collision.contacts[0].normal;
-            //float _degContact = Vector2.Angle(Vector2.up, _vecContact);
-
             isGrounded = false;
             swapCalculation.enabled = false;
             eDisplaySlide?.Invoke();
@@ -152,23 +148,17 @@ public class PlayerMovement : MonoBehaviour
 
     public void JumpBugCrutchFix()
     {
-        if (playerBody.velocity.magnitude == 0 && preVelocity.magnitude == 0)
+        if (!isGrounded && playerBody.gravityScale != 0 && playerBody.velocity.magnitude == 0 && preVelocity.magnitude == 0)
         {
             isGrounded = true;
             swapCalculation.enabled = isGrounded;
             eDisplayGrounded?.Invoke();
-            Debug.Log("RER");
-        }
-        else 
-        {
-            Debug.Log(playerBody.velocity.magnitude.ToString() + "  " + preVelocity.magnitude.ToString());
         }
     }
 
     public void SetSwapActive(bool flag) 
     {
-        //Debug.Log("Swap active");
-        ////swapCalculation.enabled = flag;
+        swapCalculation.enabled = flag;
     }
 
 
@@ -270,7 +260,7 @@ public class PlayerMovement : MonoBehaviour
                 break;
             default:
                 var sign = Mathf.Sign(preVelocity.x);
-                playerBody.velocity = new Vector2(-sign * 1.5f, preVelocity.y / 2);
+                playerBody.velocity = new Vector2(-sign * minWallBounce, preVelocity.y / 2);
                 eDisplayWallHit?.Invoke();
                 break;
         }

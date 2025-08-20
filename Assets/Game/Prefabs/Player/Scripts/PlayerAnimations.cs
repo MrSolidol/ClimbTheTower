@@ -8,7 +8,6 @@ public class PlayerAnimations : MonoBehaviour
     [SerializeField] private Animator playerAnimator;
     [SerializeField] private PlayerMovement playerMove;
     [SerializeField] private SpriteRenderer playerSprite;
-    [SerializeField] private SwapCalculation swapCalculation;
 
     private bool isKnockable = false;
 
@@ -44,19 +43,18 @@ public class PlayerAnimations : MonoBehaviour
     }
 
 
-    public void HandlerIdleAnimation() 
-    {
-        playerMove.SetSwapActive(true);
-    }
-
     public void HandlerFallAnimation() 
     {
         playerAnimator.SetBool("is_falling", false);
+        if (!playerAnimator.GetBool("is_knocked")) 
+        {
+            playerMove.SetSwapActive(true); }
     }
 
     public void HandlerKnockAnimation() 
     {
         ePlayerKnocked?.Invoke();
+        playerMove.SetSwapActive(true);
     }
 
     private void OnFlipDisplay(bool flag) 
@@ -79,7 +77,8 @@ public class PlayerAnimations : MonoBehaviour
     {
         playerAnimator.SetBool("is_standing", true);
         if (playerAnimator.GetBool("is_falling")) 
-        { playerMove.SetSwapActive(false); }
+        {
+            playerMove.SetSwapActive(false); }
     }
 
     private void OnWallHitDisplay() 
