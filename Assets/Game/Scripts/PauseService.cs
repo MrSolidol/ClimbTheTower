@@ -14,8 +14,8 @@ public class PauseService : MonoBehaviour
     [Inject]
     public void Construct() {}
 
-
-    public void StopGame() 
+    
+    public void StopGame()
     {
         if (IsGameStopped) { return; }
         IsGameStopped = true;

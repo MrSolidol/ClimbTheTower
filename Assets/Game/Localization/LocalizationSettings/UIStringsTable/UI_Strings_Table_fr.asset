@@ -109,6 +109,10 @@ MonoBehaviour:
     m_Localized: "C'est exactement pour cela que vous \xEAtes venu ici."
     m_Metadata:
       m_Items: []
+  - m_Id: 4485124209938432
+    m_Localized: The ad will be shown in
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

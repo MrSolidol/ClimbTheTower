@@ -103,6 +103,10 @@ MonoBehaviour:
     m_Key: legend2
     m_Metadata:
       m_Items: []
+  - m_Id: 4485124209938432
+    m_Key: ad_timer
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

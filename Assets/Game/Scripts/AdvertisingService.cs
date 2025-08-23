@@ -1,7 +1,8 @@
 using UnityEngine;
 using Zenject;
+using YG;
 
-public enum AdvertisingMode 
+public enum AdvertisingMode
 {
     None,
     Yandex,
@@ -10,12 +11,13 @@ public enum AdvertisingMode
 
 public class AdvertisingService : MonoBehaviour
 {
+    [SerializeField] private UIMenuBook menuBook;
+    [SerializeField] private AdvertisingTimer adTimer;
     [SerializeField] private float advertisingCooldown = 300f;
     [SerializeField] private AdvertisingMode advertisingMode;
 
     [Inject] private PlayerAnimations playerAnimations;
-
-
+    [Inject] private PauseService pauseService;
 
     private void Awake()
     {
@@ -25,24 +27,33 @@ public class AdvertisingService : MonoBehaviour
     private void OnEnable()
     {
         playerAnimations.ePlayerKnocked.AddListener(ShowAdvertising);
+        adTimer.eWarningTimeout.AddListener(YandexAd);
     }
 
     private void OnDisable()
     {
         playerAnimations.ePlayerKnocked.AddListener(ShowAdvertising);
+        adTimer.eWarningTimeout.RemoveListener(YandexAd);
     }
 
 
-    private void SetKnockStatus() 
+    private void SetKnockStatus()
     {
         playerAnimations.IsKnockable = true;
     }
 
-    private void ShowAdvertising() 
+    private void ShowAdvertising()
     {
-        Debug.Log("Advertising showing!");
+        menuBook.SetNewPopup("Advertising");
+        menuBook.SetPause(true);
+        //pauseService.LockInterface();
+    }
 
+    public void YandexAd()
+    {
+        YG2.InterstitialAdvShow();
         playerAnimations.IsKnockable = false;
         Invoke("SetKnockStatus", advertisingCooldown);
+
     }
 }

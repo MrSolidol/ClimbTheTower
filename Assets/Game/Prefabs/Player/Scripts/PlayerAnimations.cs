@@ -14,7 +14,12 @@ public class PlayerAnimations : MonoBehaviour
     public bool IsKnockable 
     {
         get { return isKnockable; }
-        set { isKnockable = value; playerAnimator.SetBool("is_knocked", value); }
+        set
+        {
+            isKnockable = value;
+            playerAnimator.SetBool("is_knocked", value);
+            if (value) { playerMove.SetSwapActive(true); }
+        }
     }
 
 
@@ -43,18 +48,22 @@ public class PlayerAnimations : MonoBehaviour
     }
 
 
-    public void HandlerFallAnimation() 
+    public void HandlerFallAnimation()
     {
         playerAnimator.SetBool("is_falling", false);
-        if (!playerAnimator.GetBool("is_knocked")) 
+        if (!playerAnimator.GetBool("is_knocked"))
         {
-            playerMove.SetSwapActive(true); }
+            playerMove.SetSwapActive(true);
+        }
+        else
+        {
+            ePlayerKnocked?.Invoke();
+        }
     }
 
     public void HandlerKnockAnimation() 
     {
-        ePlayerKnocked?.Invoke();
-        playerMove.SetSwapActive(true);
+//        playerMove.SetSwapActive(true);
     }
 
     private void OnFlipDisplay(bool flag) 

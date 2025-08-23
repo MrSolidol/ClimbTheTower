@@ -21,7 +21,7 @@ public class CameraController : MonoBehaviour
     private float widthScale = 5.6f;
 
     private float heightAspect = 1f;
-    private float heightScale = 10f;
+    private float heightScale = 15f;
 
     private float currentScale;
 
